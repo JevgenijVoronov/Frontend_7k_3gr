@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <meta charset="UTF-8"/>
+        <title>Reģistrācijas forma</title>
+    </Head>
+    <body>
+    <form action="" method="get">
+        <p style="color:burlywood;font-size:20px;">REĢISTRĀCIJAS FORMA</p>
+        <fieldset>
+            <label for="fname"> Lietotājs:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="pwd"> Parole:</label>
+            <input type="password" id="pwd" name="pwd"></br>
+        </fieldset></br>
+        <fieldset>
+            <legend><p style="background-color:burlywood;">Informācija par sevi</p></legend>
+            <span>
+            <p>Dzimums:</p>
+            <input type="radio" id="vir" name="dzimums" value="vir">
+            <label for="vir">Vīrietis</label></br>
+            <input type="radio" id="siev" name="dzimums" value="siev">
+            <label for="siev">Sieviete</label></br></br>
+            <label for="birthday">Dzimšanas datums:</label>
+            <input type="date" id="birthday" name="birthday"></br>
+            </span>
+            <span>
+            <p>Adrese:</p>
+            <label for="fname">Pilsēta:</label>
+            <input type="text" id="fname" name="fname"></br>
+            </span>
+        </fieldset><br>
+        <fieldset>
+            <legend><p style="background-color:burlywood;">Vaļasprieki</p></legend>
+            <p>Varat izvēlēties vairākus variantus</p>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Literatūra">
+            <label for="hobby1"> Literatūra</label>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Valodas">
+            <label for="hobby2"> Valodas</label></br>
+            <input type="checkbox" id="hobby3" name="hobby3" value="Ceļojumi">
+            <label for="hobby3"> Ceļojumi</label>
+            <input type="checkbox" id="hobby4" name="hobby4" value="Zīmēšana">
+            <label for="hobby4"> Zīmēšana</label></br>
+         </fieldset></br>
+         <fieldset>
+            <legend><p style="background-color:burlywood;">Mīļākā krāsa</p></legend>
+                <label for="m-krasa">Izvēlieties krāsu no saraksta:</label>
+                <input list="krasas" id="m-krasa" name="m-krasa">
+                <datalist id="krasas">
+                  <option value="Balts">
+                  <option value="Sarkans">
+                  <option value="Oranžs">
+                  <option value="Dzeltens">
+                  <option value="Zaļš">
+                  <option value="Zils">
+                  <option value="Violets">
+                  <option value="Brūns">
+                </datalist>
+              </fieldset></br>
+        <input type="submit" value="Sūtīt"/>
+        </form>
+</body>
+</html>
