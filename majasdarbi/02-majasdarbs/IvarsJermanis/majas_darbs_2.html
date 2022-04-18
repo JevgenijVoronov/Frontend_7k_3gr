@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reģistrācijas forma</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Reģistrācijas forma</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <article id="content">
+    <hr>
+      <img src="./Ivars.jpg" alt="" width="250px" height="250px">
+      <h2>Reģistrācijas forma</h2>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Input</legend>
+          <label for="name">Ievietot vārdu:</label>
+          <input type="text" name="name" id="name" required>
+          <label for="password">Ievadiet paroli:</label>
+          <input type="password" name="password" id="password" required>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Informācija par sevi</legend>
+          <p>Dzimums</p>
+          <radio id="dzimums" name="radio"></radio>
+          <input type="radio" id="Vīrietis" name="dzimums" value="Vīrietis">
+          <label for="dzimums">Vīrietis</label><br>
+          <input type="radio" id="Sieviete" name="dzimums" value="Sieviete">
+          <label for="dzimums">Sieviete</label>
+          <br>
+          <br>
+          <label for="birthday">Dzimšanas datums:</label>
+          <input type="date" id="birthday" name="birthday">
+          <br>
+          <p>Adrese</p>
+          <label for="city-select">Dzīvesvieta:</label>
+            <select id="city" name="city-select">
+                <option value="Rīga">Rīga</option>
+                <option value="Jelgava">Jelgava</option>
+                <option value="Talsi">Talsi</option>
+                <option value="Roja">Roja</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Jūsu hobiji</legend>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Skriešana">
+            <label for="hobby1"> Skriešana</label>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Programmēšana">
+            <label for="hobby2"> Programmēšana</label><br>
+            <input type="checkbox" id="hobby3" name="hobby3" value="Muzicēšana">
+            <label for="hobby3"> Muzicēšana</label>
+            <input type="checkbox" id="hobby4" name="hobby4" value="Sports">
+            <label for="hobby4"> Sports</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Papildus linki</legend>
+            <nav>
+                <a href="https://www.linkedin.com/in/ivars-jermanis-9b56ba1b5/">LinkedIn</a> |
+            </nav>
+        </fieldset>
+    </main>
+</body>
+</html>
