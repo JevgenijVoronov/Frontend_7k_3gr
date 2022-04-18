@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+
+<title>Reģistrācijas Forma</title>
+  <body>
+  </head>
+
+<h1>Reģistrācijas Forma</h1>
+<form>
+<fieldset>
+
+<p1>Ievietot vārdu:</p1> <input "text"> <p2>Ievietot paroli:</p2> <input type="password"> </fieldset>
+
+<br>
+
+<form action="" method="get">
+        <fieldset>
+          <legend>Informācija par sevi</legend>
+
+<h2><b>Dzimums</b></h2>
+<form action="/action_page.php">
+<input type="radio" id="Dzimums"value="Vīrietis">
+<label for="value">Vīrietis</label><br> 
+<input type="radio" id="Dzimums"value="Sieviete">
+<label for="value">Sieviete</label>
+</form> 
+
+<br>            
+            
+<label for="birthday">dzimšanas datums:</label>
+<input type="date" id="birthday" name="birthday">
+
+<h2>Adrese</h2>
+<p1>Jūsu pilsēta:</p1> <input list="city"/>
+<datalist id="city">
+<option value="Rīga">
+<option value="Jelgava"
+</datalist>
+
+<br>
+</fieldset>
+
+<form action="" method="get">
+        <fieldset>
+          <legend>Jūsu hobbies</legend>
+<p>Jūs varat izvēlēties jebkuru hobiju skaitu </p>          
+<table>
+<tr>
+<td>
+<input type="checkbox" name="hobijs1" id="hobijs1">
+<label for="hobijs1">Ceļojumi</label>
+</td>
+<td>
+<input type="checkbox" name="hobijs2" id="hobijs2">
+<label for="hobijs2">Programmēšana</label>
+</td>
+</tr>
+<tr>
+<td>
+<input type="checkbox" name="hobijs3" id="hobijs3">
+<label for="hobijs3">Zīmēt</label>
+</td>
+<td>
+<input type="checkbox" name="hobijs4" id="hobijs4">
+<label for="hobijs4">Spēlēt mūzikas instrumentus</label>
+</td>
+</tr>
+</table>
+</fieldset>
+
+<form action="" method="get">
+        <fieldset>
+          <legend>Vai piekrītat savu datu apstrādei?</legend>
+<table>
+<tr>
+<td>
+<input type="checkbox" name="Piekrītu" id="Piekrītu">
+<label for="Piekrītu">Piekrītu</label>
+</td>
+<td>
+<input type="checkbox" name="Nepiekrītu" id="Nepiekrītu">
+<label for="Nepiekrītu">Nepiekrītu</label>
+</table>
+</fieldset>
+<br>
+
+<input type="submit" value="Sūtīt">
+
+</body>
+</html>
