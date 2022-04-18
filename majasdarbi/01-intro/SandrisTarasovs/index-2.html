@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset=UTF-8>
+    <title>Majasdarbs2</title>
+  </head>
+  <body>
+    <h1>Reģistrācijas forma</h1>
+  </body>
+  <fieldset>
+    <label for="name">Ievietot vārdu:</label>
+    <input type="text" name="name" id="name" required>
+    <label for="password">Ievadiet paroli:</label>
+    <input type="password" name="password" id="password" required>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend> 
+      <mark> Informācija par sevi <mark>
+    </legend>
+   <p> <strong>Dzimums</strong></p>
+
+    <radio id="dzimums" name="radio"></radio>
+    <input type="radio" id="Vīrietis" name="dzimums" value="Vīrietis">
+    <label for="dzimums">Vīrietis</label><br>
+    <input type="radio" id="Sieviete" name="dzimums" value="Sieviete">
+    <label for="dzimums">Sieviete</label>
+    <br>
+    <br>
+    <label for="birthday">dzimšanas datums:</label>
+    <input type="date" id="date" name="birthday">
+    <br>
+    <p><strong>Adrese</strong></p>
+    <legend><label>Jūsu pilsēta </label></legend>
+      <label for="Jūsu pilsēta ":</label>
+      <input list="pilsetas" id="Jūsu pilsēta" name="Jūsu pilsēa">
+      <datalist id="pilsetas">
+        <option value="Rīga">
+        <option value="Jelgava">
+  </fieldset>
+    <br>
+    <fieldset>
+      <legend> 
+        <mark> Jūsu hobiji <mark>
+      </legend>
+      <label>Jūs varat izvēlēties jebkuru 
+      hobiju skaitu</label>
+      <form>
+        <input type="checkbox" id="Ceļojumi">
+    <label for="Ceļojumi">Ceļojumi</label>
+    <input type="checkbox" id="Programmēšana">
+    <label for="Programmēšana">Programmēšana
+    </label> <br>
+    <input type="checkbox" id="Zīmēt">
+    <label for="Zīmēt">Zīmēt</label>
+    <input type="checkbox" id=
+    "Spēlēt mūzikas instrumentus">
+    <label for="Spēlēt mūzikas instrumentus">
+        Spēlēt mūzikas instrumentus</label>
+    </form>
+  </fieldset>
+</fieldset>
+<br>
+<fieldset>
+    <mark> Jūsu teksts komentāriem </mark>(nav obligāts) 
+    <form action="/action_page.php">
+      <textarea name="message" rows="10" cols="30"></textarea>
+      <br><br>
+    </form>
+    </body>
+</html>
