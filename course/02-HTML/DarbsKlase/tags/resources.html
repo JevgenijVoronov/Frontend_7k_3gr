@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Birkas</title>
+    <title>Resursu birkas</title>
   </head>
   <body>
     <header>
@@ -21,6 +21,33 @@
       </ul>
     </header>
     <article id="content">
+      style | script | template
+
+      <!-- style --> 
+      <link href="style.css" rel="stylesheet">
+      <style>
+        body {
+          background-color:grey;
+        }
+      </style>
+      <!-- style --> 
+
+      <!-- script --> 
+      <script src="external.js"></script>
+      <script>
+        window.alert("Javascipt code")
+      </script>
+      <!-- /script -->
+
+      <!-- template -->   
+      <template>
+        <div class="card">
+          <h2 class="card__title"></h2>
+          <div class="card__content"></div>
+        </div>
+      </template>
+      <!-- /template -->
+
     </article>
   </body>
 </html>
