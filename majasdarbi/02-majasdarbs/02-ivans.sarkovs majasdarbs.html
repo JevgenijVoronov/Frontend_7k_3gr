@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ivans Sarkovs majasdarbs</title>
+  </head>
+  <body>
+    <header>
+      <h2>Reģistrācijas forma</h2>
+      <form action="" method="get">
+        <fieldset>
+          <label for="name">Ievietot vārdu:</label>
+          <input type="text" name="name" id="name" required>
+          <label for="pass">Ievietot paroli:</label>
+          <input type="password" id="pass" name="password"
+                 minlength="8" required>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Informacija par sevi</legend>
+         <b>Dzimums</b>
+         <br>
+         <br>
+         <input type="radio" id="dzimums" name="dzimums" value="virietis">
+            <label for="virietis">Virietis</label></br>
+            <input type="radio" id="dzimums2" name="dzimums" value="sieviete">
+            <label for="sieviete">Sieviete</label></br></br>
+          <label for="birthday">dzimšanas datums:</label>
+<input type="date" id="birthday" name="birthday">
+<br>
+<br>
+<b>Adresse</b>
+<br>
+<br><label for="name">Jūsu pilseta:</label>
+          <input type="text" name="name" id="name" required>
+        </fieldset>
+        <br>
+<fieldset>
+  <legend>Jusu hobbies</legend>
+  Jus varat izveleties jebkuru hobiju skaitu <br>
+  <form name="travel" action="dzimums" method="get">
+    <input type="checkbox" name="transport" value="train" /> Celojumi<br /> 
+    <input type="checkbox" name="transport" value="train" /> Programesana<br /> 
+    <input type="checkbox" name="transport" value="train" /> Zimet<br />
+    <input type="checkbox" name="transport" value="train" /> Spelet muzikas instrumentus<br />
+</fieldset>
+        <br>
+        <fieldset>
+          <legend>Savs laukums</legend>
+          <label for="myfile">Izvelies failu:</label>
+<input type="file" id="myfile" name="myfile">
+        </fieldset>
+        <br>
+          <button type="submit">Send</button>
+      </form>
+      <!-- /form -->
+    </article>
+  </body>
+</html>
