@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reģistrācijas forma</title>
+    <meta name="description" content="">
+    <meta charset="UTF-8">
+    </head>
+  <body>
+      <h1><b>Reģistrācijas forma</b></h1>
+      <fieldset>
+          <label>Ievietot vārdu</label><input type="text"/> 
+          <label>Ievietot paroli</label><input type="password"/>
+     </fieldset>
+          <br>
+
+      <fieldset>
+          <legend>Informācija par sevi</legend>
+          <label><b>Dzimums</b></label>
+          <br>
+          <input type="radio"> <label>Vīrietis</label><br>
+          <input type="radio"> <label>Sieviete</label><br>
+
+          <label>dzimšanas datums</label><input type="date"><br>
+
+          <label><b>Adrese</b></label><br>
+          <label>Jūsu pilsēta</label><input type="list" list="pilsetas"/>
+          <datalist id="pilsetas">
+          <option value="Rīga">
+              <option value="Valmiera">
+              </datalist>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Jūsu hobiji</legend>
+            <label>Jūs varat izvēlēties jebkuru hobiju skaitu</label><br>
+            <input type="checkbox"><label>Ceļojumi</label>
+            <input type="checkbox"><label>Programmēšana</label><br>
+            <input type="checkbox"><label>Zīmēt</label>
+            <input type="checkbox"><label>Spēlēt mūzikas instrumentus</label><br>
+        </fieldset> <br>
+
+<fieldset>
+<legend>Kontaktinformācija</legend>
+<label>Tel.numurs</label><input type="tel"><br><br>
+<label>epasts</label><input type="email">
+</fieldset><br>
+
+<button type="submit" name="name">Sūtīt</button>
+
+    
+
+  </body>
+</html>
