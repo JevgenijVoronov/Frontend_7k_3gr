@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>
-            Reģistrācijas forma
-        </title>
+        <meta charset="UTF-8"/>
+        <title>Reģistrācijas forma</title>
     </head>
+    <body>
+        <h1>Reģistrācijas forma</h1>
+        <br>
+        <form>        
+            <fieldset>
+            <label>Ievietot vārdu:</label>
+            <input type="text">
+            <label>Ievietot paroli:</label>
+            <input type="password">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informācija par sevi</legend>
+            <p><b>Dzimums:</b></p>
+            <input type="radio">
+            <label>vīrietis</label>
+            <br>
+            <input type="radio">
+            <label>sieviete</label>
+            <br>
+            <label>Dzimšanas datums:</label>
+            <input type="date"/>
+            <br>
+            <p><b>Adrese:</b></p>
+            <label>Jūsu pilsēta:</label> 
+            <input list="city"/>
+            <datalist id="city">
+            <option value="Rīga">Rīga</option>
+            <option value="Saulkrasti">Saulkrasti</option>
+            <option value="Jūrmala">Jūrmala</option>
+            </datalist>
+        </fieldset>
+    </form>
+
+    </body>
 </html>
