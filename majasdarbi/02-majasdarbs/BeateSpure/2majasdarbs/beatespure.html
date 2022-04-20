@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reģistrācijas forma</title>
+  </head>
+  <body>
+    <h1>Reģistrācijas forma</h1>
+    <form>
+      <fieldset>
+        <label for="name">Ievietot vārdu: </label>
+        <input type="text" />
+        <label for="name">Ievietot paroli: </label>
+        <input type="password" />
+      </fieldset>
+    </form>
+    <br />
+    <form>
+      <fieldset>
+        <legend><mark>Informācija par sevi</mark></legend>
+        <h2>Dzimums</h2>
+        <input type="radio" id="vīrietis" name="dzimums" value="vīrietis" />
+        <label for="vīrietis">Vīrietis</label><br />
+        <input type="radio" id="sieviete" name="dzimums" value="sieviete" />
+        <label for="sieviete">Sieviete</label><br />
+        <br />
+        <label for="name">Dzimšanas datums: </label>
+        <input type="date" /><br />
+
+        <h2>Adrese</h2>
+        <label for="city-select">Jūsu pilsēta: </label>
+        <select name="city" id="city-select">
+          <option value="riga">Rīga</option>
+          <option value="jelgava">Jelgava</option>
+        </select>
+      </fieldset>
+    </form>
+    <br />
+    <form>
+      <fieldset>
+        <legend><mark>Jūsu hobiji</mark></legend>
+        <label for="name">Jūs varat izvēlēties jebkuru hobiju skaitu: </label
+        ><br />
+        <input type="checkbox" id="hobijs1" name="hobijs1" value="celosana" />
+        <label for="celosana"> Ceļošana </label>
+        <input type="checkbox" id="hobijs2" name="hobijs2" value="skriesana" />
+        <label for="hobijs2"> Skriešana </label><br />
+        <input type="checkbox" id="hobijs3" name="hobijs3" value="filmas" />
+        <label for="hobijs3"> Filmu skatīšanās </label>
+        <input
+          type="checkbox"
+          id="hobijs4"
+          name="hobijs4"
+          value="datorspeles"
+        />
+        <label for="hobijs4"> Datorspēļu spēlēšana </label><br />
+      </fieldset>
+    </form>
+    <br />
+    <form>
+      <fieldset>
+        <legend><mark>Savs laukums</mark></legend>
+        <label for="email">Jūsu e-pasts: </label>
+        <input type="email" id="email" name="email" />
+      </fieldset>
+    </form>
+    <br />
+    <form>
+      <button type="submit">Sūtīt</button>
+    </form>
+  </body>
+</html>

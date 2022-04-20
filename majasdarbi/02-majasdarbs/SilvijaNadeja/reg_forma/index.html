@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    <header>
+       
+    </header>
+
+    <main>
+       <h1>Reģistrācijas forma</h1>
+    <!--Pirmais lauks-->
+            <form action="" method="GET">
+              <fieldset>
+              <label for="Name">Ievadiet vārdu:</label>
+              <input type="text" >
+              <label for="password">Ievadiet paroli:</label>
+              <input type="password">  
+            </fieldset>  
+            <br>
+    <!--Par sevi-->
+            <fieldset>
+              <legend><mark>Informācija par sevi</mark></legend>
+              <h3>Dzimums</h3>
+              <input type="radio" > 
+              <label for="Gender">Vīrietis</label>
+              <br>
+              <input type="radio" > 
+              <label for="Gender">Sieviete</label>
+              <br>
+              <br>
+              <label for="Birth">Dzimšanas datums:</label>
+              <input type="date" > <br>
+              <h3>Adrese</h3>
+              <label for="City">Jūsu pilsēta</label>
+              <input list="city" >
+                <datalist id="city">
+                  <option value="Rīga">
+                  <option value="Jelgava">
+                </datalist>
+            </fieldset>   
+            <br>
+   <!--Hobiji-->
+            <fieldset>
+              <legend><mark>Jūsu hobiji</mark></legend>
+              <label>Izvēlieties savu hobiju (izvēļu skaits neierobežots)</label> <br>
+              <input type="checkbox">
+              <label for="hobbies">Ceļojumi</label>
+              <input type="checkbox"> 
+              <label for="hobbies">Programmēšana</label>
+              <br>
+              <input type="checkbox">
+              <label for="hobbies">Zīmēt &nbsp &nbsp&nbsp</label>
+              <input type="checkbox">
+              <label for="hobbies">Spēlēt mūzikas instrumentus</label>
+            </fieldset> 
+            <br>  
+   <!--Paša izvēle-->
+            <fieldset>
+              <legend><mark>Savs laukums</mark></legend>
+    <label>Izvēlieties attēlu</label> <br><br>
+
+            <input type="checkbox" id="photo1" />
+              <label for="photo1"><img src="./pexels-silvija-wine-11491543.jpg" width="150" height="100" /></label>
+            <input type="checkbox" id="photo2" />
+              <label for="photo2"><img src="./pexels-silvija-wine-11491544.jpg" width="150" height="100" /></label> 
+              <br>
+              <input type="checkbox" id="photo3" />
+              <label for="photo3"><img src="./pexels-silvija-wine-8479066.jpg" width="150" height="100" /></label>
+            <input type="checkbox" id="photo4" />
+              <label for="photo4"><img src="./pexels-silvija-wine-9177278.jpg" width="150" height="100" /></label>
+            </fieldset>
+   <!--Poga-->
+           <br>
+              <button type="submit" name="name">Sūtīt</button>
+           
+            </form>
+        
+    </main>
+</body>
+</html>

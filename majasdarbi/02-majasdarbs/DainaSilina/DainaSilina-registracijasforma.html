@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reģistrācijas forma</title>
+  </head>
+  <body>
+    <h1>Reģistrācijas forma</h1>
+    <form>
+      <fieldset>
+        <p>
+          <label> Ievadīt vārdu: </label>
+          <input type="text" name="name" maxlength="40" />
+          <label> Ievadīt paroli: </label>
+          <input type="password" name="password" maxlength="20" />
+        </p>
+        <!--Es lietoju paragraph fieldset ietvarā, lai būtu skaistāk, izskatās, ka uzdevuma paraugā nav lietots.-->
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>
+          <mark>Informācija par sevi</mark>
+        </legend>
+        <p>
+          <label><b>Dzimums</b></label>
+          <br />
+          <br />
+          <input type="radio" name="gender" value="male" /> vīrietis
+          <br />
+          <input type="radio" name="gender" value="female" /> sieviete
+          <br />
+          <br />
+          <label>dzimšanas datums</label>
+          <input type="date" name="date" />
+          <br />
+          <br />
+          <label><b>Adrese</b></label>
+          <br />
+          <br />
+          <label for="cities">Jūsu pilsēta</label>
+          <select name="cities" id="cities">
+            <option></option>
+            <option>Rīga</option>
+            <option>Jelgava</option>
+          </select>
+        </p>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>
+          <mark>Jūsu hobiji</mark>
+        </legend>
+        <p>
+          Jūs varat izvēlēties jebkādu hobiju skaitu
+          <br />
+          <input type="checkbox" name="hobby" value="travel" /> Ceļojumi
+          <input type="checkbox" name="hobby" value="programming" />
+          Programmēšana
+          <br />
+          <input type="checkbox" name="hobby" value="drawing" /> Zīmēt
+          <input type="checkbox" name="hobby" value="music-instrument" /> Spēlēt
+          mūzikas instrumentus
+          <!--Es redzu, ka hobijs Spēlēt nav pielīdzināts zem Programmēšana, bet saprotu, ka to dara CSS, nevis HTML-->
+        </p>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>
+          <mark>Foto</mark>
+        </legend>
+        <p>
+          Augšuplādējiet savu foto JPEG formātā:
+          <br />
+          <br />
+          <input type="file" name="user-photo" accept=".jpeg" />
+          <!--Kā es saprotu, tad šeit valoda ir atkarīga no sistēmas valodas, un es nevaru norādīt, kādu val. vēlos uz pogas-->
+          <br />
+          <br />
+          <input type="submit" value="Augšuplādēt" />
+        </p>
+      </fieldset>
+      <br />
+      <br />
+      <input type="submit" value="Sūtīt" />
+    </form>
+  </body>
+</html>

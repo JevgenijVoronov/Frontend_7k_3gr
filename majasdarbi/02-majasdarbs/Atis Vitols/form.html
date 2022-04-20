@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2.lekcija mājasdarbs</title>
+</head>
+
+<body>
+    <h1>Reģistrācijas forma</h1>
+    <form action="POST">
+        <fieldset>
+            <label for="name">Ievietot vārdu:</label>
+            <input type="text" name="name" id="name">
+            <label for="password">Ievietot paroli:</label>
+            <input type="password" name="password" id="password">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informācija par sevi</legend>
+            <h3>Dzimums</h3>
+            <input type="radio" name="sex" id="male">
+            <label for="male">vīrietis</label>
+            <br>
+            <input type="radio" name="sex" id="female">
+            <label for="female">sieviete</label>
+            <br><br>
+            <label for="birth">dzimšanas datums</label>
+            <input type="date" name="birth" id="birth">
+            <br>
+            <h3>Adrese</h3>
+            <label for="city">Jūsu pilsēta</label>
+            <input list="cities" name="city" id="city">
+            <datalist id="cities">
+                <option value="Rīga"></option>
+                <option value="Jelgava"></option>
+                <option value="Salaspils"></option>
+                <option value="Ādaži"></option>
+                <option value="Sigulda"></option>
+            </datalist>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Jūsu hobiji</legend>
+            <p>Jūs varat izvēlēties jebkuru nobiju skaitu</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="travel" id="hobby1">
+                        <label for="travel">Ceļojumi</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="code" id="hobby2">
+                        <label for="code">Programmēšana</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="draw" id="hobby3">
+                        <label for="draw">Zīmēt</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="music" id="hobby4">
+                        <label for="music">Spēlēt mūzikas instrumentus</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Papildus info</legend>
+            <br>
+            <label for="mood">Cik labi šodien jūties?</label>
+            <br>
+            <label for="mood">Slikti</label>
+            <input type="range" name="mood" id="mood" min="1" max="10">
+            <label for="mood">Ideāli</label>
+            <br> <br>
+            <label for="moreInfo">Papildus informārcija</label>
+            <br>
+            <textarea name="moreInfo" id="moreInfo" rows="4" cols="50"
+                placeholder="Pastāsti par sevi vairāk!"></textarea>
+        </fieldset>
+        <br>
+        <button>Sūtīt</button>
+    </form>
+</body>
+
+</html>
