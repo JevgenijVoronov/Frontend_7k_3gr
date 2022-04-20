@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__item {
+    border: 1px solid red;
+    padding: 10px 50px;
+}

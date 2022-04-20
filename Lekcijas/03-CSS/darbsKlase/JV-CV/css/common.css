@@ -1,0 +1,21 @@
+:root {
+    --main-color: black;
+}
+
+
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+section {
+    padding: 50px;
+    min-height: 20vh;
+    background-color: var(--main-color)
+}
+
+div {
+    padding: 50px;
+    min-height: 20vh;
+    color: white
+}
