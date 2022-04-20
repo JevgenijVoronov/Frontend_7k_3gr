@@ -9,34 +9,60 @@
         <br>
         <form>        
             <fieldset>
-            <label>Ievietot vārdu:</label>
-            <input type="text">
-            <label>Ievietot paroli:</label>
-            <input type="password">
+            <label for="name">Ievietot vārdu:</label>
+            <input type="text" id="name" name="name">
+            <label for="password">Ievietot paroli:</label>
+            <input type="password" id="password" name="password">
         </fieldset>
         <br>
         <fieldset>
-            <legend>Informācija par sevi</legend>
+            <legend style="background-color: yellow;">Informācija par sevi</legend>
             <p><b>Dzimums:</b></p>
-            <input type="radio">
-            <label>vīrietis</label>
+            <input type="radio" value="virietis" id="virietis" name="dzimums">
+            <label for="virietis">vīrietis</label>
             <br>
-            <input type="radio">
-            <label>sieviete</label>
+            <input type="radio" value="sieviete" id="sieviete" name="dzimums">
+            <label for="sieviete">sieviete</label>
             <br>
-            <label>Dzimšanas datums:</label>
-            <input type="date"/>
+            <label for="bdate">Dzimšanas datums:</label>
+            <input type="date" id="bdate" name="bdate"/>
             <br>
             <p><b>Adrese:</b></p>
-            <label>Jūsu pilsēta:</label> 
-            <input list="city"/>
+            <label>Jūsu pilsēta:</label>
+            <input list="city">
             <datalist id="city">
             <option value="Rīga">Rīga</option>
             <option value="Saulkrasti">Saulkrasti</option>
             <option value="Jūrmala">Jūrmala</option>
             </datalist>
         </fieldset>
+        <br>
+        <fieldset>
+            <legend style="background-color: yellow;">Jūsu vaļasprieki</legend>
+            <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p>
+            <input type="checkbox" value="Ceļojumi" id="celojumi" name="celojumi">
+            <label for="celojumi">Ceļojumi</label>
+            <input type="checkbox" value="Programmēšana" id="programmesana" name="programmesana">
+            <label for="programmesana">Programmēšana</label>
+            <br>
+            <input type="checkbox" value="Zīmēt" id="zimet" name="zimet">
+            <label for="zimet">Zīmēt</label>
+            <input type="checkbox" value="Spēlēt mūzikas instrumentus" id="muzikas_instrumenti" name="muzikas_instrumenti">
+            <label for="muzikas_instrumenti">Spēlēt mūzikas instrumentus</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend style="background-color: yellow;">Kāds ir Jūsu mīļākais dzīvnieks:</legend>
+            <label>Dzīvnieks:</label>
+            <input list="animal">
+            <datalist id="animal">
+                <option value="Suns">Suns</option>
+                <option value="Kaķis">Kaķis</option>
+                <option value="Cits">Cits</option>
+            </datalist>
+        </fieldset>
+        <br>
+        <input type="submit" value="Sūtīt">
     </form>
-
     </body>
 </html>
