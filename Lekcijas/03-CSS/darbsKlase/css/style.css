@@ -89,3 +89,26 @@ body * + * { margin-top: 1.5em;}
   padding: 20px;
   font-size: 30px;
 }
+
+/* ---------------------------
+             GRIDS
+------------------------------ */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: grey;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
