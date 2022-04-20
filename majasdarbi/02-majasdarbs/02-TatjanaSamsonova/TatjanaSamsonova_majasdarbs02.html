@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/> 
+    <title>Mājas darbs 2 </title>  
+  </head>
+<body>
+  <h1><b>Reģistrācijas forma</b></h1>
+  <form action=""method="get">
+    <fieldset>
+      <label for="name">Ievietot vārdu :</label>
+      <input type="text" name=name/>
+      <label for="password">Ievietot paroli :</label>
+      <input type="password" name=name/>
+    </fieldset>
+  </form> 
+
+
+  <form action=""method="get">
+    <fieldset>
+      <legend style="background-color:yellow;">Informācija par sevi</legend>
+      <p><b>Dzimums</b></p>
+      <input type="radio" id="virietis" name="gender" value="virietis"/>
+      <label type="radio">virietis</label><br>
+      <input type="radio"id="sieviete" name="gender" value="sieviete"/>
+      <label type="radio">sieviete</label><br>
+      
+      
+      <label type="date">dzimšanas datums</label>
+      <input name="date" type="date"/>
+      <p><b>Adrese</b></p>
+      <label>Jūsu pilsēta</label>
+      <input list="city"/>
+      <datalist id="city"> 
+        <option value="Rīga">
+        <option value="Liepaja"></option>
+      </datalist id>
+    </fieldset>
+
+
+  </form> 
+  <form action=""method="get">
+    <fieldset>
+      <legend style="background-color:yellow;">Jūsu hobbies</legend>
+      <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p>
+      <label for="travel">Ceļojumi</label>
+      <input name=travel/ type="checkbox">
+      <label for="programming">Programmešana</label>
+      <input name=name/ type="checkbox"><br>
+      <label for="painting">Zīmēt</label>
+      <input name=name/ type="checkbox">
+      <label for="play music">Spēlēt mūzikas instrumentus</label>
+      <input name=name/ type="checkbox"><br>
+
+    </fieldset>
+
+    <form action=""method="get">
+      <fieldset>
+        <legend style="background-color:yellow;"> Telefona numurs </legend>
+        <ol>
+          <li>1</li>
+        <label for="phone number">mobilais numurs</label>
+        <input name=name/><br>
+
+          <li>2</li>
+        <label for="phone number">darba numurs</label>
+        <input name=name/><br>
+        </ol> 
+      </fieldset>
+  
+  
+    </form>
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reģistrācija</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Reģistrācijas forma</h1>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Vards un parole -->
+        <section id="login_credentials">
+            <form action="" method="get">
+                <fieldset>
+                    <label for="name">Ievietot vārdu: </label>
+                    <input type="text" name="name">
+                    <label for="paswd">Ievietot paroli: </label>
+                    <input type="password" name="paswd">
+                </fieldset>
+            </form>
+        </section>
+        <!-- /Vards un parole -->
+        
+        <br>
+        <!-- Informācija par sevi -->
+        <section id="info_par_sevi">
+            <form action="" method="get">
+                <fieldset>
+                    <legend><mark>Informācija par sevi</mark></legend>
+                    <label for="gender"><h3>Dzimums</h3></label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="male">Vīrietis</label><br>
+                    <input type="radio" name="gender" value="female">
+                    <label for="female">Sieviete</label>
+                    <br>
+                    <br>
+                    <label for="datums">Dzimšanas datums:</label>
+                    <input type="date" name="datums">
+                    <h3>Adrese</h3>
+                    <label for="adrese">Jūsu pilsēta:</label>
+                    <input type="text" name="adrese">
+                </fieldset>
+            </form>
+        </section>
+        <!-- Informācija par sevi -->
+
+        <br>
+        <!-- Hobiji -->
+        <section id="hobiji">
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Jūsu hobiji</legend>
+                    <label for="hobies">Jus varat izvēleties jebkuru hobiju skaitu</label><br>
+                    <table style="text-align: left;">
+                        <tr>
+                          <td><input type="checkbox" name="hobies" value="celot"> Ceļojumi</td>
+                          <td><input type="checkbox" name="hobies" value="zimet"> Zīmēt</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="hobies" value="programmet"> Programmēšana</td>
+                          <td><input type="checkbox" name="hobies" value="muzika"> Spēlēt mūzikas instumentus</td>
+                        </tr>
+                      </table>  
+                </fieldset>
+            </form>
+        </section>
+        <!-- hobiji -->
+        
+        <!-- Epasts -->
+        <br>
+        <section id="e-mail">
+            <form action="" method="get">
+                <fieldset>
+                    <label for="e-mail">Ievietot e-pastu: </label>
+                    <input type="email" name="e-mail">
+                </fieldset>
+            </form>
+        </section>
+        <!-- /Epastse -->
+
+        <section id="sutit">
+            <br>
+            <input type="submit" value="Sūtīt">
+        </section><br>
+        
+
+    </main>
+</body>
+</html>

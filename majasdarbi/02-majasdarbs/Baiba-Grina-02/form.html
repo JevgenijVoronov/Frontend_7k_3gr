@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reģistrācijas forma</title>
+  </head>
+  <body>
+    <header>
+      <hr>
+      <h1>Reģistrācijas forma</h1>
+      <form action="" method="get">
+        <fieldset>
+          <label for="name"><strong>Ievietot vārdu:</strong></label>
+          <input type="text" name="name" id="name" required>
+            <label for="pass"><strong>Ievietot paroli:</strong></label>
+            <input type="password" name="password" id="pass" required>
+          </fieldset>
+
+        <br>
+        <fieldset>
+          <legend> <strong>Informācija par sevi</strong></legend>
+          <br>
+          <legend><strong>Dzimums</strong></legend>
+          <br>
+          <div>
+            <input type="radio" id="Woman" name="gender" value="Woman"
+                   checked>
+            <label for="Woman">Sieviete</label>
+          </div>
+          <div>
+            <input type="radio" id="Man" name="gender" value="Man">
+            <label for="Man">Vīrietis</label>
+          </div>
+          <br>
+          <label for="start"> <strong>Dzimšanas datums</strong></label>
+          <input type="date" id="date" name="born-date"
+                 value="YYYY-MM-DD"
+                 min="1900-01-01" max="2022-05-01">
+          <br>
+          <br>
+
+          
+          <legend><strong>Adrese</strong></legend>
+            <p>Jūsu pilsēta</p>
+              <input list="city" id="my-city" name="my-city">
+              <datalist id="city">
+                <option value="Rīga">
+                <option value="Jelgava">
+                <option value="Ogre">
+                <option value="Sigulda">
+                <option value="Venstpils">
+                <option value="Kuldīga">
+                </option>
+              </select>
+            <br>
+           
+            </fieldset>
+
+        <br>
+        <fieldset>
+          <legend><strong>Jūsu hobiji</strong></legend>
+        <p>(Jūs varat izvēlēties vairākus hobijus)</p>
+        <div>
+          <input type="checkbox" id="travel" name="travel">
+          <label for="travel">Ceļojumi</label>
+        </div>
+        
+        <div>
+          <input type="checkbox" id="drawing" name="drawing">
+          <label for="drawing">Zīmēšana</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="programming" name="programming">
+          <label for="programming">Programmēšana</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="music" name="music">
+          <label for="music">Muzicēšana</label>
+        </div>
+        </fieldset>
+
+        <br>
+        <fieldset>
+          <legend><strong>Jūsu e-pasts</strong></legend>
+          <input type="email" id="email"
+          pattern=".+@globex\.com" size="30" required>
+          
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend><strong>Pievienot fotoattēlu</strong></legend>
+          <input type="file"
+          id="avatar" name="avatar"
+          accept="image/png, image/jpeg">
+          
+        </fieldset>
+        <br>
+
+        <button type="submit">Sūtīt</button>
+      </form>
+    </header>
+  </body>
+</html>
