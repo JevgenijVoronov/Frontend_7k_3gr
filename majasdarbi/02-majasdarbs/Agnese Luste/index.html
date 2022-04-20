@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reģistrācijas forma</title>
+  <style>
+    legend {
+      background-color: yellow
+    }
+  </style>
+</head>
+<body>
+  <h2>Reģistrācijas forma</h2>
+  <p style="border:1px; border-style:solid; border-color:black; padding: 1em;">
+  <label for="name">Ievietot vārdu:</label>
+  <input type="text" name="name" id="name" />
+  <label for="name">Ievietot paroli:</label>
+  <input type="password" id="password" />
+  </p>
+  <fieldset>
+  <legend>Informācija par sevi</legend>
+  <table>
+  <h4>Dzimums</h4>
+  <input type="radio" value="vīrietis" name="programming" id="">vīrietis
+  <br>
+  <input type="radio" value="sieviete" name="programming" id="">sieviete
+  <br>
+  <br>
+  <form>
+  <form action="" method="">
+  <label for="name">dzimšanas datums </label>
+  <input type="date" placeholder="dd / mm/ yyyy" >
+  </form>
+  <br>
+  <h4>Adresse</h4>
+  <!-- Jūsu pilsēta -->
+  <label for="Jūsu pilsēta">Jūsu pilsēta </label>
+  <select name="pilsētas" id="">
+  <option value=""></option>
+  <option value="Rīga">Rīga</option>
+  <option value="Jelgava">Jelgava</option>
+  </select>
+  </table>
+  </fieldset>
+  <br>
+  <!--Papildus info-->
+  <fieldset>
+  <legend>Jūsu hobbies</legend>
+  <p>Jūs varat izvēlēties jebkuru hobiju</p>
+  <input type="checkbox" value="Ceļojumi" name="programming" id="">Ceļojumi
+  <input type="checkbox" value="Programmēšana" name="programming" id="">Programmēšana
+  <br>
+  <input type="checkbox" value="Zīmēt" name="programming" id="">Zīmēt
+  <input type="checkbox" value="Spēlēt mūzikas instrumentus" name="programming" id="">Spēlēt mūzikas instrumentus
+  </fieldset>
+  <br>
+  <fieldset>
+  <legend>Savs laukums</legend>
+  <label for="name">Epasts</label>
+  <input type="text" name="email" placeholder="email" />
+  <p>Papildus informācija</p>
+  <textarea name="description" id="" cols="30" rows="10" placeholder="Teksts"></textarea>
+  </fieldset>
+  <br>
+  <input type="submit" value="Sūtīt">
+
+</body>
+
+</html>
