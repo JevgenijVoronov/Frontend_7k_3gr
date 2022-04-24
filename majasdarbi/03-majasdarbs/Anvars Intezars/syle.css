@@ -1,0 +1,47 @@
+body p {
+
+    background: #f6f5f2;
+    color: #211414;
+    font-family: Special Elite, cursive;
+    font-size: 16px;
+    line-height: 1.58;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+ section {
+    font-family: Special Elite, cursive;
+
+}
+
+body {
+
+    background-color:#eef3f3;
+}
+
+navbar {
+
+font-family: Special Elite, cursive;
+color:black;
+
+}
+
+header {
+
+ font-family: Special Elite, cursive;
+
+}
+
+title {
+
+text-align: center;
+
+}
+
+.flex-container > ul {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  }
+
