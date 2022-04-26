@@ -1,3 +1,10 @@
+: :root {
+    --main-color: blue;
+}
+
+
+
+
 html {
     font-family: 'Square Peg', cursive;
 }
@@ -5,4 +12,10 @@ html {
 section {
     padding: 50px;
     min-height: 20vh;
+    color: var(--main-color)
+}
+div{
+    padding: 50px;
+    min-height: 20vh;
+    color: white;
 }
