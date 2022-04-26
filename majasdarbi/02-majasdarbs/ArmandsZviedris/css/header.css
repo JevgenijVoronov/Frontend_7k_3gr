@@ -1,6 +1,6 @@
 .header {
 display: flex;
-justify-content: space-around
+font-family: 'Dancing Script', cursive;
 
 }
 .header__item{
