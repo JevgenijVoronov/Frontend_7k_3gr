@@ -1,4 +1,4 @@
-: :root {
+ :root {
     --main-color: blue;
 }
 
@@ -14,5 +14,5 @@ section {
 div{
     padding: 50px;
     min-height: 20vh;
-    color: white;
+    color: green;
 }
