@@ -9,7 +9,7 @@ html {
 section {
     padding: 50px;
     min-height: 20vh;
-    background color:var(--main-color)
+    background-color:var(--main-color)
 }
 div{
     padding: 50px;
