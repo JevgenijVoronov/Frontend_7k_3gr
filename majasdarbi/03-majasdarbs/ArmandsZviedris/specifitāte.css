@@ -24,9 +24,9 @@ p#titleId.titleClass1.titleClass2 {} /* 1.2.1 */
 
 p em {}  /* 0.0.2 */                               
 
-p .class {}   /* 0.2.1 */                          
+p .class {}   /* 0.1.1 */                          
 
-p .class {                              
+p .class {  /* 0.2.1 */                             
     color: red !important
 }                             
 
