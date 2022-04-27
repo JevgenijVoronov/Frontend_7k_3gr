@@ -1,0 +1,8 @@
+html {
+    font-family: 'Oxygen', sans-serif;
+}
+
+section { 
+    padding: 30px;
+    min-height: 10vh;
+}
