@@ -1,0 +1,46 @@
+h1 {
+text-align: center;
+font-family: 'Merriweather Sans', sans-serif;
+font-size: 30px;
+color: darkblue;
+background-color: grey;
+}
+h2 {
+text-align: center;
+font-family: 'Merriweather Sans', sans-serif;
+font-size: 30px;
+color: darkblue;
+background-color: grey;
+}
+.flex-container {
+    display: flex;
+    min-height: 150px;
+    background-color: whitesmoke;
+    flex-wrap:wrap;
+    justify-content: baseline;
+    align-content:space-between;
+    align-items:stretch;
+    background-color: gray;
+}
+ul {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    color: darkblue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: center;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+   }
+   li a:hover:not(.active) {
+     background-color: darkblue;
+   }
+body {
+    background-color: lightgray;
+}
