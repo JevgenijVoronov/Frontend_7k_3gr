@@ -1,3 +1,8 @@
+:root {
+    --main-color: rgb(175 161 161)
+}
+
+
 html {
     font-family: 'Oxygen', sans-serif;
 }
@@ -5,4 +10,5 @@ html {
 section { 
     padding: 30px;
     min-height: 10vh;
+    background-color: var(--main-color);
 }
