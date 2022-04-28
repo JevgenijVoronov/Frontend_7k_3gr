@@ -1,0 +1,67 @@
+body p {
+
+    background: #f6f5f2;
+    color: #211414;
+    font-family: Special Elite, cursive;
+    font-size: 16px;
+    line-height: 1.58;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+ section {
+    font-family: Special Elite, cursive;
+
+}
+
+body {
+
+    background-color:#eef3f3;
+}
+
+navbar {
+
+font-family: Special Elite, cursive;
+color:black;
+display: flex;
+
+
+}
+
+header {
+
+ font-family: Special Elite, cursive;
+
+}
+
+title {
+
+text-align: center;
+
+}
+
+.container {
+  display: flex;
+
+}
+
+#idLinkedInIcon{background-color:rgb(0, 102, 170);
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-right-radius:6px;
+    border-bottom-left-radius:6px;
+    color:white;
+    cursor:pointer;
+    display:inline-block;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-weight:bold;
+    font-stretch:normal;
+    font-size:35px;
+    line-height:normal;
+    font-family:Arial, Helvetica, sans-serif;
+    height:40px;margin-top:1px;
+    text-align:center;
+    width:40px;}
+    #idLinkedInIcon:hover{background-color:#06d;}
+
