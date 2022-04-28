@@ -12,7 +12,6 @@
         <nav>
             <ul>
                 <li><a href="">Reģistrācijas forma</a></li>
-
             </ul>
         </nav>
     </header>
@@ -23,7 +22,6 @@
     <h2>Reģistrācijas forma</h2>
       <form action="" method="get">
         <fieldset>
-          <legend>Input</legend>
           <label for="name">Ievietot vārdu:</label>
           <input type="text" name="name" id="name" required>
           <label for="password">Ievadiet paroli:</label>
@@ -31,8 +29,10 @@
         </fieldset>
         <br>
         <fieldset>
-          <legend>Informācija par sevi</legend>
-          <p>Dzimums</p>
+          <legend>
+              <mark>Informācija par sevi</mark>
+            </legend>
+          <p><b>Dzimums</b></p>
           <radio id="dzimums" name="radio"></radio>
           <input type="radio" id="Vīrietis" name="dzimums" value="Vīrietis">
           <label for="dzimums">Vīrietis</label><br>
@@ -43,9 +43,10 @@
           <label for="birthday">Dzimšanas datums:</label>
           <input type="date" id="birthday" name="birthday">
           <br>
-          <p>Adrese</p>
+          <p><b>Adrese</b></p>
           <label for="city-select">Dzīvesvieta:</label>
             <select id="city" name="city-select">
+                <option></option>
                 <option value="Rīga">Rīga</option>
                 <option value="Jelgava">Jelgava</option>
                 <option value="Talsi">Talsi</option>
@@ -54,7 +55,9 @@
         </fieldset>
         <br>
         <fieldset>
-            <legend>Jūsu hobiji</legend>
+            <legend>
+                <mark>Jūsu hobiji</mark>
+            </legend>
             <input type="checkbox" id="hobby1" name="hobby1" value="Skriešana">
             <label for="hobby1"> Skriešana</label>
             <input type="checkbox" id="hobby2" name="hobby2" value="Programmēšana">
@@ -66,7 +69,9 @@
         </fieldset>
         <br>
         <fieldset>
-            <legend>Papildus linki</legend>
+            <legend>
+                <mark>Papildus linki</mark>
+            </legend>
             <nav>
                 <a href="https://www.linkedin.com/in/ivars-jermanis-9b56ba1b5/">LinkedIn</a> |
             </nav>
