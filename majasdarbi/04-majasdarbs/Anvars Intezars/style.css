@@ -8,6 +8,12 @@ body p {
     -webkit-font-smoothing: antialiased;
 }
 
+.customfont {
+
+  font-family: 'Whisper', cursive;
+
+}
+
  section {
     font-family: Special Elite, cursive;
 
@@ -15,11 +21,11 @@ body p {
 
 body {
 
-    background: url("background.jpg");
+    background: url("./background.jpg");
     background-position: center;
 }
 
-navbar {
+.navbar {
 
 font-family: Special Elite, cursive;
 color:black;
@@ -39,10 +45,10 @@ text-align: center;
 
 .container {
   display: flex;
- flex-wrap: nowrap | wrap | wrap-reverse;
+ /*flex-wrap: nowrap | wrap | wrap-reverse;*/
 }
 
-navbar {
+.navbar {
   height: 80px;
   width: 60%;
   background-color: #f6f5f2;
