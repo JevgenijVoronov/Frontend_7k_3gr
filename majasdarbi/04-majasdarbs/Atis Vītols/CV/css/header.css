@@ -1,0 +1,32 @@
+#logo {
+    width: 125px;
+}
+@media only screen and (max-width: 768px) {
+    #logo {
+        display: none;
+    }
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+}
+.navigation a {
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.navigation a:hover {
+    color: var(--accent-color);
+}
+@media only screen and (max-width: 768px) {
+    #nav-item {
+        padding: 0.3rem;
+    }
+}
