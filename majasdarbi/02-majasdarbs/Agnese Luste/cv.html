@@ -2,24 +2,29 @@
 <html>
 
 <head>
-  <title>CV</title>
-  <meta name="description" content="">
+  <title>Agnese Luste | Sales/Aftersales assistant</title>
+  <meta name="description" content="Agnese Luste | Sales/Aftersales assistant">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/style.css">
+  <style>
+    section {
+      padding: 50px;
+      min-height: 20vh;
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="">Kontaktinformācija</a></li>
-        <li><a href="">Work-experience</a></li>
-        <li><a href="">Education</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">FAQ</a></li>
-        <li><a href="">Languages</a></li>
-        <li><a href="">Contact me</a></li>
+        <li><a href="#work-experience">Work experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#contactme">Contact me</a></li>
       </ul>
     </nav>
   </header>
@@ -27,12 +32,12 @@
   <main>
     <!-- ABOUT ME -->
     <section id="aboutme">
-      <img src="IMG_0996.jpeg" alt="" width="250px" height="250px">
-      <h1>Agnese Luste</h1>
+      <img src="./IMG_8128.jpg" alt="IMG_8128" width="100px" height="100px">
       <address>
-        <h1>Kontaktinformācija</h1>
-        <p>Berģi, "Vizandi", Garkalnes novads, Ropažu pagasts, LV-1024</p>
-
+        <h1>Agnese Luste | Sales/Aftersales assistant</h1>
+        <a href="tel:+37127754999">+371 27754999</a><br>
+        <a href="mailto:agness.luste@gmail.com">agness.luste@gmail.com</a><br>
+        <a href="#contactme">contact me</a>
       </address>
     </section>
     <!-- /ABOUT ME -->
@@ -41,36 +46,67 @@
     <!-- WORK EXPERIENCE -->
     <section id="work-experience">
       <h2>Work experience</h2>
+
+      <h3>Luxury & Sports Cars SE, Riga – Sales/Aftersales assistant</h3>
+      <em>May 2015 – present</em>
+
+      <ul>
+        <li>;</li>
+
+      </ul>
+
+      <h3>Hotel Konventa Seta, Riga – Reservations Manager</h3>
+      <em>June 2007 – February 2012</em>
+
+      <ul>
+        <li>Responsibilities: Reservation handling,
+          client service, direct sales (invoicing, special offers etc.)
+          management software, telephone calls etc.</li>
+      </ul>
     </section>
     <!-- /WORK EXPERIENCE -->
-    <p>From 2018 till now - working Luxury & Sports Cars SE </p>
 
     <hr>
     <!-- EDUCATION -->
     <section id="education">
       <h2>Education</h2>
+      <p>ISMA - Information Systems Management Highschool, Riga – Bachelor's degree <em>2006 – 2010</em></p>
+      <p> Bauskas 1. vidusskola, Bauska <em>2003 – 2006</em></p>
     </section>
     <!-- EDUCATION -->
-    <p>ISMA</p>
 
     <hr>
     <!-- SKILLS -->
     <section id="skills">
       <h2>Skills</h2>
+      <b>In the everyday work I'm using the following skills and technologies:</b>
+      <ul>
+        <li>MC Navision</li>
+        <li>MC Office</li>
+        <li>MC Outlook</li>
+      </ul>
+
+      <b>I’m also interested in following technologies:</b>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+      </ul>
     </section>
     <!-- SKIllS -->
-    <p>Logistic Manager</p>
 
     <hr>
     <!-- FAQ -->
     <section id="faq">
       <h2>FAQ</h2>
       <details>
-        <summary>>My hobbyies?</summary>
+        <summary>My hobbyies?</summary>
         <ul>
-          <li></li>
-          <li>Reading</li>
+          <li>Snowboarding</li>
           <li>Running</li>
+          <li>Reading</li>
+        </ul>
       </details>
     </section>
     <!-- LANGUAGES -->
@@ -79,33 +115,44 @@
     <!-- LANGUAGES -->
     <section id="languages">
       <h2>Languages</h2>
+      <ul>
+        <li>Latvian (native)</li>
+        <li>English (fluent)</li>
+        <li>Russian (basic)</li>
+      </ul>
     </section>
     <!-- LANGUAGES -->
-    <section id="languages" class="languages">
 
-      <ul class="languages__item">
-        <li>Latvian</li>
-        <li>English</li>
-        <li>Russian</li>
+    <hr>
+    <!-- PERSONAL SKILLS -->
+    <section id="personal skills">
+      <h2>Personal skills</h2>
+      <p> LU VUMC: Front-End Web Development Course <em>2022</em></p>
+      <p> Driver’s licence category B <em>2007</em></p>
+    </section>
+    <!-- PERSONAL SKILLS -->
 
-        <hr>
-        <!-- CONTACT FORM -->
-        <section id="contactme">
-          <h2>Contact me </h2>
-          <form>
+    <hr>
+    <!-- CONTACT FORM -->
+    <section id="contactme">
+      <h2>Contact me </h2>
 
-          </form>
-        </section>
-        <!-- CONTACT FORM -->
-        <label for="name">Your name: </label><br>
-        <input type="text" name="name" id="name"><br>
-        <label for="email">Your email:</label><br>
-        <input type="email" name="email" id="email"><br>
-        <label for="text">Message:</label><br>
-        <textarea name="text" id="text" cols="20" rows="10">
+      <form action="action_page.php">
+        <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
+        <br><br>
 
-</textarea><br>
-        <input type="submit" value="SEND">
+        <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
+        <br><br>
+
+        <textarea id="subject" name="subject" placeholder="Write something.."
+          style="width: 200px; height:100px"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <!-- zeka test  -->
+    <!-- CONTACT FORM -->
   </main>
 </body>
 

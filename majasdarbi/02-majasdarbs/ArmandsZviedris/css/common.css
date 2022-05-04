@@ -1,0 +1,18 @@
+ :root {
+    --main-color: blue;
+}
+
+html {
+    font-family: 'Square Peg', cursive;
+}
+
+section {
+    padding: 50px;
+    min-height: 20vh;
+    background-color:var(--main-color)
+}
+div{
+    padding: 50px;
+    min-height: 20vh;
+    color: green;
+}

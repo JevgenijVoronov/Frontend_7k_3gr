@@ -1,0 +1,14 @@
+:root {
+    --main-color: rgb(197, 190, 190);
+}
+
+
+html {
+    font-family: 'Oxygen', sans-serif;
+}
+
+section { 
+    padding: 30px;
+    min-height: 10vh;
+    background-color: var(--main-color);
+}
