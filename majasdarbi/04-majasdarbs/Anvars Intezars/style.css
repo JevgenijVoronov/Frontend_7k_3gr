@@ -78,3 +78,9 @@ text-align:center;
 width:40px;}
 #idLinkedInIcon:hover{background-color:#06d;}
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 27%;
+}
