@@ -1,0 +1,29 @@
+
+header h1 {
+    color: #161413;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+#navigation a {
+    padding: 3vh 1.5vw;
+    /*padding: 10px 16px;*/
+    background: #555;
+    /*background-image: url('https://4axln85txth1zw3um9bx5vtj-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/17.jpg');*/
+    color: white;
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+
+#navigation a:hover, a:active {
+    background-color: #ffbb33;
+    color: white;
+}
+
+
+

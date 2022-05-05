@@ -1,0 +1,17 @@
+#logo {
+    width: 125px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation a {
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.navigation a:hover {
+    color: var(--accent-color);
+}
+

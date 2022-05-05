@@ -1,0 +1,63 @@
+@import "./reset.css";
+@import "./common.css";
+@import "./header.css";
+
+#profilePic {
+    border-radius: 50%;
+    margin-right: 2rem;
+    box-shadow: 0 0 20px var(--main-color);
+}
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    background-color: var(--text-color);
+}
+@media only screen and (max-width: 768px) {
+    .greeting {
+        flex-direction: column-reverse;
+        padding: 2rem 1rem;
+        margin-top: 0.6rem;
+    }
+    h1 {
+        padding: 1rem;
+    }
+}
+#aboutme,#work-experience,#education,#skills,#faq,#languages,#contactme {
+    padding: 1rem;
+}
+#skills li {
+    padding-bottom: 0.3rem;
+}
+#faq summary {
+    padding-bottom: 0.5rem;
+}
+#faq p {
+    padding-bottom: 0.5rem;
+    line-height: 1.6;
+    max-width: 680px;
+    color: var(--accent-color);
+}
+#faq li {
+    padding-bottom: 0.6rem;
+    max-width: 680px;
+    color: var(--accent-color);
+}
+#languages p {
+    padding-bottom: 0.5rem;
+}
+
+#contactme p {
+    padding-bottom: 1rem;
+}
+#contactme form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+input,textarea,button {
+    background-color: var(--text-color);
+}
+
