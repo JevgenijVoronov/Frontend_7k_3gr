@@ -22,12 +22,19 @@
          list-style-type: none;
          background-color: rgb(87, 83, 83);
          margin: 0;
-         padding: 0;
+         padding: .5rem .5rem;;
          overflow: hidden;
          position: fixed;
          top: 0;
          width: 100%;
         }
+        @media only screen and (max-width: 700px) {
+        nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: .5rem 0;
+       }
+      }
                
         nav ul li a {
          color: white;
