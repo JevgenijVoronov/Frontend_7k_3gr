@@ -1,0 +1,29 @@
+ul {
+    list-style-type: none;
+}
+
+body{
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
+
+h1{
+    font-size: 23px;
+    display:flex
+}
+h2{
+    font-size: 23px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.header_item{
+    padding: 10px 10px;
+    background-color: rgb(94, 199, 159);
+  
+}

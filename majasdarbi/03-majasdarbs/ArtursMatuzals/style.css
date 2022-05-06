@@ -16,11 +16,17 @@ background-color: grey;
     display: flex;
     min-height: 150px;
     background-color: whitesmoke;
-    flex-wrap:wrap;
     justify-content: baseline;
     align-content:space-between;
-    align-items:stretch;
+    align-items: center;
     background-color: gray;
+}
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    width: 100%;
 }
 ul {
     font-family: 'Merriweather Sans', sans-serif;
