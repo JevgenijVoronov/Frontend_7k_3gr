@@ -1,15 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 
-a,
+
+body {
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  color: var(--font-main-color);
+  background-color: var(--main-color);
+}
+
 h1,
 h2,
 h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bebas Neue', cursive;
 }
 
-/* */
-li,
-td {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+h2 {
+  padding: 20px 20px;
+  font-size: 2.5em;
+  text-align: center;
+  color: var(--font-hover-color);
 }
+
+h3 {
+  font-size: 2em;
+  padding: 20px 0px;
+}
+
