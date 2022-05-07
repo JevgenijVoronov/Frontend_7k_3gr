@@ -1,4 +1,4 @@
-body *+* {
+header *+* {
   margin-top: 1.5em;
 }
 
@@ -10,11 +10,11 @@ body *+* {
 .flex-container {
   display: flex;
   min-height: 500px;
-  background-color: grey;
+  background-color: peachpuff;
 }
 
 .flex-container>div {
-  background-color: lightgrey;
+  background-color: peachpuff;
   margin: 10px;
   width: 75px;
   height: 75px;
