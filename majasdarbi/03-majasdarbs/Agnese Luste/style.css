@@ -1,8 +1,0 @@
-.navigation {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-
-  list-style: none;
-  margin: 0;
-  background: deepskyblue;
