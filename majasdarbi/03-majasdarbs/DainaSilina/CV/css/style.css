@@ -1,0 +1,10 @@
+@import "./reset.css";
+@import "./common.css"; /* viss, kas ir kopīgs */
+@import "./header.css";
+@import "./about-me.css";
+@import "./work-experience.css";
+@import "./education.css";
+@import "./skills.css";
+@import "./faq.css";
+@import "./languages.css";
+@import "./contact-me.css";

@@ -1,0 +1,13 @@
+/* #contactme {
+  display: flex;
+  flex-direction: column;
+} */
+
+input[type="text"] {
+  width: 20rem;
+}
+
+textarea {
+  width: 20rem;
+  resize: none;
+}
