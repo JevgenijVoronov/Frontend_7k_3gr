@@ -1,0 +1,6 @@
+.picture {
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50%;
+}
