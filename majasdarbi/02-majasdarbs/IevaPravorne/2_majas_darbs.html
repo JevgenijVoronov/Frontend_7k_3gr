@@ -1,0 +1,80 @@
+<html>
+<body>
+<head>
+  	<b><h1>Reģistrācijas forma</h1></b>
+</head>
+
+<forms>
+ <fieldset>
+  <div>
+    <p><label for="name">Ievietojiet vārdu:</label>
+    <input type="text" id="name" name="name"></p>
+</div>
+
+<div>
+    <label for="pass">Ievietojiet paroli:</label>
+    <input type="password" id="pass" name="password">
+</div>
+ </fieldset>
+</forms>
+
+<forms>
+ <fieldset>
+        <legend>Informācija par sevi</legend>
+    <label><b>Dzimums</b></label>
+    <br>
+    <br>
+    <input type="radio" name="gender" value="male">vīrietis
+    <br>
+    <input type="radio" name="gender" value="female"> sieviete
+    <p><legend>dzimšanas datums</legend></p><input type="date" name="begin" id="date" placeholder="dd-mm-yyyy" value="" min="1900-01-01" max="2022-12-31">
+
+    <p><legend><b>Adrese</b></legend></p>
+  <label for="address">Jūsu pilsēta:</label>
+    <select id="addresses">
+      <option value="riga">Rīga</option>
+      <option value="jelgava">Jelgava</option>
+    </select>
+    </fieldset>
+    </forms>
+
+<forms>
+    <fieldset>
+    <legend>Jūsu hobiji</legend>
+    Jūs varat izvēlēties jebkuru hobiju skaitu
+    <div>
+        <input type="checkbox" id="hobiji1" name="hobiji1"> 
+        <label for="hobiji1">Ceļojumi</label>   
+      </div>
+      
+      <div>
+        <input type="checkbox" id="hobiji2" name="hobiji2">
+        <label for="hobiji2">Zīmēt</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="hobiji3" name="hobiji3">
+        <label for="hobiji3">Programmēšana</label>
+      </div>
+      
+
+      <div>
+        <input type="checkbox" id="hobiji4" name="hobiji4">
+        <label for="hobiji4">Spēlēt mūzikas instrumentu</label>
+      </div>
+    </fieldset>
+  </forms>
+
+  <forms>
+    <fieldset>
+    <legend>Komentāri</legend>
+    <p>Vieta komentāriem un piezīmēm</p>
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">Lūdzu ierakstiet savus komentārus brīvā tekstā.</textarea>
+  <br><br>
+  </fieldset>
+</forms>
+  
+      <p><input type="submit" value="Iesniegt"></p>
+</body>
+</html>
