@@ -10,7 +10,9 @@ body p {
 
 .customfont {
 
-  font-family: 'Whisper', cursive;
+  font-family: 'Whisper', cursive; 
+  color: #3e0404; 
+  font-size: 25px;
 
 }
 
@@ -45,7 +47,6 @@ text-align: center;
 
 .container {
   display: flex;
- /*flex-wrap: nowrap | wrap | wrap-reverse;*/
 }
 
 .navbar {
@@ -88,7 +89,11 @@ width:40px;}
 footer {color: black;}
 footer span{color: black};
 
-/* Experiment part */
+address {
+
+  text-align: center;
+}
+
 
 
 
