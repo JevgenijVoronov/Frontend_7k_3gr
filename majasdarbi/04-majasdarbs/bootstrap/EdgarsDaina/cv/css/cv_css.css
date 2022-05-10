@@ -20,8 +20,8 @@ li{
 }
 
 body{
-    background-color: rgb(43, 42, 42);
-    color: white;
+    background-color: rgb(121, 115, 110);
+    color: rgb(0, 0, 0);
     font-family: 'Roboto Mono', monospace;
     font-size: 13px;
 }
@@ -38,13 +38,18 @@ h2{
 
 .header{
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    
 }
 
 .header_item{
     padding: 10px 10px;
-    background-color: rgb(94, 199, 159);
+    background-color: rgb(250, 245, 239);
+  
   
 }
 
-
+#svg{
+    height: 25px;
+    width: auto;
+}
