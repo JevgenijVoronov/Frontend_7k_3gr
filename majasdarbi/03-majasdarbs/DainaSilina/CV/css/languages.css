@@ -1,0 +1,8 @@
+/* #languages {
+  display: flex;
+  flex-direction: column;
+} */
+
+.languages__item li {
+  padding: 0.1rem 0px;
+}
