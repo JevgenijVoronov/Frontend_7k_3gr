@@ -27,14 +27,16 @@
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-end
+    
     }
-
+    @media screen 300px {
+    flex-direction: column
+    }
     .header__item {
       border: 1px solid peachpuff;
       padding: 10px 50px;
       padding-bottom: 50px;
       background-color: peachpuff;
-      color: black
     }    
   </style>
 </head>
@@ -55,6 +57,7 @@
   <main>
     <!-- ABOUT ME -->
     <section id="aboutme">
+        <h2>About me</h2>
       <img src="./IMG_8128 2.jpg" alt="IMG_8128 2" width="300px" height="400px">
       <address>
         <h1>Agnese Luste | Sales/Aftersales assistant</h1>
