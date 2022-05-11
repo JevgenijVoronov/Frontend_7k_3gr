@@ -7,6 +7,14 @@
     margin-right: 2rem;
     box-shadow: 0 0 20px var(--main-color);
 }
+#profilePic:hover {
+    animation-name: greet;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes greet {
+    100% {transform: scale(1.2);}
+}
 .greeting {
     display: flex;
     align-items: center;
@@ -22,6 +30,9 @@
     }
     h1 {
         padding: 1rem;
+    }
+    #profilePic:hover {
+        animation-name: none;
     }
 }
 #aboutme,#work-experience,#education,#skills,#faq,#languages,#contactme {
