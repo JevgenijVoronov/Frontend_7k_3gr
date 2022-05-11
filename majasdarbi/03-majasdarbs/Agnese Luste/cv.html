@@ -7,36 +7,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/style.css">
-  <style>
-    section {
-      padding: 80px;
-      min-height: 10vh;
-    }
-    .contactMe {
-    background-color: peachpuff
-    }
-      body {
-      background-color: peachpuff
-    }
-      main {
-      font-family: 'Assistant', sans-serif;
-    }   
-        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
-
-    .header {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end
-    }
-
-    .header__item {
-      border: 1px solid peachpuff;
-      padding: 10px 50px;
-      padding-bottom: 50px;
-      background-color: peachpuff;
-      color: black
-    }    
-  </style>
 </head>
 
 <body>
@@ -53,20 +23,24 @@
       </nav>
     </header>
   <main>
-    <!-- ABOUT ME -->
-    <section id="aboutme">
-      <img src="./IMG_8128 2.jpg" alt="IMG_8128 2" width="300px" height="400px">
-      <address>
-        <h1>Agnese Luste | Sales/Aftersales assistant</h1>
-        <a href="tel:+37127754999">+371 27754999</a><br>
-        <a href="mailto:agness.luste@gmail.com">agness.luste@gmail.com</a><br>
-        <a href="#contactme">contact me</a>
-      </address>
-    </section>
-    <!-- /ABOUT ME -->
-
+        <!-- ABOUT ME -->
+        <section id="aboutme" class="main">
+          <img src="./IMG_8128 2.jpg" alt="IMG_8128.2" width="400px" height="500px">
+          <address>
+            <p class="main__preTitle" data-animation="slideInUp">Sales/Aftersales assistant</p>
+            <h1 class="main__title" data-animation="slideInDown">Agnese Luste</h1>
+            <a class="main__contactInfo" href="https://linkedin.com/in/agneseluste/" target="_blank"
+              data-animation="slideInDown" data-animation-delay=".3s">LinkedIn</a><br>
+            <a class="main__contactInfo" href="mailto:agness.luste.com" data-animation="slideInDown"
+              data-animation-delay=".4s">agness.luste@gmail.com</a><br>
+            <a class="main__contactBtn" href="#contactme" data-animation="slideInDown" data-animation-delay=".5s">
+              CONTACT ME
+            </a>
+          </address>
+        </section>
+        <!-- /ABOUT ME -->
     <hr>
-    <!-- WORK EXPERIENCE -->
+        <!-- WORK EXPERIENCE -->
     <section id="work-experience">
       <h2>Work experience</h2>
 
@@ -74,17 +48,30 @@
       <em>May 2015 – present</em>
 
       <ul>
-        <li>Responsibilities: </li>
-
+        <li>Responsibilities: 
+        • Preparation of required weekly and monthly reports, documentation
+        • Communication with customers, as well as with other car dealers in Estonia and Lithuania
+        • Logistics process planning, transport ordering and new car delivery control
+        • Preparation of necessary documents for customs cooperation partners;
+        • Ordering, buying, selling spare parts
+        • Preparation of service estimates, orders, offers
+        • Ordering and accepting car interior accessories
+        • Development of car price lists
+        • Receivables list control
+        • Cooperation and communication with various suppliers of companies
+        • Customer database replenishment
+        • Data processing, analysis.</li>
       </ul>
 
       <h3>Hotel Konventa Seta, Riga – Reservations Manager</h3>
       <em>June 2007 – February 2012</em>
 
       <ul>
-        <li>Responsibilities: Reservation handling,
-          client service, direct sales (invoicing, special offers etc.)
-          management software, telephone calls etc.</li>
+        <li>Responsibilities: 
+        • Development of reservations and offers for customers and groups by telephone, electronically or in person
+        • Development of pricing policy in various sales channels - promotion and maintenance of cooperation with corporate clients and travel agencies
+        • Preparation of documentation, compilation of statistical data, analysis of competitors
+      • Management of front desk staff.</li>
       </ul>
     </section>
     <!-- /WORK EXPERIENCE -->

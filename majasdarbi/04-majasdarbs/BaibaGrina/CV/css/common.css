@@ -1,0 +1,29 @@
+:root {
+   --main-color: #ffffff;
+
+}
+html{
+    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Patrick Hand', cursive; */ 
+    color: #414042;
+    font-size: 25px;
+}
+
+section {
+    padding: 50px;
+    min-height:20vh;
+    background-color: var(--main-color);
+}
+
+h1 { 
+    font-size: 50px;
+}
+
+
+h2 {
+    font-size: 35px;
+}
+
+#languages, #work-experience, #education {
+    text-align: center;
+}
