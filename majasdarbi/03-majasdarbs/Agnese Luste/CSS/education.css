@@ -1,0 +1,62 @@
+.education {
+  background-color: var(--color-black);
+}
+
+.education p {
+  padding: 0 20% 30px 20%;
+}
+.faq {
+  background-color: var(--color-black);
+  padding: 0 20% 30px 20%;
+}
+.languages {
+  background-color: var(--color-black);
+  padding: 0 20% 30px 20%;
+}
+
+.languages__item li {
+  padding: 10px 0px;
+}
+
+.languages__item li:last-child {
+  padding-bottom: 40px;
+}
+.skills {
+  background-color: var(--color-black);
+  padding: 0 20% 30px 20%;
+}
+
+.skills__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start
+}
+
+.skills__item li {
+  padding: 10px 30px 10px 0px;
+}
+
+.skills__item li:last-child {
+  padding-bottom: 40px;
+}
+:root {
+  --main-color: #161d20;
+  --color-black: #000;
+  --font-main-color: white;
+  --font-hover-color: #f0c010;
+
+
+  --large: 50px;
+}
+.workExperience {
+  background-color: var(--color-black);
+  padding: 0 20% 30px 20%;
+}
+
+.workExperience__item li {
+  padding: 10px 0px;
+}
+
+.workExperience__item li:last-child {
+  padding-bottom: 40px;
+}
