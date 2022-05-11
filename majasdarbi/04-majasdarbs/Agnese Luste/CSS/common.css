@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
+body {
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  color: var(--font-main-color);
+  background-color: var(--main-color);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+  padding: 20px 20px;
+  font-size: 2.5em;
+  text-align: center;
+  color: peachpuff
+}
+
+h3 {
+  font-size: 2em;
+  padding: 20px 0px;
+}
+
+h4 {
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
