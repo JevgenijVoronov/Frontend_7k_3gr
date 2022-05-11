@@ -1,5 +1,5 @@
 .row {
-    height: 100px;
+    height: 50px;
 }
 #red {
     background-color: red;
@@ -11,10 +11,10 @@
     background-color: green;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
     .row {
         display: flex;
         flex-direction: column;
-        height: 300px;
+        height: 150px;
     }
 }

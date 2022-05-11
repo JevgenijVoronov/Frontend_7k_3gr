@@ -1,0 +1,10 @@
+#putns {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 576px) {
+  #putns {
+    display: none;
+  }
+}

@@ -1,0 +1,6 @@
+/*šeit es apvienošu visus savus CV CSS stilus */
+@import "./reset.css";
+@import "./common.css";
+@import "./header.css";
+@import "./profileIMG.css";
+@import "./instagram_icon.css";
