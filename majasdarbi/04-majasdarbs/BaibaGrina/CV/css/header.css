@@ -1,0 +1,40 @@
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px  10%;
+justify-content: center;
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+background: gray;
+
+}
+
+.header__item {
+    display: inline-block;
+    padding: 0 55px;
+    border: none;
+    color: white;
+}
+
+.header__item a {
+
+    text-decoration: none;
+    color: var(--font-main-color);
+    text-transform: uppercase;
+}
+
+.header__item a:hover {
+    color: #414042;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*Mobile nav*/
+  

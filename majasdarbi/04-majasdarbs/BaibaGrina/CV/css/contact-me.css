@@ -1,0 +1,47 @@
+.contactMe {
+    background-color: var(--color-black);
+    text-align: center;
+    padding-bottom: 50px;
+
+    /* background-image: linear-gradient(to top, rgb(22 29 32), rgb(255 255 255 / 0%)), url(../profile2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    height: 80vh;*/
+}
+
+.contactMe__input,
+.contactMe__text-area {
+    width: 50%;
+    height: 50px;
+    font-size: 0.8em;
+    border: solid 1px #414042;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+}
+
+.contactMe__text-area {
+    height: 150px;
+}
+
+.contactMe__submit-btn {
+    padding: 15px 0px;
+    font-size: 1em;
+    display: inline-block;
+    color: white;
+    background-color: #414042;
+    margin-top: 15px;
+    border: 1px solid var(--font-hover-color);
+    border-radius: 5px;
+    padding: 10px 70px;
+    text-align: center;
+    width: 50%;
+}
+
+.contactMe__submit-btn:hover {
+    color: var(--color-black);
+    background-color: grey;
+    border-color: var(--font-main-color);
+}
