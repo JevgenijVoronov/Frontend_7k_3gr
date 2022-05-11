@@ -1,0 +1,155 @@
+:root {
+    /* background-image: linear-gradient(rgb(116, 95, 183), rgb(65, 27, 131), rgb(21, 11, 35));
+    background-repeat: no-repeat; */
+   color: rgb(213, 190, 231);
+   
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", "Josefin Slab";
+    background-image: url('./photo_for_big.JPG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+section {
+    padding: 50px;
+    min-height: 20vh;
+   
+}
+
+div {
+    padding: 50px;
+    min-height: 20vh;
+   
+}
+
+
+.photo{
+clip-path: circle();
+}
+
+
+
+
+.nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+    
+    .nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .nav li {
+        list-style: none;
+    }
+    
+    .nav-links {
+        color: rgb(213, 190, 231);
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+    
+    .nav-links:after{
+        content: "";
+        position: absolute;
+        background-color: rgb(21, 11, 35);
+        height: 3px;
+        width: 0;
+        left: 0px;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    
+    .nav-links:hover {
+    color: white;
+    }
+    .nav-links:hover:after {
+        width: 100%;
+    
+    }
+    
+    .toggle-button {
+        position:absolute;
+        top: 0.75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+    }
+    
+    .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(21, 11, 35);
+    border-radius: 10px;
+    }
+
+    @media all and (max-width: 576px) {
+    
+        :root {
+            color: black;
+        }
+    
+        body {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: auto;
+            align-items: center;
+            margin: auto;
+            justify-content: center; 
+            background-image: url('./photo_for_small.JPG');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .toggle-button {
+            display: flex;
+        }
+    
+        .nav-links {
+            display: none;
+            width: 100%;
+            padding: 0;
+    
+        }
+    
+    
+        .nav ul {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .nav-links:after{
+            height: 0;
+            width: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .nav-links.active {
+            display: flex;
+    /* visu jāpārskata. funkcija nestrādā */
+        }
+    }
