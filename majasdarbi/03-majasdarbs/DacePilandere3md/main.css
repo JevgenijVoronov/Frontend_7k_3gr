@@ -1,0 +1,104 @@
+body {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    line-height: 1.5;
+
+    background: radial-gradient(50% 50% at 50% 50%, #DEEEFB 63.85%, #FFFFFF 100%);
+
+}
+
+
+
+p{
+   
+    font-family: 'Inter';
+    font-style: normal; 
+    font-weight: 100;
+    font-size: 44px;
+    line-height: 10px;
+
+    color: #000000;
+
+    
+}
+
+.header__link:hover{
+
+
+    color:crimson; 
+}
+
+.header__link{
+
+    color: #000000;
+
+    margin-left: 30px;
+}
+
+h1{
+
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    left: 120px;
+    top: 100px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 54px;
+    line-height: 57px;
+    color: #000000;
+
+}
+
+.about-me__title{
+
+    position: absolute;
+width: 640px;
+height: 154px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 154px;
+
+}
+
+.about-me__pre-title{
+
+    margin-left: 113px;
+}
+
+.about-me__image{
+
+    
+    position: absolute;
+    width: 333px;
+    height: 345.47px;
+    left: 1030px;
+    top: 112px;
+    border-radius: 50%;
+}
+
+
+.header{
+    
+    padding: 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
