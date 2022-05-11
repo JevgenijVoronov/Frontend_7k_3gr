@@ -1,0 +1,39 @@
+section {
+    padding: 50px;
+    min-height: 20vh;
+  
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 
+{color: blueviolet;
+text-align: left;
+font-weight: bolder;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {font-size: 20px;}
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+body {
+  font-size: 15px;
+font-weight: normal;
+  font-style: italic;
+  background-color: rgb(141, 170, 170);
+}
+
+p {font-size: 15px;
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+li {font-size: 15px;
+  font-weight: normal;
+  font-style: italic;}
+
+
