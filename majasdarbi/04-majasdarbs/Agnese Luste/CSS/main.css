@@ -5,7 +5,7 @@
     linear-gradient(to bottom, rgb(255 255 255 / 0%), rgb(0 0 0 / 80%)),
     url(../IMG_8128.jpg);
   background-size: contain;
-  /* background-position: bottom; */
+
   background-position: 70%;
   display: flex;
   align-items: center;
