@@ -1,17 +1,17 @@
-.contactme {
+.contactMe {
   background-color: var(--color-black);
   text-align: center;
   padding-bottom: 50px;
 
-  background-image: linear-gradient(to top, rgb(22 29 32), rgb(255 255 255 / 0%)), url(../profile2.png);
+  background-image: linear-gradient(to top, rgb(22 29 32), rgb(255 255 255 / 0%)), url(../IMG_8624.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 30%;
   height: 80vh;
 }
 
-.contactme__input,
-.contactme__text-area {
+.contactMe__input,
+.contactMe__text-area {
   width: 20%;
   height: 50px;
   font-size: 0.8em;
@@ -22,11 +22,11 @@
   padding: 20px;
 }
 
-.contactme__text-area {
+.contactMe__text-area {
   height: 150px;
 }
 
-.contactme__submit-btn {
+.contactMe__submit-btn {
   padding: 15px 0px;
   font-size: 1em;
   display: inline-block;
@@ -38,7 +38,7 @@
   padding: 10px 70px;
 }
 
-.contactme__submit-btn:hover {
+.contactMe__submit-btn:hover {
   color: var(--color-black);
   background-color: var(--font-main-color);
   border-color: var(--font-main-color);
