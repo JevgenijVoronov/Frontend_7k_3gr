@@ -2,7 +2,7 @@ const NameSurname = {
     name:"Anvars",
     surname:"Intezars", 
 
-    get getName() {
+    get name() {
         return this.name;
     },
     get surname() {
@@ -15,7 +15,23 @@ let aboutMe = {
     mail:"anvar.intezar@gmail.com",
     linkedin:"https://www.linkedin.com/in/anvarintezar",
     github:"https://github.com/Anvar331",
-    location:"Riga, Latvia"
+    location:"Riga, Latvia",
+
+    get telephone() {
+        return this.telephone
+    },
+    get mail() {
+        return this.mail
+    },
+    get linkedin() {
+        return this.linkedin
+    },
+    get github() {
+        return this.github
+    },
+    get location() {
+        return this.location
+    }
 }
 
 let workExperience = [
