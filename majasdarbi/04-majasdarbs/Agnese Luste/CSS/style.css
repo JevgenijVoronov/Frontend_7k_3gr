@@ -10,3 +10,10 @@
 @import "./faq.css";
 @import "./languages.css";
 @import "./contact-me.css";
+@media all and (max-width: 600px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+}
