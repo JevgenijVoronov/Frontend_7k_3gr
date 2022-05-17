@@ -1,0 +1,31 @@
+*
+body{
+    height: 400vh;
+    width: 100%;
+    background: rgb(255,255,255);   
+    background-image: url("./DSC_0110.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text{
+    position: absolute;
+    top:35%;
+    bottom: 50%;
+    left:15%;
+    transform: translateY(-50)%
+}
+.text h1{
+    font-size: 130px;
+    color: #1f1f1f;
+    line-height: 140px;
+    margin-bottom: 20px;
+}
+button{
+    background: #1f1f1f;
+    color: white;
+    font-weight: bold;
+    padding: 4px 15px;
+    font-size: 18px;
+    border: none;
+    letter-spacing: 18px;
+}
