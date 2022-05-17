@@ -6,6 +6,7 @@ header h1 {
 #navigation {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 #navigation a {
