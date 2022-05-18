@@ -1,7 +1,7 @@
 nav {
   border-right: none;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 nav ul {
@@ -15,12 +15,16 @@ nav ul {
   position: fixed;
   top: 0;
   width: 100%;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 @media only screen and (max-width: 576px) {
   nav ul {
     flex-direction: column;
     align-items: center;
     height: 25vh;
+    margin-bottom: 15px;
   }
 }
 
@@ -31,7 +35,7 @@ nav ul li a {
   text-decoration: none;
 }
 li a:hover:not(.active) {
-  background-color: rgb(39, 83, 127);
+  color: rgb(154, 157, 162);
 }
 
 .active {
