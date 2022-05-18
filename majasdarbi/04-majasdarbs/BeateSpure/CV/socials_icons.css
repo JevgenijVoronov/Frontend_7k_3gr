@@ -1,6 +1,10 @@
 .socials {
   display: flex;
+  padding: 10px 0 30px 0;
 }
 .instagram {
+  display: inline-block;
+}
+.linkedin {
   display: inline-block;
 }
