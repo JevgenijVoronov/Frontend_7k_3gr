@@ -24,7 +24,6 @@ section{
   background: rgb(225, 172, 96);
   padding: 15px;
   height: 30vh;
-  min-width: 33.33%;
 }
 
 #izglitiba {
@@ -39,6 +38,7 @@ section{
   background: rgb(225, 172, 96);
   padding: 15px;
   height: 30vh;
+  min-width: 33.33%;
 }
 
 @media only screen and (min-width: 576px) {

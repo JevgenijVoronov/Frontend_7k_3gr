@@ -1,3 +1,6 @@
+.socials {
+  display: flex;
+}
 .instagram {
   display: inline-block;
 }
