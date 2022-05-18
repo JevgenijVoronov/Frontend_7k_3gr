@@ -1,25 +1,60 @@
-@import "./navigation.css";
+@import "./new-nav.css";
+@import "./bs.css";
 @import "./img.css";
 
 h1 {
-  text-align: center;
-  font-family: "Karla", sans-serif;
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 25px;
   font-weight: normal;
   color: white;
   text-transform: uppercase;
-  background-color: rgb(39, 83, 127);
+}
+h2 {
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 30px;
+  font-weight: normal;
+  padding-top: 1rem;
+  color: rgb(87, 83, 83);
+}
+
+h4 {
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 25px;
+  font-weight: normal;
+  color: rgb(87, 83, 83);
+  text-transform: uppercase;
   line-height: 30px;
 }
+
+p1 {
+  color: white;
+}
+
 body {
-  background-color: rgb(165, 169, 171);
-  font-family: "IBM Plex Mono", monospace;
+  background-color: rgb(239, 240, 240);
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
 }
 
 table {
+  align-self: center;
   margin: 20px;
   border-collapse: collapse;
-  width: 50%;
+  width: 80%;
+  padding-right: 15px;
+  background-color: rgb(199, 202, 202);
 }
 
 th,
@@ -29,5 +64,13 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #dfe6e6;
+  background-color: rgb(239, 240, 240);
+}
+
+ul.b {
+  list-style-type: square;
+  color: white;
+  position: relative;
+  padding: 20px;
+  left: 10px;
 }
