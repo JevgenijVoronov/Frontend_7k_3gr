@@ -2,6 +2,7 @@
   padding: 7px;
   margin-bottom: 7px;
   float: center;
+  justify-content: space-between;
 }
 #pieredze {
   border-radius: 10px;
@@ -22,7 +23,6 @@
   padding: 15px;
   margin: 10px;
   height: 30vh;
-  min-width: 33.33%;
 }
 
 #izglitiba {
@@ -39,6 +39,7 @@
   padding: 15px;
   margin: 10px;
   height: 30vh;
+  min-width: 33.33%;
 }
 
 @media only screen and (min-width: 576px) {
