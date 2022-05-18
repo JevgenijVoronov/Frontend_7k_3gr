@@ -1,0 +1,21 @@
+@media screen and (min-width: 576px) {
+  .img-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 4px;
+  }
+  .img-column {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img-row {
+    display: none;
+  }
+  .img.column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

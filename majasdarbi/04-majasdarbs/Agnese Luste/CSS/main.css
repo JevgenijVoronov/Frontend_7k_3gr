@@ -3,9 +3,9 @@
   background-repeat: no-repeat;
   background-image:
     linear-gradient(to bottom, rgb(255 255 255 / 0%), rgb(0 0 0 / 80%)),
-    url(../mainImg.png);
+    url(../IMG_8128.jpg);
   background-size: contain;
-  
+
   background-position: 70%;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 
   text-align: center;
-  padding-bottom: 200px
+  padding-bottom: 130px
 }
 
 .main__preTitle {

@@ -1,3 +1,4 @@
+<!-- Need add responsive behavior for mobile screens V.F. -->
 <!DOCTYPE html>
 <html>
 
@@ -25,13 +26,14 @@
   <main>
         <!-- ABOUT ME -->
         <section id="aboutme" class="main">
-          <img src="./IMG_8128 2.jpg" alt="IMG_8128.2" width="400px" height="500px">
           <address>
             <p class="main__preTitle" data-animation="slideInUp">Sales/Aftersales assistant</p>
+            <br>
+            <br>
             <h1 class="main__title" data-animation="slideInDown">Agnese Luste</h1>
-            <a class="main__contactInfo" href="https://linkedin.com/in/agneseluste/" target="_blank"
-              data-animation="slideInDown" data-animation-delay=".3s">LinkedIn</a><br>
-            <a class="main__contactInfo" href="mailto:agness.luste.com" data-animation="slideInDown"
+            <a class="main__contactInfo" href="27754999" target="_blank"
+              data-animation="slideInDown" data-animation-delay=".3s">+371 27754999</a><br>
+            <a class="main__contactInfo" href="mailto:agness.luste@gmail.com" data-animation="slideInDown"
               data-animation-delay=".4s">agness.luste@gmail.com</a><br>
             <a class="main__contactBtn" href="#contactme" data-animation="slideInDown" data-animation-delay=".5s">
               CONTACT ME
@@ -46,13 +48,14 @@
 
       <h3>Luxury & Sports Cars SE, Riga – Sales/Aftersales assistant</h3>
       <em>May 2015 – present</em>
-
+      <br>
+      <br>
       <ul>
         <li>Responsibilities: 
         • Preparation of required weekly and monthly reports, documentation
         • Communication with customers, as well as with other car dealers in Estonia and Lithuania
         • Logistics process planning, transport ordering and new car delivery control
-        • Preparation of necessary documents for customs cooperation partners;
+        • Preparation of necessary documents for customs cooperation partners
         • Ordering, buying, selling spare parts
         • Preparation of service estimates, orders, offers
         • Ordering and accepting car interior accessories
@@ -65,7 +68,8 @@
 
       <h3>Hotel Konventa Seta, Riga – Reservations Manager</h3>
       <em>June 2007 – February 2012</em>
-
+      <br>
+      <br>
       <ul>
         <li>Responsibilities: 
         • Development of reservations and offers for customers and groups by telephone, electronically or in person
@@ -80,7 +84,7 @@
     <!-- EDUCATION -->
     <section id="education">
       <h2>Education</h2>
-      <p>ISMA - Information Systems Management Highschool, Riga – Bachelor's degree <em>2006 – 2010</em></p>
+      <p>ISMA - Information Systems Management Highschool, Business Managament, Riga – Bachelor's degree <em>2006 – 2010</em></p>
       <p> Bauskas 1. vidusskola, Bauska <em>2003 – 2006</em></p>
     </section>
     <!-- EDUCATION -->
@@ -95,7 +99,7 @@
         <li>MC Office</li>
         <li>GRP Wolkswagen group</li>
       </ul>
-
+      <br>
       <b>I’m also interested in following technologies:</b>
       <ul>
         <li>HTML5</li>
@@ -143,25 +147,24 @@
     <!-- PERSONAL SKILLS -->
 
     <hr>
-    <!-- CONTACT FORM -->
-    <section id="contactme">
-      <h2>Contact me </h2>
+<!-- CONTACT FORM -->
+<section id="contactme" class="contactMe">
+  <h2>Contact me</h2>
 
-      <form action="action_page.php">
-        <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
-        <br><br>
+  <form action="action_page.php">
+    <input type="text" id="firstname" name="firstname" placeholder="Your name.." class="contactMe__input">
+    <br><br>
 
-        <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
-        <br><br>
+    <input type="text" id="company" name="lastname" placeholder="Company name.." class="contactMe__input">
+    <br><br>
 
-        <textarea id="subject" name="subject" placeholder="Write something.."
-          style="width: 200px; height:100px"></textarea>
-        <br><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." class="contactMe__text-area"></textarea>
+    <br><br>
 
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-    <!-- CONTACT FORM -->
+    <input type="submit" value="Submit" class="contactMe__submit-btn">
+  </form>
+</section>
+<!-- CONTACT FORM -->
   </main>
 </body>
 
