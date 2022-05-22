@@ -1,20 +1,25 @@
 .row {
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    
 }
-#red {
-    background-color: red;
-}
-#yellow {
-    background-color: yellow;
-}
-#green {
-    background-color: green;
+#col1 {
+background-color: red ;
 }
 
-@media only screen and (max-width: 576px) {
+#col2 {
+background-color: yellow;
+}
+
+#col3{
+background-color: green;
+}
+
+@media all and (max-width: 576px) {
     .row {
         display: flex;
-        flex-direction: column;
-        height: 300px;
+        flex-direction: row;
+        height: 100px;
     }
 }
