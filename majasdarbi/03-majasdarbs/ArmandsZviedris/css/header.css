@@ -1,0 +1,9 @@
+.header {
+display: flex;
+font-family: 'Dancing Script', cursive;
+
+}
+.header__item{
+    border: 0px solid red;
+padding: 15px 65px;
+}
