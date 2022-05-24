@@ -1,0 +1,285 @@
+/* Apzinos, ka ir problēma, kuru lūgšu palīdzēt, kā atrisināt - kad mob versijā ir noskrollēts
+uz leju un klikšķina uz hamburgera, tas neatveras pareizi.
+Sapratu, ka labāk ir veidot atsevišķus css failus un tad import tos, bet šoreiz izvēlējos šādi, jo nav tik
+gari un likās, ka var pārskatīt šādi labāk, bet ņemu vērā.
+Mājasdarbā minētie nosacījumi, šķiet, izpildīti.*/
+
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+
+/* common */
+:root {
+  --white: #f9f9f9;
+  --black: #36383f;
+  --gray: #85888c;
+  --main-color: rgb(245, 245, 245);
+} /* variables*/
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  display: flex;
+  padding: 1.3rem 0.1rem 1.2rem 0.1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* unvisited link */
+main.a:link {
+  color: black;
+}
+
+/* visited link */
+main.a:visited {
+  color: rgb(100, 100, 100);
+}
+
+/* mouse over link */
+main.a:hover {
+  color: rgb(1, 4, 206);
+}
+
+/* about me */
+#aboutme {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 15px;
+  font-style: normal;
+}
+
+#profile_pic {
+  filter: drop-shadow(0 0 0.5rem gray);
+  border-radius: 50%;
+}
+
+/* contact me */
+/* #contactme {
+  display: flex;
+  flex-direction: column;
+} */
+
+input[type="text"] {
+  width: 20rem;
+}
+
+textarea {
+  width: 20rem;
+  resize: none;
+}
+
+a {
+  color: darkslateblue;
+}
+
+/* education */
+#education {
+  display: flex;
+  flex-direction: column;
+}
+
+/* faq */
+#faq {
+  display: flex;
+  flex-direction: column;
+}
+
+/* languages */
+/* #languages {
+  display: flex;
+  flex-direction: column;
+} */
+
+.languages__item li {
+  padding: 0.1rem 0px;
+}
+
+/* skills */
+#skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__item li {
+  padding: 0.1rem 0px;
+}
+
+.bit-of-margin-please {
+  margin-left: 2rem;
+}
+
+.maybe-center-this-one {
+  justify-content: center;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  background-color: var(--black);
+  box-shadow: 1px 1px 5px 0px var(--gray);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+/* Logo */
+.logo {
+  display: inline-block;
+  color: var(--white);
+  font-size: 60px;
+  margin-left: 10px;
+  min-height: 85px;
+}
+
+/* Nav menu */
+.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--black);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+.menu a {
+  display: block;
+  padding: 30px;
+  color: var(--white);
+  text-align: right;
+}
+.menu a:hover {
+  background-color: var(--gray);
+}
+
+/* Menu Icon */
+.hamb {
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+} /* Style label tag */
+
+.hamb-line {
+  background: var(--white);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after {
+  background: var(--white);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.hamb-line::before {
+  top: 5px;
+}
+.hamb-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav {
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.svg-image {
+  display: flex;
+  padding-right: 0.4rem;
+  /* margin-bottom: 2rem; */
+}
+
+.flexspan {
+  display: flex;
+  align-items: center;
+}
+
+picture {
+  z-index: -1;
+}
+
+/* Responsiveness */
+@media (min-width: 860px) {
+  .logo {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    flex-wrap: nowrap;
+  }
+  .menu li {
+    float: left;
+  }
+  .menu a:hover {
+    background-color: transparent;
+    color: var(--gray);
+  }
+
+  .hamb {
+    display: none;
+  }
+}
