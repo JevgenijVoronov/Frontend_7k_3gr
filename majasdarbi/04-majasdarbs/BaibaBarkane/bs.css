@@ -8,20 +8,21 @@
   border-radius: 10px;
   background: rgb(225, 172, 96);
   padding: 15px;
-  margin: 10px;
   min-width: 33.33%;
 }
 #apraksts {
   background-color: rgb(239, 240, 240);
   padding: 15px;
-  margin: 10px;
+}
+
+section{
+  min-width: 30%;
 }
 
 #prasmes {
   border-radius: 10px;
   background: rgb(225, 172, 96);
   padding: 15px;
-  margin: 10px;
   height: 30vh;
 }
 
@@ -29,7 +30,6 @@
   border-radius: 10px;
   background: rgb(225, 172, 96);
   padding: 15px;
-  margin: 10px;
   height: 30vh;
 }
 
@@ -37,7 +37,6 @@
   border-radius: 10px;
   background: rgb(225, 172, 96);
   padding: 15px;
-  margin: 10px;
   height: 30vh;
   min-width: 33.33%;
 }
