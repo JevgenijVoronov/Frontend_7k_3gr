@@ -19,7 +19,7 @@ const characterArray = ["a", "b", "c", "d", "e", "f", "g", "h"];
 // 2) izvejtot mainigo "arrayId" šis mainigas saņems lietotaja ievadito skaitli
 
 
-var arrayId;
+let arrayId;
 
 // 3) izvejtot mainigo "output" šis mainigas satur DOM elementu kur tiek izvadits izveletais burts (getElementById) 
 
@@ -37,16 +37,18 @@ const output = document.getElementById("output");
         izmaiņam defineto output mainigo iekšejo text (innerText) ar izveleto burtu masiva (characters[arrayId])
 */
 
+let printValues = () => {
+    consoles.log(characterArray[arrayId]);
+}
+
 let getValue = () => {
-let arrayId = prompt ("Welcome! Please enteter desired ID number of array element");
-if (arrayId >=0 && arrayId <= characterArray.length) {   
-   let printValues = () => {
-           consoles.log(characterArray.forEach.getElementById(arrayId));
-           break;
-   }}
-   else {
+        let arrayId = prompt ("Welcome! Please enteter desired ID number of array element");
+        if (arrayId >=0 && arrayId <= characterArray.length) {   
+            printValues();
+        }
+        else {
            console.log("Error. The Entered value does not exist.")
-        continue;
+           getValue();
    }
        
 }
@@ -62,4 +64,5 @@ getValue();
         ne gadijum izvadit paziņojumu alert('NEPAREIZI')
 */ 
 }
-}
+
+document.addEventListener
