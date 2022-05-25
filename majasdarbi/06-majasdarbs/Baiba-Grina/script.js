@@ -86,7 +86,3 @@ function getValue (element.addEventListener(‘keypress’, (eventObject)) => {
                 alert("NEPAREIZI");      
 }
 }
-
-      
-        
-        ) 
