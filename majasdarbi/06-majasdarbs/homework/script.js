@@ -14,9 +14,12 @@
 // Implementacija
 // 1) izvejdot massivu ar burtiem characters[]
 
+
 // 2) izvejtot mainigo "arrayId" šis mainigas saņems lietotaja ievadito skaitli
 
+
 // 3) izvejtot mainigo "output" šis mainigas satur DOM elementu kur tiek izvadits izveletais burts (getElementById) 
+
 
 /* 4) izvejtot funkciju getValue() funkcijas ipašibas 
         neko nesaņem
@@ -26,12 +29,14 @@
         ne gadijuma izvadit kļudas paziņojomu pec tam izsaukt funkciju getValue velreizi
 */      
 
+
 /* 5) izvejtot funkciju printValues() funkcijas ipašibas
         neko nesaņem
         izmaiņam defineto output mainigo iekšejo text (innerText) ar izveleto burtu masiva (characters[arrayId])
 */
 
 // 6) izsaucam funkciju getValue()
+
 
 /* 7) japievino event listener keyPress un parbaudit ievadito to tastaturas vertibu ar izveleto vertibu pirm tam
         ja gadijuma izvadit paziņojumu alert('PAREIZI') un izsaukt funkciju getValue() vel reizi
