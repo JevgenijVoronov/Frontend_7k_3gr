@@ -37,7 +37,7 @@ let output = document.getElementById(input);
 
 let getValue = () => {
   arrayId = prompt("Ievadiet skaitli no 0 līdz 25");
-  if (arrayId >= 0 && arrayId <= characters.length) {
+  if (arrayId >= 0 && arrayId <= characters.length - 1) {
     printValue();
   } else {
     alert("Nepareizi");
