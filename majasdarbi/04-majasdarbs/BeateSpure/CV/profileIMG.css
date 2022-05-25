@@ -1,13 +1,7 @@
-.picture {
+#picture {
   display: block;
   align-items: center;
   justify-content: space-around;
   border-radius: 50%;
   margin: 0 auto;
-}
-
-@media only screen and (min-width: 400px) {
-  .picture {
-    background-image: url("formobile.jpg");
-  }
 }
