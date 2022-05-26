@@ -18,12 +18,12 @@ const characters = ["z", "a", "l", "k", "t", "i", "s"];
 
 // 2) izvejtot mainigo "arrayId" šis mainigas saņems lietotaja ievadito skaitli
 
-let arrayId = 0;
+let arrayId = "";
 
 /* 3) izvejtot mainigo "output" šis mainigas satur DOM elementu 
 kur tiek izvadits izveletais burts(getElementById) */
 
-let output = document.getElementById(input);
+let output = document.getElementById("main");
 
 /* 4) izvejtot funkciju getValue() funkcijas ipašibas 
         neko nesaņem
@@ -40,7 +40,6 @@ let getValue = () => {
   if (arrayId >= 0 && arrayId <= characters.length - 1) {
     printValue();
   } else {
-    alert("Nepareizi");
     getValue;
   }
 

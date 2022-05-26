@@ -1,9 +1,10 @@
-.socials {
+div.socials {
   display: flex;
   padding: 10px 0 30px 0;
 }
 .instagram {
   display: inline-block;
+  padding: 0 5px 0 0;
 }
 .linkedin {
   display: inline-block;
