@@ -63,6 +63,13 @@ getValue();
         ja gadijuma izvadit paziņojumu alert('PAREIZI') un izsaukt funkciju getValue() vel reizi
         ne gadijum izvadit paziņojumu alert('NEPAREIZI')
 */ 
-}
 
-document.addEventListener
+
+document.addEventListener('keypress', (eventObject) => {
+        if (eventObject.key === characterArray[arrayId]) {
+                console.log("True");
+                getValue();
+        } else {
+                console.log("False");
+        }
+});
