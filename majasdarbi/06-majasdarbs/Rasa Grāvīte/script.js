@@ -46,7 +46,8 @@ getValue();
 
 document.addEventListener('keypress', (eventobject) => {
         console.log(eventobject)
-        if (eventobject === characters[arrayId]) {
+        //Added eventobject.key,to compare key,not object and key V.F.//
+        if (eventobject.key === characters[arrayId]) {
                 alert('pareixi');
                 getValue()
         }else{
