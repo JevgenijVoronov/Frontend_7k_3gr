@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Dace Pilandere | Front end developer </title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <header>
         <nav class="header">
@@ -34,96 +36,93 @@
             <div class="about-me__hero">
                 <div>
                     <p class="about-me__pre-title">
-                        FRONTEND DEVELOPER
-                    </p>
-
+                        WEB DESIGNER</P>
                     <p class="about-me__pre-title">
-                        WEB DESIGNER
-                    </p>
-
-                    
-                    <h1 class="about-me__title">Dace Pilandere</h1>
+                        FRONTEND DEWELOPER</P> 
+                <!--vis iekomentētais ir tavs,augšā mans pieraksts-->                  
+                <!-- <p class="about-me__pre-title">
+                        <P>WEB DESIGNER</P>
+                        <P>FRONTEND DEWELOPER</P>
+                     </p>šis tags neko nenoslēdz, dzēšam-->
+                    <h1 class="about-me__title">DACE PILANDERE</h1> <!--pieliku klasi,redzēsi css-->
                 </div>
-                <img class="about-me__image" src="cvm.jpg" alt="profileImg" width="100px" height="100px">
+                <img class="about-me__image" src="cvm.jpg" alt="profileImg"> <!--šo var nenorādīt, Tu jau klasē piešķīri izmērus-width="100px" height="100px"-->
             </div>
-                <br>
-
+            <br><!--br nav labi izmantot, to jāpanāk ar css-->
             <div class="about-me__contacts">
-
                 <a class="about-me__link" href="mailto:dpdesign@inbox.lv">dpdesign@inbox.lv</a>
-                
-                <a class="about-me__contact-btn" href="#contactme">Sazināties ar mani</a>
+                <a class="about-me__contact-btn" href="#contact-me">Contact me</a> <!--ieliku pogu savādāk un nostilošu css-->
+                <!-- <button type="button">Click Me!</button> -->
             </div>
         </section>
         <!-- /ABOUT ME -->
 
         <!-- WORK EXPERIENCE -->
-        <section id="work-experience">
+        <section id="work-experience" class="text"><!--class text ir priekš line-height: 1.5-->
 
             <h2>Work experience</h2>
 
             <div class="work-experience__item">
-
                 <h3>Norstat Group – Intervētāja</h3>
-
                 <h4>07/2021 – pašlaik</h4>
-
                 <p class="work-experience__tools">Intervēšana</p>
-                <ul>
-                    
-                </ul>
-
+                <!-- <ul>
+                </ul> nav vajadzīgs-->
             </div>
+
             <div class="work-experience__item">
-
                 <h3>Jelgavas pilsētas pašvaldības policija</h3>
-
                 <h4>09/2009 – 10/2020</h4>
                 <p class="work-experience__tools">Skolu inspektore</p>
                 <ul>
                     <li>Sabiedriskās kārtības uzturēšana Jelgavas pilsētā.</li>
-                   
+<!-- !!šeit nebija noslēdzoša /ul --></ul>
             </div>
+
             <div class="work-experience__item">
-
                 <h3>Transcom Worl Wide – klientu konsultants</h3>
-
                 <h4>04/2007 – 06/2009</h4>
-
-            
             </div>
         </section>
         <!-- /WORK EXPERIENCE -->
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="container">
+
+<i class="glyphicon glyphicon-cloud"></i>
+
+
         <!-- EDUCATION -->
-        <section id="education">
+        <section id="education" class="text">
             <h2>Education</h2>
-            <p>Daugavpils University  – Bachelor's degree <em>2002 – 2006</em></p>
-            <p> Jelgavas vakara maiņu vidusskola, Jelgava <em>1999 – 2002</em></p>
+            <p>Daugavpils University – Bachelor's degree
+                <em>2002 – 2006</em>
+            </p>
+            <p>Jelgavas vakara maiņu vidusskola, Jelgava
+                <em>1999 – 2002</em>
+            </p>
         </section>
         <!-- EDUCATION -->
 
         <!-- FAQ -->
-        <section id="faq">
+        <section id="faq" class="text">
             <h2>FAQ</h2>
             <details>
                 <summary>My hobbyies?</summary>
                 <ul>
                     <li>Volk dance</li>
-                   
                     <li>Swimming</li>
                 </ul>
-              </details>
-             
+            </details>
         </section>
-        <!-- LANGUAGES -->
-
         <!-- LANGUAGES -->
         <section id="languages">
             <h2>Languages</h2>
             <ul>
                 <li>Latvian (native)</li>
-                <li>Russian (beginner)</li> 
+                <li>Russian (beginner)</li>
             </ul>
         </section>
         <!-- LANGUAGES -->
@@ -134,15 +133,13 @@
 
             <form class="contact-me__form" action="action_page.php">
                 <input class="contact-me__input" type="text" id="firstname" name="firstname" placeholder="Your name..">
-
                 <input class="contact-me__input" type="text" id="company" name="lastname" placeholder="Company name..">
-            
                 <textarea class="contact-me__text-area" id="subject" name="subject" placeholder="Write something.."></textarea>
-
-                <input class="contact-me__submit-btn" type="submit" value="Submit">            
-              </form>
+                <input class="contact-me__submit-btn" type="submit" value="Submit">
+            </form>
         </section>
         <!-- CONTACT FORM -->
     </main>
 </body>
+
 </html>
