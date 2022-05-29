@@ -76,7 +76,7 @@ let getValue = () => {
 
   let printValue = () => {
     output.innerHTML = characters[arrayId];
-    console.log(output);
+    alert(output);
   };
 
   // 6) izsaucam funkciju getValue()
