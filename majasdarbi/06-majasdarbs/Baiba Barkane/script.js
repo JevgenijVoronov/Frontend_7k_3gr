@@ -18,7 +18,7 @@ const characters = ["z", "a", "l", "k", "t", "i", "s"];
 
 // 2) izvejtot mainigo "arrayId" šis mainigas saņems lietotaja ievadito skaitli
 
-let arrayId = "";
+let arrayId = "0";
 
 /* 3) izvejtot mainigo "output" šis mainigas satur DOM elementu 
 kur tiek izvadits izveletais burts(getElementById) */
