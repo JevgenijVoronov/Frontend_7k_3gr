@@ -64,7 +64,7 @@ let output = document.getElementById("main");
 arrayId = prompt("Ievadiet skaitli no 0 līdz 25");
 
 let getValue = () => {
-  if (arrayId >= 0 && arrayId <= characters.length - 1) {
+  if (arrayId === 0 || arrayId <= characters.length - 1) {
     printValue();
   } else {
     alert(`Skaitlis ${arrayId} neatbilst`);
@@ -88,11 +88,12 @@ let getValue = () => {
         ja gadijuma izvadit paziņojumu alert('PAREIZI') un izsaukt funkciju getValue() vel reizi
         ne gadijum izvadit paziņojumu alert('NEPAREIZI')
         */
-  document.addEventListener("keypress", key);
-  if (key == characters[arrayId]) {
-    alert("Pareizi");
-    getValue();
-  } else {
-    alert("Nepareizi");
-  }
-};
+  document.addEventListener("keypress", (key) => {
+    if (key.key === characters[arrayId]) {
+      alert("Pareizi");
+      getValue();
+    } else {
+      alert("Nepareizi");
+    }
+    console.log(key);
+  });
