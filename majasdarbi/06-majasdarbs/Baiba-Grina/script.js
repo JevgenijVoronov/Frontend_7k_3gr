@@ -14,17 +14,18 @@
 // Implementacija
 // 1) izvejdot massivu ar burtiem characters[]
 
-const characters = ["a", "b", "c", "e", "d", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "t", "s", "v", "w", "z"];
+const characters = ['a','b','c', 'd', 'e', 'f', 'g','h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 'v', 'w', 'u', 'z'];
+// const characters = ["a", "b", "c", "e", "d", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "t", "s", "v", "w", "z"];
 
 
 // 2) izvejtot mainigo "arrayId" šis mainigas saņems lietotaja ievadito skaitli
 
-let arrayId; 
+let arrayId = '';
 
 
 // 3) izvejtot mainigo "output" šis mainigas satur DOM elementu kur tiek izvadits izveletais burts (getElementById) 
 
-let output = document.getElementById('main');
+const output = document.getElementById('main');
 
 
 /* 4) izvejtot funkciju getValue() funkcijas ipašibas 
@@ -34,39 +35,39 @@ let output = document.getElementById('main');
         ja gadijuma izsaukt finkciju print value (5 punkts)
         ne gadijuma izvadit kļudas paziņojomu pec tam izsaukt funkciju getValue velreizi
 */      
-// neko nesaņem
-let main = undefined;
-//  izmantojot prompt() medoti --> https://www.w3schools.com/jsref/met_win_prompt.asp piesaistit vertibu mainigam arrayId
-const value = prompt("Please enter number from 0-21")
-
-//izveidot parbaudi if else un parliecinaties ka ievietotais skatlis pieder intervalam no 0 lidz characters.lenght
-if (prompt => characters.lenght) {
-        (printValue.character.indexOf(""));
-} else if (arrayId < characters.leght){
-        alert ("Error: enter number from 0-21")
-} else {getValue();
-}
-
-//ja gadijuma izsaukt finkciju print value (5 punkts)
-
-//ne gadijuma izvadit kļudas paziņojomu pec tam izsaukt funkciju getValue velreizi
-
-
-
 
         // funkcijas koda bloks
-    
 
 
+let getValues = () => {
+        arrayId = prompt(`Ievadiet skaitli no 0 līdz ${characters.length}`);
+if (arrayId > characters.lenght || arrayId === '' || arrayId === undefined) { 
+        alert(`Skaitls ${arrayId} neatbilst`);
+        getValues();
+} else {
+        printValues();
+}
+}
 /* 5) izvejtot funkciju printValues() funkcijas ipašibas
         neko nesaņem
         izmaiņam defineto output mainigo iekšejo text (innerText) ar izveleto burtu masiva (characters[arrayId])
 */
 
+let printValues = () => {
+        output.innerHTML = characters[arrayId];
+}  
 
-let printValues = (characters) => {
-        output.innerHTML = arrayId;
-        return characters;}
+getValues();
+
+document.addEventListener('keypress', (eventObject) => {
+        if (eventObject.key === characters[arrayId]) {
+                alert('Pareizi');
+                getValues();
+        } else {
+                alert('Nepareizi')
+        }
+})
+
 
 
 
@@ -77,6 +78,7 @@ let printValues = (characters) => {
         ne gadijum izvadit paziņojumu alert('NEPAREIZI')
         */
 
+        /*
 function getValue (element.addEventListener(‘keypress’, (eventObject)) => {
 
         if (arrayId => characters.lenght) {
@@ -86,3 +88,4 @@ function getValue (element.addEventListener(‘keypress’, (eventObject)) => {
                 alert("NEPAREIZI");      
 }
 }
+*/
