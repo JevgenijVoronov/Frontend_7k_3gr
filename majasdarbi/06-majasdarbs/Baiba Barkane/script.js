@@ -47,7 +47,7 @@ let getValue = () => {
         izmaiņam defineto output mainigo iekšejo text (innerText) ar izveleto burtu masiva (characters[arrayId])  */
 
   let printValue = () => {
-    output.innerText = characters[arrayId];
+    output.innerHTML = characters[arrayId];
     console.log(output);
   };
 
@@ -60,7 +60,7 @@ let getValue = () => {
         ja gadijuma izvadit paziņojumu alert('PAREIZI') un izsaukt funkciju getValue() vel reizi
         ne gadijum izvadit paziņojumu alert('NEPAREIZI')
         */
-  element.addEventListener("keypress", key);
+  document.addEventListener("keypress", key);
   if (key == characters[arrayId]) {
     alert("Pareizi");
     getValue();
