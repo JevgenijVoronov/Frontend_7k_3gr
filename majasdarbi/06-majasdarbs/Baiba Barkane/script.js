@@ -61,13 +61,14 @@ let output = document.getElementById("main");
         ja gadijuma izsaukt finkciju print value (5 punkts)
         ne gadijuma izvadit kļudas paziņojomu pec tam izsaukt funkciju getValue velreizi
         */
+arrayId = prompt("Ievadiet skaitli no 0 līdz 25");
 
 let getValue = () => {
-  arrayId = prompt("Ievadiet skaitli no 0 līdz 25");
   if (arrayId >= 0 && arrayId <= characters.length - 1) {
     printValue();
   } else {
-    getValue;
+    alert(`Skaitlis ${arrayId} neatbilst`);
+    getValue();
   }
 
   /* 5) izvejtot funkciju printValues() funkcijas ipašibas neko nesaņem
