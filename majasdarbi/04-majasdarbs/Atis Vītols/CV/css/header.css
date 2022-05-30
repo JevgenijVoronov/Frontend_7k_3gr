@@ -1,0 +1,44 @@
+#logo {
+    width: 125px;
+}
+@media only screen and (max-width: 768px) {
+    #logo {
+        display: none;
+    }
+}
+#logo:hover {
+    animation-name: scaleAndRotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes scaleAndRotate {
+    25% {transform: rotate(15deg) scale(1.1);}
+    50% {transform: rotate(0deg) scale(0.9);}
+    75% {transform: rotate(-15deg) scale(1.1);}
+    100% {transform: rotate(0deg) scale(1);}
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+}
+.navigation a {
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.navigation a:hover {
+    color: var(--accent-color);
+}
+@media only screen and (max-width: 768px) {
+    #nav-item {
+        padding: 0.3rem;
+    }
+}

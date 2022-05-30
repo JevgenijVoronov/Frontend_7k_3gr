@@ -1,0 +1,13 @@
+@media only screen and (max-width: 576px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 40%;
+        align-items: center;
+        margin: auto;
+        justify-content: center;   
+
+    }
+
+    }

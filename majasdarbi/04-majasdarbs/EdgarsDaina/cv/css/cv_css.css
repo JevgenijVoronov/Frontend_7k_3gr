@@ -1,0 +1,55 @@
+ul {
+    list-style-type: none;
+}
+
+li{
+    margin: 7px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+#vards{
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+body{
+    background-color: rgb(121, 115, 110);
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
+
+
+h1{
+    font-size: 23px;
+    display:flex
+}
+
+h2{
+    font-size: 23px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.header_item{
+    padding: 10px 10px;
+    background-color: rgb(250, 245, 239);
+
+
+}
+
+#svg{
+    height: 25px;
+    width: auto;
+}
