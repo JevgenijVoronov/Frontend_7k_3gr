@@ -9,6 +9,15 @@
 @import './education.css';
 @import './variables.css';
 
+
+@media all and (max-width: 576px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+    }
+}
+
 section {
     padding: 50px;
     min-height: 20vh;
