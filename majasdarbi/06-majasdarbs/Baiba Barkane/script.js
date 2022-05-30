@@ -52,7 +52,6 @@ let output = document.getElementById("main");
 
 let printValue = () => {
   output.innerHTML = characters[arrayId];
-  alert(output);
 };
 
 /* 4) izvejtot funkciju getValue() funkcijas ipašibas 

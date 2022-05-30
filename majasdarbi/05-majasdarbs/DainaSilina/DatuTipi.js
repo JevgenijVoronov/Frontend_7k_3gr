@@ -1,3 +1,6 @@
+// Need add switch.js and CV.js tasks V.F.
+
+
 // Kads rezultats bus pec datu tipu pārvēršānas
 // Rezultatu uzrakstit blakus komentāros
 
