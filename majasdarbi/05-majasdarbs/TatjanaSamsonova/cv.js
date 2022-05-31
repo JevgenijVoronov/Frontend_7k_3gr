@@ -5,12 +5,12 @@ const VardsUzvards = {
     education :{
         school : [ "Banking Institution of Higher Education", "Information System Management Academy"]
 }
+}
 
-skills :{
-    languages ["russian", "latvian","english"]
+const skills = {
+    languages : ["russian", "latvian","english"],
 
 }
 
 
     
-}
