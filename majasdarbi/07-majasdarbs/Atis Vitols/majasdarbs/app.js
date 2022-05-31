@@ -43,10 +43,11 @@ const myTasks = document.querySelector('.myTasks');
 const tasks = JSON.parse(localStorage.getItem('taskList')) || [];
 
 // addEventListener click 
-//addEventListener("click", addTask);
+addEventListener("click", toggleDone);
 // addEventListener submit
 addEventListener("submit", addTask)
 
+let taskContainer = document.getElementById("taskList");
 
 renderTask();
 
@@ -65,9 +66,45 @@ function saveToLocalStorage(task) {
     localStorage.setItem("taskList", JSON.stringify(tasks));
 };
 
-function renderTask() {
 
+
+
+function renderTask() {
+    let tasksToRender = [];
+    tasks.forEach((item, i) => {
+        //let isTaskChecked = item.done ? "checked" : "";
+        if (item.done === true) {
+            let eachTask = `<li data-index='${i}'>
+                            <div class="done">
+                            ${item.textTask}<span class="remove" id="delete"> ❌ </span>
+                            </div>
+                            </li>`;
+            tasksToRender.push(eachTask)
+        } else {
+            let eachTask = `<li data-index='${i}'>
+                            <div class="todo">
+                            ${item.textTask}<span class="remove" id="delete"> ❌ </span>
+                            </div>
+                            </li>`;
+            tasksToRender.push(eachTask);
+        }
+    });
+    taskContainer.innerHTML = tasksToRender.join("");
 }
 
 function toggleDone(e) {
+    let taskIndex = e.target.parentNode.getAttribute("data-index")
+    let deleteId = e.target.getAttribute("id")
+    let deleteIndex = e.target.parentNode.parentNode.getAttribute("data-index")
+
+    if (deleteId === "delete") {
+        tasks.splice(deleteIndex, 1)
+    } else if (tasks[taskIndex].done) {
+        tasks[taskIndex].done = false;
+    } else if (!tasks[taskIndex].done) {
+        tasks[taskIndex].done = true;
+    }
+
+    localStorage.setItem("taskList", JSON.stringify(tasks))
+    renderTask();
 }
