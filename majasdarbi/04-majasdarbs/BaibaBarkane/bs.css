@@ -24,6 +24,7 @@ section {
   background: rgb(225, 172, 96);
   padding: 15px;
   height: 30vh;
+  margin: 7px;
 }
 
 #izglitiba {
@@ -31,6 +32,7 @@ section {
   background: rgb(225, 172, 96);
   padding: 15px;
   height: 30vh;
+  margin: 7px;
 }
 
 #valodas {
@@ -38,7 +40,7 @@ section {
   background: rgb(225, 172, 96);
   padding: 15px;
   height: 30vh;
-  min-width: 33.33%;
+  margin: 7px;
 }
 
 @media only screen and (min-width: 576px) {
