@@ -1,6 +1,6 @@
 .row {
   padding: 7px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   float: center;
   justify-content: space-between;
 }
@@ -8,14 +8,14 @@
   border-radius: 10px;
   background: rgb(225, 172, 96);
   padding: 15px;
-  min-width: 33.33%;
+  min-width: 30%;
 }
 #apraksts {
   background-color: rgb(239, 240, 240);
   padding: 15px;
 }
 
-section{
+section {
   min-width: 30%;
 }
 
