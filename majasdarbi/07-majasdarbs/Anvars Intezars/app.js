@@ -74,18 +74,10 @@ function addTask () {
     saveToLocalStorage();
 }
 
-/*
-Maybe this version of the function is also ok to apply?
-*******************************************************
 function saveToLocalStorage() {
 let taskList = localStorage.setItem("taskList");
     JSON.stringify(taskList);
 
-}
-*/
-
-function saveToLocalStorage(){
-    localStorage.setItem('taskList',JSON.stringify(taskList));
 }
 
 function renderTask() {
@@ -97,4 +89,7 @@ function renderTask() {
 }
 
 function toggleDone(e) {
+    addEventListener('submit', addTask);
+    addEventListener('click', toggleDone);
+    
 }
