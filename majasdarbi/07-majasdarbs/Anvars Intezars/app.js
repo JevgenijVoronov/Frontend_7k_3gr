@@ -52,7 +52,7 @@ window.onload = () => {
     let allTasksToShow = [];
     taskListOutput.innerHTML = 'TaskList';
     Object.keys(taskList).forEach((key) => {
-        let itemAsString = '<li>${key}: ${taskList[key]}</li>'
+        let itemAsString = `<li>${key}: ${taskList[key]}</li>`
         allTasksToShow.push(itemAsString);
     });
 
@@ -62,6 +62,7 @@ window.onload = () => {
 renderTask();
 
 function addTask () {
+    let taskDescription = document.getElementById("taskAdder").value;
     console.log("Describe your task:", taskDescription);
 
     const task = {
@@ -70,26 +71,25 @@ function addTask () {
     }
     
     taskDescription = "";
-    taskList.push(task);
+    tasks.push(task);
     saveToLocalStorage();
+    
 }
 
 function saveToLocalStorage() {
-let taskList = localStorage.setItem("taskList");
-    JSON.stringify(taskList);
+    localStorage.setItem("taskList", JSON.stringify(tasks));
 
 }
 
 function renderTask() {
-    if(taskList) {
-        taskList.innerHTML = 'TaskList: ${taskList}'
+    if(tasks) {
+        // taskList.innerHTML = 'TaskList: ${taskList}'
     } else {
-        console.log("Task list is empty.");
+        // console.log("Task list is empty.");
     }
 }
-
+taskAdder.addEventListener('submit', addTask);
 function toggleDone(e) {
-    addEventListener('submit', addTask);
     addEventListener('click', toggleDone);
     
 }
