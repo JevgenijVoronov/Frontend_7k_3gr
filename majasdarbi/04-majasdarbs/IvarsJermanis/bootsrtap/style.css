@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    
+}
+#col1 {
+background-color: red ;
+}
+
+#col2 {
+background-color: yellow;
+}
+
+#col3{
+background-color: green;
+}
+
+@media all and (max-width: 576px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+    }
+}

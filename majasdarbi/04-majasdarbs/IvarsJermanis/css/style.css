@@ -1,0 +1,24 @@
+@import './reset.css';
+@import './faq.css';
+@import './fonts.css';
+@import './languages.css';
+@import './navigation.css';
+@import './main.css';
+@import './skills.css';
+@import './work-experience.css';
+@import './education.css';
+@import './variables.css';
+
+
+@media all and (max-width: 576px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+    }
+}
+
+section {
+    padding: 50px;
+    min-height: 20vh;
+}

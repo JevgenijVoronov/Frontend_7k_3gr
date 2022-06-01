@@ -13,9 +13,15 @@
 // Implementacija
 // 1) izvejdot massivu ar burtiem characters[]
 
+const characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+
 // 2) izvejtot mainigo "arrayId" šis mainigas saņems lietotaja ievadito skaitli
 
+let arrayID = "";
+
 // 3) izvejtot mainigo "output" šis mainigas satur DOM elementu kur tiek izvadits izveletais burts (getElementById)
+
+const output = document.getElementById("main");
 
 /* 4) izvejtot funkciju getValue() funkcijas ipašibas 
         neko nesaņem
@@ -24,6 +30,23 @@
         ja gadijuma izsaukt finkciju print value (5 punkts)
         ne gadijuma izvadit kļudas paziņojomu pec tam izsaukt funkciju getValue velreizi
 */
+let getValue = () => {
+  arrayID = prompt(`Ievadit skaitli no 0 lidz ${characters.length}`);
+
+  if (arrayID > characters.length || arrayID === "" || arrayID === undefined) {
+    //kluda
+    alert(`Skaitlis ${arrayID} neatbilst`);
+    getValue();
+  } else {
+    printValue();
+  }
+};
+
+let printValue = () => {
+  output.innerHTML = characters[arrayID];
+};
+
+getValue();
 
 /* 5) izvejtot funkciju printValues() funkcijas ipašibas
         neko nesaņem
@@ -36,3 +59,12 @@
         ja gadijuma izvadit paziņojumu alert('PAREIZI') un izsaukt funkciju getValue() vel reizi
         ne gadijum izvadit paziņojumu alert('NEPAREIZI')
 */
+document.addEventListener("keypress", (eventObject) => {
+  console.log(eventObject);
+  if (eventObject.key === characters[arrayID]) {
+    alert("PAREIZI!");
+    getValue();
+  } else {
+    alert("NEPAREIZI!");
+  }
+});

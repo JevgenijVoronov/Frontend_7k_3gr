@@ -1,0 +1,22 @@
+:root {
+    --main-color: #523831;
+    --accent-color: white;
+    --text-color: #e3c2a9;
+}
+html {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    max-width: fit-content;
+    margin: auto;
+}
+h1 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    text-align: center;
+}
+h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.6rem;
+    color: var(--accent-color)
+}
