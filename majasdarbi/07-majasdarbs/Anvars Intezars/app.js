@@ -73,7 +73,7 @@ function addTask () {
     taskDescription = "";
     tasks.push(task);
     saveToLocalStorage();
-    
+    renderTask();
 }
 
 function saveToLocalStorage() {
@@ -82,12 +82,19 @@ function saveToLocalStorage() {
 }
 
 function renderTask() {
-    if(tasks) {
-        // taskList.innerHTML = 'TaskList: ${taskList}'
-    } else {
-        // console.log("Task list is empty.");
-    }
+    let html = tasks.forEach(function(details,i) {
+
+        let statusOfTask = details.done ? 'done' : '';
+
+        return `<li data-index='${i}'>
+                        <div class="${statusOfTask}">
+                            ${data.textTask}<span class="remove">❌</span>
+                        </div>
+                    </li>`;
+    })
+    statusOfTask.innerHTML = html.join('');
 }
+
 taskAdder.addEventListener('submit', addTask);
 function toggleDone(e) {
     addEventListener('click', toggleDone);
