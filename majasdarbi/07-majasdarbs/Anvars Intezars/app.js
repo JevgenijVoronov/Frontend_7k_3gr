@@ -59,7 +59,8 @@ window.onload = () => {
     taskListOutput.innerHTML = allTasksToShow.join("");
 }
 
-renderTask();
+taskAdder.addEventListener('submit', addTask);
+addEventListener('click', toggleDone);
 
 function addTask () {
     let taskDescription = document.getElementById("taskAdder").value;
@@ -88,15 +89,39 @@ function renderTask() {
 
         return `<li data-index='${i}'>
                         <div class="${statusOfTask}">
-                            ${data.textTask}<span class="remove">❌</span>
+                            ${details.textTask}<span class="remove">❌</span>
                         </div>
                     </li>`;
     })
     statusOfTask.innerHTML = html.join('');
 }
 
-taskAdder.addEventListener('submit', addTask);
-function toggleDone(e) {
-    addEventListener('click', toggleDone);
-    
+function toggleDone(event) {
+    const selectedElement = event.target;
+    const statusOfMainElement = selectedElement.parentElement;
+
+    if (selectedElement === 'remove') {
+        let indexOfSelectedElement = selectedElement.parentElement.dataset.index;
+        let temporaryElement = tas.splice(index,1);
+    } else {
+        
+        selectedElement.classList.toggleDone;
+        tasks[statusOfMainElement.dataset.index].done = !tasks[statusOfMainElement.dataset.index].done;
+
+    //    checkEachTaskArrayStatus();
+
+    }
+    saveToLocalStorage();
+    renderTask();
+
 }
+
+/*
+function checkEachTaskArrayStatus() {
+    if (tasks[index].done === true) {
+        tasks[index].done === false
+    } else if (tasks[index] === false) {
+        tasks[index].done === true
+    }
+}
+*/
