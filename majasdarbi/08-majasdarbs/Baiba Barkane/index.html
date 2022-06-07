@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="text"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="">Epasts lauks</label>
+            <input 
+                type="email" 
+                id="email"
+                pattern=".+@gmail.com"
+                title="E-pasts"  
+                oninvalid="this.setCustomValidity('E-pasts neatbilst prasībām')" 
+
+                required
+            />
+        </div>
+
+        <div>
+            <label for="">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="text1" 
+                title="Teksts nedrīkst būt īsāks par 5 zīmēm un garāks par 10"  
+                minlength="5"
+                maxlength="10"
+                pattern="(^\d{5,10}$)"
+                oninvalid="this.setCustomValidity('Teksts nedrīkst būt īsāks par 5 zīmēm un garāks par 10')" 
+               required
+            />
+        </div>
+      
+        <div>
+            <label for="">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="pwd1" 
+                title="Parolei jāsatur vismaz viens lielais burts, mazais burts un cipars"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])"
+                oninvalid="this.setCustomValidity('Parolei jāsatur vismaz viens lielais burts, mazais burts un cipars')"  
+                required
+            />
+        </div>
+            
+        <div>
+            <label for="">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="pwd2" 
+                title="Parolei jābūt 8 zīmes garai un jāsatur vismaz viens lielais burts, mazais burts un cipars"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.{8,})"
+                oninvalid="this.setCustomValidity('Parolei jābūt 8 zīmes garai un jāsatur vismaz viens lielais burts, mazais burts un cipars')" 
+                required
+            />
+        </div>
+
+        <div>
+            <label for="">Nedeļa</label>
+            <input 
+                type="week" 
+                name="week" 
+                id="week"
+                min="2022-W18"
+                max="2022-W26"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="">Laiks</label>
+
+            <input 
+                type="time" 
+                id="time" 
+                name="time"
+                min="09:00"
+                max="18:00"
+                oninvalid="this.setCustomValidity('Pieejams laiks no plkst. 9 līdz 18')" 
+                required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="">ZIP : </label>
+            <input 
+                type="ZIP" 
+                id="ZIP"
+            />
+            <label for="">Valsts : </label>
+            <select id="country">
+              <option value="lv">Latvija</option>
+              <option value="lt">Lietuva</option>
+              <option value="ee">Igaunija </option>
+              <option value="no">Norvēģija</option>
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Pārbaudīt">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
