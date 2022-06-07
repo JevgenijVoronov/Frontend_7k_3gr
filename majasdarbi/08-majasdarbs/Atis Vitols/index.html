@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="text">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="text"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="email">Epasts lauks</label>
+            <input 
+                type="email" 
+                id="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please enter Your email."  
+                required
+            />
+        </div>
+
+        <div>
+            <label for="limitedText">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="limitedText" 
+                title="Please enter text with 5-10 symbols"  
+                minlength="5"
+                maxlength="10"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="password">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}"
+                oninvalid="this.setCustomValidity('Password must contain at least 1 lowercase and upercase character, 1 number.')"
+                oninput="this.setCustomValidity('')"
+                required
+            />
+        </div>
+            
+        <div>
+            <label for="password8symbols">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password8symbols" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Password must contain at least 1 lowercase and upercase character, 1 number. Must be at least 8 symbols." 
+                required
+            />
+        </div>
+
+        <div>
+            <label for="week">Nedeļa</label>
+            <input 
+                type="week" 
+                name="week" 
+                id="week"
+                min="2022-W18"
+                max="2022-W26"
+                oninvalid="this.setCustomValidity('Choose week between w18 and w26!')"
+                oninput="this.setCustomValidity('')"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="time">Laiks</label>
+
+            <input 
+                type="time" 
+                id="time" 
+                name="time"
+                min="09:00" 
+                max="18:00"
+                oninvalid="this.setCustomValidity('Choose time between 09:00 and 18:00!')"
+                oninput="this.setCustomValidity('')"
+                required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="ZIP">ZIP : </label>
+            <input 
+                type="text" 
+                id="ZIP"
+                required
+            />
+            <label for="Country">Valsts : </label>
+            <select id="Country">
+              <option value="lv">Latvia</option>
+              <option value="lt">Lietuva</option>
+              <option value="est">Estonia</option>
+              <option value="pl">Poland</option>
+              required
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
