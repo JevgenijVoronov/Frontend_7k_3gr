@@ -1,5 +1,5 @@
 // Need add switch.js and CV.js tasks V.F.
-
+// For the rest of the homework plase see two folders in 05-majasdarbs / DainaSilina / D.S.
 
 // Kads rezultats bus pec datu tipu pārvēršānas
 // Rezultatu uzrakstit blakus komentāros
