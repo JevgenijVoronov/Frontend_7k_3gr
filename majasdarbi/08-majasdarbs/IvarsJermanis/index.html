@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="text">Text field</label>
+            <input 
+                type="text" 
+                id="text"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="email">E-mail</label>
+            <input 
+                type="email" 
+                id="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please enter Your email."  
+                required
+            />
+        </div>
+
+        <div>
+            <label for="limitedText">Text Min un Max length</label>
+            <input 
+                type="text" 
+                id="limitedText" 
+                title="Please enter text with 5-12 symbols"  
+                minlength="5"
+                maxlength="12"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="password">Password 1 (must contain at least 1 lowercase and upercase character, 1 number)</label>
+            <input 
+                type="password" 
+                id="password" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}"
+                oninvalid="this.setCustomValidity('Password must contain at least 1 lowercase and upercase character, 1 number.')"
+                oninput="this.setCustomValidity('')"
+                required
+            />
+        </div>
+            
+        <div>
+            <label for="password8symbols">Password 2 (must contain at least 1 lowercase and upercase character, 1 number. Must be at least 8 symbols)</label>
+            <input 
+                type="password" 
+                id="password8symbols" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Password must contain at least 1 lowercase and upercase character, 1 number. Must be at least 8 symbols." 
+                required
+            />
+        </div>
+
+        <div>
+            <label for="week">Week</label>
+            <input 
+                type="week" 
+                name="week" 
+                id="week"
+                min="2022-W23"
+                max="2022-W40"
+                oninvalid="this.setCustomValidity('Choose week between w23 and w40!')"
+                oninput="this.setCustomValidity('')"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="time">Time</label>
+
+            <input 
+                type="time" 
+                id="time" 
+                name="time"
+                min="09:00" 
+                max="18:00"
+                oninvalid="this.setCustomValidity('Choose time between 09:00 and 18:00!')"
+                oninput="this.setCustomValidity('')"
+                required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="ZIP">ZIP: </label>
+            <input 
+                type="text" 
+                id="ZIP"
+                required
+            />
+            <label for="Country">Country: </label>
+            <select id="Country">
+              <option value="lv">Latvia</option>
+              <option value="lt">Lithuania</option>
+              <option value="est">Estonia</option>
+              <option value="de">Germany</option>
+              required
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Submit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
