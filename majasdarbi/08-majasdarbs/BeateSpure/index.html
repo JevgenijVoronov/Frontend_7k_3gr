@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="textField">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="textField"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="email">Epasts lauks</label>
+            <input 
+                type="email" 
+                id="email"
+                pattern=".+@gmail\.com"
+                title="Ludzu ievadiet savu epasta adresi"
+                oninvalid="this.setCustomValidity('Epastam jabut @gmail.com')"
+                required  
+            />
+        </div>
+
+        <div>
+            <label for="minMaxText">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="minMaxText" 
+                title="Ludzu ievadiet tekstu"
+                minlength="5"
+                maxlength="10"
+                oninvalid="this.setCustomValidity('Tekstam jabut no 5 lidz 10 simboliem')"
+                required 
+            />
+        </div>
+      
+        <div>
+            <label for="firstPass">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="firstPass" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                oninvalid="this.setCustomValidity('Parole nesatur visas nepieciesamas vertibas')"
+                required 
+            />
+        </div>
+            
+        <div>
+            <label for="secondPass">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="secondPass"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                minlength="8"
+                title="Ludzu ievadiet paroli"
+                oninvalid="this.setCustomValidity('Parole nesatur visas nepieciesamas vertibas, un tai jabut vismaz 8 simboliem')"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="appointmentWeek">Nedeļa</label>
+            <input 
+                type="week" 
+                name="Atzimejiet nedelu" 
+                id="appointmentWeek"
+                min="2022-W18"
+                max="2022-W26"
+                oninvalid="this.setCustomValidity('Ludzu izvelieties pieejamu nedelu')"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="appointmentTime">Laiks</label>
+
+            <input 
+                type="time" 
+                id="appointmentTime" 
+                name="Atzimejiet laiku"
+                min="9:00"
+                max="18:00"
+                oninvalid="this.setCustomValidity('Musu darba laiks ir no 09:00 lidz 18:00')"
+                required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="ZIP">ZIP : </label>
+            <input 
+                type="text" 
+                id="ZIP"
+                required
+            />
+            <label for="country">Valsts : </label>
+            <select id="country">
+              <option value="lv">Latvia</option>
+              <option value="lt">Lithuania</option>
+              <option value="ee">Estonia</option>
+              <option value="fr">France</option>
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
