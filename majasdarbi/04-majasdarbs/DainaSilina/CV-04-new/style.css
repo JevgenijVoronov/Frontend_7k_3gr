@@ -1,8 +1,7 @@
 /* Apzinos, ka ir problēma, kuru lūgšu palīdzēt, kā atrisināt - kad mob versijā ir noskrollēts
 uz leju un klikšķina uz hamburgera, tas neatveras pareizi.
 Sapratu, ka labāk ir veidot atsevišķus css failus un tad import tos, bet šoreiz izvēlējos šādi, jo nav tik
-gari un likās, ka var pārskatīt šādi labāk, bet ņemu vērā.
-Mājasdarbā minētie nosacījumi, šķiet, izpildīti.*/
+gari un likās, ka var pārskatīt šādi labāk, bet ņemu vērā. */
 
 /* Theming */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
