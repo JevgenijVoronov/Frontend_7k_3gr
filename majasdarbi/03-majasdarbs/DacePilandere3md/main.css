@@ -1,104 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-    line-height: 1.5;
-
-    background: radial-gradient(50% 50% at 50% 50%, #DEEEFB 63.85%, #FFFFFF 100%);
-
-}
-
-
-
-p{
-   
-    font-family: 'Inter';
-    font-style: normal; 
-    font-weight: 100;
-    font-size: 44px;
-    line-height: 10px;
-
-    color: #000000;
-
-    
-}
-
-.header__link:hover{
-
-
-    color:crimson; 
-}
-
-.header__link{
-
-    color: #000000;
-
-    margin-left: 30px;
-}
-
-h1{
-
-    position: absolute;
-    width: 100px;
-    height: 10px;
-    left: 120px;
-    top: 100px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 54px;
-    line-height: 57px;
-    color: #000000;
-
-}
-
-.about-me__title{
-
-    position: absolute;
-width: 640px;
-height: 154px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 45px;
-line-height: 154px;
-
-}
-
-.about-me__pre-title{
-
-    margin-left: 113px;
-}
-
-.about-me__image{
-
-    
-    position: absolute;
-    width: 333px;
-    height: 345.47px;
-    left: 1030px;
-    top: 112px;
-    border-radius: 50%;
-}
-
-
-.header{
-    
-    padding: 15px;
     font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* line-height: 1.5; iekomentēju jo pievienoju klasi text ar šo pašu*/
+    background: radial-gradient(50% 50% at 50% 50%, #DEEEFB 63.85%, #FFFFFF 100%);
+}
+
+
+/* WEB DESIGNER */
+p {
+
+    margin: 0;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    /*dinamiska vērtība*/
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    /*visi lielie burti*/
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 0 0 20px 0px;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+.header {
+    padding: 15px 0;
+    /*augšā apakšā 15, pa labi pa kreisi 0*/
+    /*font-size: 15px;pieliku 15px body un tagad header to manto*/
     display: flex;
     justify-content: center;
-    
+}
+
+.header__link:hover {
+    color: crimson;
+}
+
+.header__link {
+    color: #000000;
+    margin-left: 30px;
+    text-decoration: none;
+    /*noņēmu pasvītrojumu*/
+}
+
+section {
+    padding: 0 20% 0 20%;
+    margin: 0 0 30px 0;
+}
+
+/*nobīdīju visu saturu*/
+
+.about-me {
+    display: flex;
+    margin: 50px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.about-me__hero {
+    display: flex;
+    align-items: center;
+}
+
+.about-me__pre-title {
+    font-size: 2.0vw;
+    /*dinamiska vērtība*/
+}
+
+.about-me__title {
+    font-size: 2, 5vw;
+    /*dinamiska vērtība*/
 }
 
 
 
+.about-me_image {
+    /* position: absolute; */
+    width: 330px;
+    height: 330px;
+    /* left: 1030px;
+    top: 112px; */
+    margin: 0 0 0 70px;
+    border-radius: 50%;
+
+}
+
+.about-me_box {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.boxter{
+    display: flex;
+    align-items: center;
+}
+
+/* dpdesign@inbox.lv */
+.about-me__link {
+    padding-left: 5px;
+    text-decoration: none;
+    /*noņēmu pasvītrojumu*/
+
+}
+
+.about-me__link:hover {
+    color: crimson
+}
+
+.about-me__link,
+.about-me__contact-btn {
+    display: inline-block;
+    font-size: 1.5vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+.about-me__contact-btn {
+    margin: 15px 0 0 0;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 70px;
+    text-align: center;
+}
+
+.contact-me__form {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact-me__input,
+.contact-me__text-area {
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-me__text-area {
+    height: 150px;
+}
+
+.contact-me__submit-btn {
+    font-size: 1em;
+    color: #000000;
+    background-color: transparent;
+    margin-top: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px 70px;
+}
 
 
+@media screen and (max-width: 768px) {
+    .about-me_image {
+        background-image: url(../ess.jpg);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
 
+    .contact-me__input,
+    .contact-me__text-area {
 
+        width: 80%;
 
+    }
 
+    h2 {
 
+        font-size: 1.5rem;
+
+    }
+
+}
