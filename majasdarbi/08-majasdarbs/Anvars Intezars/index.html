@@ -23,7 +23,7 @@
                 size="30"
                 title="Email Field"
                 oninvalid="this.setCustomValidity('Your email must contain @gmail.com part')"
-                required  
+                oninput="setCustomValidity('')"
             />
         </div>
 
@@ -35,8 +35,9 @@
                 title="Minimum and maximum length of the text"
                 minlength="5"
                 maxlength="10"
+                required
                 oninvalid="this.setCustomValidity('The length of the text must be from 5 till 10 letters')"
-                required 
+                oninput="setCustomValidity('')"
             />
         </div>
       
@@ -46,8 +47,9 @@
                 type="password" 
                 id="password1" 
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required
                 oninvalid="this.setCustomValidity('Your password must contain 1 capital, 1 small letters and 1 digit')"
-                required  
+                oninput="setCustomValidity('')"  
             />
         </div>
             
@@ -58,8 +60,9 @@
                 id="password2" 
                 title="Second line password"
                 minlength="8"
+                required
                 oninvalid="this.setCustomValidity('Your password must contain 8 symbols, 1 small letter and 1 digit')"
-                required 
+                oninput="setCustomValidity('')"
             />
         </div>
 
@@ -72,8 +75,9 @@
                 id="week"
                 min="2022-W18"
                 max="2022-w26"
-                oninvalid="this.setCustomValidity('The range of the week is from 18 till 26')"
                 required
+                oninvalid="this.setCustomValidity('The range of the week is from 18 till 26')"
+                oninput="setCustomValidity('')"
             />
         </div>
 
@@ -87,8 +91,9 @@
                 name="time"
                 min="9:00"
                 max="18:00"
-                oninvalid="this.setCustomValidity('The time range is from 9AM till 18PM')"
                 required
+                oninvalid="this.setCustomValidity('The time range is from 9AM till 18PM')"
+                oninput="setCustomValidity('')"
             />
         </div>
 
