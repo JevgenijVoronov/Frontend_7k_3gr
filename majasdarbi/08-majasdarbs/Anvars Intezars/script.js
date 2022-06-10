@@ -2,6 +2,7 @@ function checkZIP() {
     // Pievinot vel 3 valsti
     var constraints = {
       lv : [ '^(LV-)?\\d{4}$', "Latvias ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007" ],
+      lt : [ '^(LT-)?\\d{4}$', "Lithuanias ZIPs jabut 5 simboliem un jasakas ar LT-: e.g. LT-60344 or 00104" ],
     };
   
     var country = document.getElementById("Country").value;
