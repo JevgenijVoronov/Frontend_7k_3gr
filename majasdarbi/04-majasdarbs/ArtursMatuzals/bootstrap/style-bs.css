@@ -1,0 +1,23 @@
+.row{
+    height: 100px;
+}
+#column1{
+    background-color:yellow;
+    width: 100%;
+}
+#column2{
+    background-color:blue;
+    width: 100%;
+}
+#column3{
+    background-color:red;
+    width: 100%;
+}
+@media only screen and (min-width: 576px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 33.33%;
+    }
+}

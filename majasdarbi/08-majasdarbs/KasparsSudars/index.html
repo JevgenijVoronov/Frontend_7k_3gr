@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form" > 
+        <div>
+            <label for="">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="text"
+                
+            />
+        </div>
+      
+        <div>
+            <label for="">Epasts lauks</label>
+            <input 
+                type="text" 
+                id="epasts"
+
+                  
+            />
+        </div>
+
+        <div>
+            <label for="">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="text2" 
+                  
+            />
+        </div>
+      
+        <div>
+            <label for="">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="parole1" 
+                  
+            />
+        </div>
+            
+        <div>
+            <label for="">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="parole2" 
+                 
+            />
+        </div>
+
+        <div>
+            <label for="">Nedeļa</label>
+            <input 
+                type="week" 
+                name="week" 
+                id="nedela"
+                min="2022-W18"
+                max="2022-W26"
+            />
+        </div>
+
+        <div>
+            <label for="">Laiks</label>
+
+            <input 
+                type="time" 
+                id="laiks" 
+                name="laiks"
+                
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="">ZIP : </label>
+            <input 
+                type="text" 
+                id="ZIP"
+                
+            />
+            <label for="">Valsts : </label>
+            <select id="Country" >
+              <option value="lv">Latvia</option>
+              <option value="ee">Estonia</option>
+              <option value="lt">Lithuania</option>
+              <option value=""> </option>
+            </select>
+        </div>
+
+        <input id="submit" type="button" class="button" value="Parbaudīt"> 
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>

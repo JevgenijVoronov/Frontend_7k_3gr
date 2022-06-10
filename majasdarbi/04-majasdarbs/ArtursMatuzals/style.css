@@ -1,0 +1,75 @@
+@media only screen and (max-width: 768px){
+    .header{
+        display: flex;
+        flex-direction: ;
+        height: 200px;
+        width: 20%;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+    }
+    }
+h1 {
+text-align: center;
+font-family: 'Merriweather Sans', sans-serif;
+font-size: 30px;
+color: darkblue;
+background-color: grey;
+}
+h2 {
+text-align: center;
+font-family: 'Merriweather Sans', sans-serif;
+font-size: 30px;
+color: darkblue;
+background-color: grey;
+}
+.navigation {
+    display: flex;
+    min-height: 150px;
+    background-color: whitesmoke;
+    justify-content: baseline;
+    align-content:space-between;
+    align-items: center;
+    background-color: gray;
+}
+.nav-box{
+    display: flex;
+    justify-content: space-around;
+}
+#nav-item{
+    padding: 1%;
+}
+nav{
+    width: 100%;
+}
+ul {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    color: darkblue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: center;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+   }
+   li a:hover:not(.active) {
+     background-color: darkblue;
+   }
+body {
+    background-color: lightgray;
+}
+#profpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.svgicon {
+    max-width: 7mm;
+    height: auto;
+}
