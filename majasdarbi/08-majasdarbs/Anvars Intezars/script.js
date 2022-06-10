@@ -1,8 +1,10 @@
 function checkZIP() {
     // Pievinot vel 3 valsti
     var constraints = {
-      lv : [ '^(LV-)?\\d{4}$', "Latvias ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007" ],
-      lt : [ '^(LT-)?\\d{4}$', "Lithuanias ZIPs jabut 5 simboliem un jasakas ar LT-: e.g. LT-60344 or 00104" ],
+      lv : [ '^(LV-)?\\d{4}$', "Latvian ZIPs should contain 4 symbols and should start with LV-: e.g. LV-3001 or 3007" ],
+      lt : [ '^(LT-)?\\d{5}$', "Lithuanias ZIPs should contain 5 symbols and should start with LT-: e.g. LT-60344 or 00104" ],
+      ee : [ '^(EE-)?\\d{5}$', "Estonians ZIPs should contain 5 symbols and should start with EE-: e.g. EE-13625 or 13623" ],
+      pl : [ '^(PL-)?\\d{5}$', "Estonians ZIPs should contain 5 symbols and should start with PL-: e.g. PL-00-001 or 00-004" ]
     };
   
     var country = document.getElementById("Country").value;
