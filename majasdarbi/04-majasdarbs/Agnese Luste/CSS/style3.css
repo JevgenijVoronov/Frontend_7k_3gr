@@ -5,7 +5,7 @@
 }
 
 .image {
-  background: url(./CSS/bg.jpg) no-repeat;
+  background: url(../CSS/bg.jpg) no-repeat;
   background-size: contain;
     height: 100%;
     width: 100%;
@@ -13,7 +13,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .image {
-    background-image: url(./CSS/bg2.jpg);
+    background-image: url(../CSS/bg2.jpg);
   }
 }
 
@@ -21,12 +21,12 @@
 
 @media only screen and (min-width: 768px) {
     .image {
-      background-image: url(./CSS/bg.jpg);
+      background-image: url(../CSS/bg.jpg);
     }
   }
 
   @media only screen and (min-width: 1200px) {
     .image {
-      background-image: url(./CSS/bg2.jpg);
+      background-image: url(../CSS/bg2.jpg);
     }
   } 
