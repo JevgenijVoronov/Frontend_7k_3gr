@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="textfield"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="">Epasts lauks</label>
+            <input 
+                type="email" 
+                id="email"
+                pattern=".+@gmail\.com"
+                size="30"
+                title="Email Field"
+                oninvalid="this.setCustomValidity('Your email must contain @gmail.com part')"
+                required  
+            />
+        </div>
+
+        <div>
+            <label for="">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="minmaxtextlength" 
+                title="Minimum and maximum length of the text"
+                minlength="5"
+                maxlength="10"
+                oninvalid="this.setCustomValidity('The length of the text must be from 5 till 10 letters')"
+                required 
+            />
+        </div>
+      
+        <div>
+            <label for="">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password1" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                oninvalid="this.setCustomValidity('Your password must contain 1 capital, 1 small letters and 1 digit')"
+                required  
+            />
+        </div>
+            
+        <div>
+            <label for="">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password2" 
+                title="Second line password"
+                minlength="8"
+                oninvalid="this.setCustomValidity('Your password must contain 8 symbols, 1 small letter and 1 digit')"
+                required 
+            />
+        </div>
+
+        <div>
+            <label for="">Nedeļa</label>
+            <input 
+                type="week"
+                class="form-control"
+                name="week" 
+                id="week"
+                min="2022-W18"
+                max="2022-w26"
+                oninvalid="this.setCustomValidity('The range of the week is from 18 till 26')"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="">Laiks</label>
+
+            <input 
+                type="time"
+                class="form-control"
+                id="time" 
+                name="time"
+                min="9:00"
+                max="18:00"
+                oninvalid="this.setCustomValidity('The time range is from 9AM till 18PM')"
+                required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="">ZIP : </label>
+            <input 
+                type="zip" 
+                id="zip"
+                required
+            />
+            <label for="">Valsts : </label>
+            <select id="">
+              <option value="lv">Latvia</option>
+              <option value="lt">Lithuania </option>
+              <option value="est">Estonia </option>
+              <option value="pl">Poland </option>
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
