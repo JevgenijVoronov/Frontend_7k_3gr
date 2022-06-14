@@ -33,7 +33,7 @@ function printValues() {
        savedValues.push(value);
      }
 alert(savedValues);
-    }
+    
     // izmantojot getElementsByTagName('input') dabut visus ievadlaukus
     
     // ar for ciklu priekš katra no vertibam var key in inputs
