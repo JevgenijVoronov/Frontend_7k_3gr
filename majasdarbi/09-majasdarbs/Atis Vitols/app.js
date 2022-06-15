@@ -42,12 +42,26 @@
 */
 
 let dogSelector = document.getElementById("dogSelector");
+let dogImg = document.getElementById("dogImg")
 
-const renderDogData = (data) => {
+const renderList = (data) => {
     data.forEach(breed => {
         let holder = `<option value=${breed.value}>${breed.name}</option>`
         dogSelector.innerHTML += holder
     });
 }
-renderDogData(data);
-console.log(dogSelector)
+
+const renderDogData = (data) => {
+    dogImg.innerHTML = `<img src="${data.message}"></img>`
+}
+
+const getDogImg = () => {
+    let link = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`
+    
+    fetch(link)
+                .then(response => response.json())
+                .then(data => renderDogData(data))
+                .catch(error => alert(error));
+}
+renderList(data);
+addEventListener('change', getDogImg)
