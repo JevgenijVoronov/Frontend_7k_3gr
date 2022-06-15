@@ -17,7 +17,6 @@
 
 
 
-
     2)  Izmantojot addEventListener('change', getDogImg) notikumu priekš dogSelector elementa, piesaistam šim notikumam funkciju kura kā parametru saņemt suņa attēlu.
 
         Implementācija:
@@ -42,3 +41,13 @@
         - izmantojot innerHTML pievienot img tag ar src=${data.message}
 */
 
+let dogSelector = document.getElementById("dogSelector");
+
+const renderDogData = (data) => {
+    data.forEach(breed => {
+        let holder = `<option value=${breed.value}>${breed.name}</option>`
+        dogSelector.innerHTML += holder
+    });
+}
+renderDogData(data);
+console.log(dogSelector)
