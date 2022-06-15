@@ -43,28 +43,28 @@
 */
 
 
-
-const dogSelector   = document.getElementById('dogSelector');
-const dogimg        = document.getElementById('dogImg');
-
-function renderSelectOptions(data) {
-    data.forEach(breed => {
-        dogSelector.innerHTML += `<option value=${breed.value}>${breed.name}</option>`
-    })
-} 
+const dogSelector       = document.getElementById('dogSelector');
+const dogImgSelector    = document.getElementById('dogImg');
 
 function renderDogData(data) {
-    dogImg.innerHTML = `<img src='${data.message}'>`
+    data.forEach(breed => {
+        dogSelector.innerHTML += `<option value=${breed.value}>${breed.name}</option>`
+    }) 
 }
+
+function renderDogImg(data) {
+    dogImgSelector.innerHTML = `<img src='${data.message}'/>`
+} 
 
 function getDogImg() {
     const url = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
+    console.log(url);
 
     fetch(url)
-        .then(response => response.json())
-        .then(data => renderDogData(data))
-        .catch(error => alert(error));
+        .then(rensponse => rensponse.json())
+        .then(data => renderDogImg(data))
+        .catch(error => alert(error))
 }
 
-renderSelectOptions(data);
-dogSelector.addEventListener('change', getDogImg);
+renderDogData(data);
+dogSelector.addEventListener('change', getDogImg)
