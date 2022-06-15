@@ -1,6 +1,6 @@
 function checkZIP() {
   // Pievinot vel 3 valsti
-  var constraints = {
+  const constraints = {
     lv: [
       "^(LV-)?\\d{4}$",
       "Latvijas ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007",
@@ -19,10 +19,9 @@ function checkZIP() {
     ],
   };
 
-  var country = document.getElementById("Country").value;
-  var ZIPField = document.getElementById("ZIP");
-
-  var constraint = new RegExp(constraints[country][0], "");
+  let country = document.getElementById("Country").value;
+  let ZIPField = document.getElementById("ZIP");
+  let constraint = new RegExp(constraints[country][0], "");
   console.log(constraint);
 
   // Parbaude
@@ -36,12 +35,19 @@ function checkZIP() {
 
 function printValues() {
   // izveidtot tukšu masivu kura saglabam vertibas
+  var vertibas = [];
   // izmantojot getElementsByTagName('input') dabut visus ievadlaukus
+  var inputs = document.getElementsByTagName("input");
   // ar for ciklu priekš katra no vertibam var key in inputs
+  for (var key in inputs) {
+    var value = inputs[key].value;
+    matches.push(value);
+  }
   // dabujam vertibas inputs[key].value
   // ja value eksiste
   // pievinojam vertibu masiva .push(value);
   // izvadam masivu vertibas uz ekrana alert();
+  alert(vertibas);
 }
 
 window.onload = function () {
@@ -49,4 +55,5 @@ window.onload = function () {
   document.getElementById("ZIP").oninput = checkZIP;
 
   // pievienot addEventListener priekš formas submit notikumam un izvadit funkciju printValues()
+  document.getElementById("form").addEventListener("submit", printValues);
 };

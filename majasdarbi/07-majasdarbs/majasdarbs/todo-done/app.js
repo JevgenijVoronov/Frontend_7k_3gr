@@ -1,4 +1,3 @@
-     
 const taskAdder = document.querySelector('.taskAdder');
 const myTasks   = document.querySelector('.myTasks');
 const tasks     = JSON.parse(localStorage.getItem('taskList')) || [];

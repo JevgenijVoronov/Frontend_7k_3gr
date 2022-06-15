@@ -1,5 +1,5 @@
 function checkZIP() {
-  var constraints = {
+  const constraints = {
     lv: [
       "^(LV-)?\\d{4}$",
       "Latvijas ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007",
@@ -15,10 +15,10 @@ function checkZIP() {
     no: ["d{4}", "Norvēģijas ZIPs jabut 4 simboliem"],
   };
 
-  var country = document.getElementById("Country").value;
-  var ZIPField = document.getElementById("ZIP");
+  let country = document.getElementById("Country").value;
+  let ZIPField = document.getElementById("ZIP");
 
-  var constraint = new RegExp(constraints[country][0], "");
+  let constraint = new RegExp(constraints[country][0], "");
   console.log(constraint);
 
   // Parbaude

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style3.css" />
+  <title>Adaptive images</title>
+</head>
+
+<body>
+  <div class="container">
+        <img class="image" src="./CSS/bg.jpg"  srcset="./CSS/bg2.jpg" alt="img"/>
+    </div>
+
+  <div class="container">
+    <div class="image"></div>
+  </div>
+
+  <picture>
+        <source media="(min-width:1200px)" srcset="./CSS/bg.jpg">
+        <source media="(min-width:768px)" srcset="./CSS/bg2.jpg">
+    </picture>
+</body>
+
+</html>
