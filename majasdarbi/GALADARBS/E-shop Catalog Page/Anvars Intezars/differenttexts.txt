@@ -1,0 +1,6 @@
+About Us:
+
+    <li> ANIN is an Internet Shop which was established in Riga, Latvia.
+            Shops offers a variety of different products which posses high quality. </li>
+        <li> ANIN started business activity in 2020 as a local shop and further in 2022 expanded within the Batltics.</li>
+    </ul>
