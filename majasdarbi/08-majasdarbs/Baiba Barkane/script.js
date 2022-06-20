@@ -21,7 +21,6 @@ function checkZIP() {
   let constraint = new RegExp(constraints[country][0], "");
   console.log(constraint);
 
-  // Pārbaude
   if (constraint.test(ZIPField.value)) {
     ZIPField.setCustomValidity("");
   } else {
@@ -35,13 +34,13 @@ function printValues() {
 
   savedValues.push(document.getElementById("text"));
   savedValues.push(document.getElementById("email"));
-  savedValues.push(document.getElementById("limitedText"));
-  savedValues.push(document.getElementById("password"));
-  savedValues.push(document.getElementById("password8symbols"));
+  savedValues.push(document.getElementById("text1"));
+  savedValues.push(document.getElementById("pwd"));
+  savedValues.push(document.getElementById("pwd2"));
   savedValues.push(document.getElementById("week"));
   savedValues.push(document.getElementById("time"));
   savedValues.push(document.getElementById("ZIP"));
-  savedValues.push(document.getElementById("Country"));
+  savedValues.push(document.getElementById("country"));
 
   for (let i = 0; i < savedValues.length; i++) {
     if (savedValues[i].value) {
