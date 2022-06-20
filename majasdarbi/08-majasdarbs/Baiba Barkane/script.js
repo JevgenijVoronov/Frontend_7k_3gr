@@ -5,14 +5,14 @@ function checkZIP() {
       "Latvijas ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007",
     ],
 
-    lt: ["^(LT-)?\\d{5}$", "Lietuvas ZIPs jabut 5 simboliem un jasakas ar LT-"],
+    lt: ["^(LT-)?\\d{5}$", "Lietuvas ZIPs jābut 5 simboliem un jāsākas ar LT-"],
 
     ee: [
       "^(EE-)?\\d{5}$",
-      "Igaunijas ZIPs jabut 5 simboliem un jasakas ar EE-",
+      "Igaunijas ZIPs jābut 5 simboliem un jāsākas ar EE-",
     ],
 
-    no: ["d{4}", "Norvēģijas ZIPs jabut 4 simboliem"],
+    no: ["d{4}", "Norvēģijas ZIPs jābut 4 simboliem"],
   };
 
   let country = document.getElementById("Country").value;
@@ -25,17 +25,14 @@ function checkZIP() {
   if (constraint.test(ZIPField.value)) {
     ZIPField.setCustomValidity("");
   } else {
-    // Izvada kļudas paziņojumu
     ZIPField.setCustomValidity(constraints[country][1]);
   }
 }
 
 function printValues() {
-  // masivs kura saglabā vērtibas
   let savedValues = [];
   let finalValues = [];
 
-  // izmantojot getElementsByTagName('input') dabut visus ievadlaukus
   savedValues.push(document.getElementById("text"));
   savedValues.push(document.getElementById("email"));
   savedValues.push(document.getElementById("limitedText"));
@@ -65,5 +62,4 @@ window.onload = function () {
 
   const submit = document.getElementById("submit");
   submit.addEventListener("click", printValues);
-  // pievienot addEventListener priekš formas submit notikumam un izvadit funkciju printValues()
 };
