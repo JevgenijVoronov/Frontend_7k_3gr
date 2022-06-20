@@ -21,7 +21,7 @@ function checkZIP() {
   let constraint = new RegExp(constraints[country][0], "");
   console.log(constraint);
 
-  // Parbaude
+  // Pārbaude
   if (constraint.test(ZIPField.value)) {
     ZIPField.setCustomValidity("");
   } else {
@@ -30,82 +30,40 @@ function checkZIP() {
   }
 }
 
-function validationRules() {
-  text: (value) => {
-    let isValid = Boolean(value);
-    return isValid;
-  };
+function printValues() {
+  // masivs kura saglabā vērtibas
+  let savedValues = [];
+  let finalValues = [];
 
-  email: (value) => {
-    let regEx = /.+@gmail.com/;
-    let isValid = regEx.test(value);
-    return isValid;
-  };
+  // izmantojot getElementsByTagName('input') dabut visus ievadlaukus
+  savedValues.push(document.getElementById("text"));
+  savedValues.push(document.getElementById("email"));
+  savedValues.push(document.getElementById("limitedText"));
+  savedValues.push(document.getElementById("password"));
+  savedValues.push(document.getElementById("password8symbols"));
+  savedValues.push(document.getElementById("week"));
+  savedValues.push(document.getElementById("time"));
+  savedValues.push(document.getElementById("ZIP"));
+  savedValues.push(document.getElementById("Country"));
 
-  text1: (value) => {
-    let regEx = /(^\d{5,10}$)/;
-    let isValid = regEx.test(value);
-    return isValid;
-  };
-
-  pwd1: (value) => {
-    let regEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
-    let isValid = regEx.test(value);
-    return isValid;
-  };
-
-  pwd2: (value) => {
-    let regEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.{8,})/;
-    let isValid = regEx.test(value);
-    return isValid;
-  };
-
-  time: (value) => {
-    let regEx = /(^((0?9|1[0-6]):[0-6][0-9]|18:00)$)/;
-    let isValid = regEx.test(value);
-    return isValid;
-  };
-}
-
-function isValid(inputField) {
-  return validationRules[inputField.name](inputField.value);
-}
-
-function handleValidity(inputField, errorMsg) {
-  if (isValid(inputField)) {
-    setFieldValid(inputField);
-  } else {
-    setFieldInvalid(inputField, errorMsg);
-  }
-}
-
-function printValues(event) {
-  let formInputs = Array.form(userForm.elements);
-  const input = document.getElementsByTagName("input");
-
-  event.preventDefault();
-  let keyValuePairs = [];
-
-  formInputs.forEach((inputField) => {
-    if (inputField.tagName !== "BUTTON") {
-      let valuePairString = `${inputField.name}: ${inputField.value}`;
-      keyValuePairs.push(valuePairString);
+  for (let i = 0; i < savedValues.length; i++) {
+    if (savedValues[i].value) {
+      finalValues.push(savedValues[i].value);
     }
-  });
-  alert(keyValuePairs.join("; "));
+  }
+
+  if (finalValues.length === savedValues.length) {
+    alert(finalValues);
+  } else {
+    window.alert("Aizpildi visus laukus");
+  }
 }
 
 window.onload = function () {
   document.getElementById("Country").onchange = checkZIP;
   document.getElementById("ZIP").oninput = checkZIP;
 
-  formInputs.forEach((inputField) => {
-    if (inputField.tagName !== "BUTTON" && inputField.tagName !== "SELECT") {
-      inputField.addEventListener("input", resetErrorState);
-      inputField.addEventListener("blur", validateField);
-    } else if (inputField.tagName === "SELECT") {
-      inputField.addEventListener("change", handlePoValidity);
-    }
-  });
-  userForm.addEventListener("submit", printvalues);
+  const submit = document.getElementById("submit");
+  submit.addEventListener("click", printValues);
+  // pievienot addEventListener priekš formas submit notikumam un izvadit funkciju printValues()
 };
