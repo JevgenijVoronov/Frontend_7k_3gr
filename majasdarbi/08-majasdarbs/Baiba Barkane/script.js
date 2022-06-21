@@ -59,6 +59,6 @@ window.onload = function () {
   document.getElementById("Country").onchange = checkZIP;
   document.getElementById("ZIP").oninput = checkZIP;
 
-  const submit = document.getElementById("submit");
+  const submit = document.getElementById("form");
   submit.addEventListener("click", printValues);
 };
