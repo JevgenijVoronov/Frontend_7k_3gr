@@ -19,7 +19,7 @@
             <input 
                 type="email" 
                 id="email"
-                pattern=".+@gmail.com"
+                pattern=".+@gmail\.com"
                 title="E-pasts"  
                 oninvalid="this.setCustomValidity('E-pasts neatbilst prasībām')" 
 
@@ -46,7 +46,7 @@
                 type="password" 
                 id="pwd1" 
                 title="Parolei jāsatur vismaz viens lielais burts, mazais burts un cipars"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                 oninvalid="this.setCustomValidity('Parolei jāsatur vismaz viens lielais burts, mazais burts un cipars')"  
                 required
             />
