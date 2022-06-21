@@ -29,30 +29,15 @@ function checkZIP() {
 }
 
 function printValues() {
-  let savedValues = [];
-  let finalValues = [];
+  var matches = [];
+  var inputs = document.getElementsByTagName("input");
 
-  savedValues.push(document.getElementById("text"));
-  savedValues.push(document.getElementById("email"));
-  savedValues.push(document.getElementById("text1"));
-  savedValues.push(document.getElementById("pwd"));
-  savedValues.push(document.getElementById("pwd2"));
-  savedValues.push(document.getElementById("week"));
-  savedValues.push(document.getElementById("time"));
-  savedValues.push(document.getElementById("ZIP"));
-  savedValues.push(document.getElementById("country"));
-
-  for (let i = 0; i < savedValues.length; i++) {
-    if (savedValues[i].value) {
-      finalValues.push(savedValues[i].value);
-    }
+  for (var key in inputs) {
+    var value = inputs[key].value;
+    matches.push(value);
   }
 
-  if (finalValues.length === savedValues.length) {
-    alert(finalValues);
-  } else {
-    window.alert("Nepieciešams aizpildīt visus laukus");
-  }
+  alert(matches);
 }
 
 window.onload = function () {
