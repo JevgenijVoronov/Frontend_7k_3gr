@@ -17,7 +17,6 @@ function checkZIP() {
 
   let country = document.getElementById("Country").value;
   let ZIPField = document.getElementById("ZIP");
-
   let constraint = new RegExp(constraints[country][0], "");
   console.log(constraint);
 
@@ -43,6 +42,5 @@ function printValues() {
 window.onload = function () {
   document.getElementById("Country").onchange = checkZIP;
   document.getElementById("ZIP").oninput = checkZIP;
-
   document.getElementById("form").addEventListener("submit", printValues);
 };
