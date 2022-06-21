@@ -60,5 +60,5 @@ window.onload = function () {
   document.getElementById("ZIP").oninput = checkZIP;
 
   const submit = document.getElementById("form");
-  submit.addEventListener("click", printValues);
+  submit.addEventListener("submit", printValues);
 };
