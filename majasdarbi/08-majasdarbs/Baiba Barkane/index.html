@@ -58,7 +58,8 @@
                 type="password" 
                 id="pwd2" 
                 title="Parolei jābūt 8 zīmes garai un jāsatur vismaz viens lielais burts, mazais burts un cipars"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.{8,})"
+                minlength="10"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                 oninvalid="this.setCustomValidity('Parolei jābūt 8 zīmes garai un jāsatur vismaz viens lielais burts, mazais burts un cipars')" 
                 required
             />
