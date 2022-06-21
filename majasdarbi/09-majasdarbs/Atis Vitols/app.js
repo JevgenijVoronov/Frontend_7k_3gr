@@ -17,7 +17,6 @@
 
 
 
-
     2)  Izmantojot addEventListener('change', getDogImg) notikumu priekš dogSelector elementa, piesaistam šim notikumam funkciju kura kā parametru saņemt suņa attēlu.
 
         Implementācija:
@@ -42,29 +41,27 @@
         - izmantojot innerHTML pievienot img tag ar src=${data.message}
 */
 
+let dogSelector = document.getElementById("dogSelector");
+let dogImg = document.getElementById("dogImg")
 
-const dogSelector       = document.getElementById('dogSelector');
-const dogImgSelector    = document.getElementById('dogImg');
-
-function renderDogData(data) {
+const renderList = (data) => {
     data.forEach(breed => {
-        dogSelector.innerHTML += `<option value=${breed.value}>${breed.name}</option>`
-    }) 
+        let holder = `<option value=${breed.value}>${breed.name}</option>`
+        dogSelector.innerHTML += holder
+    });
 }
 
-function renderDogImg(data) {
-    dogImgSelector.innerHTML = `<img src='${data.message}'/>`
-} 
-
-function getDogImg() {
-    const url = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
-    console.log(url);
-
-    fetch(url)
-        .then(rensponse => rensponse.json())
-        .then(data => renderDogImg(data))
-        .catch(error => alert(error))
+const renderDogData = (data) => {
+    dogImg.innerHTML = `<img src="${data.message}"></img>`
 }
 
-renderDogData(data);
-dogSelector.addEventListener('change', getDogImg)
+const getDogImg = () => {
+    let link = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`
+    
+    fetch(link)
+                .then(response => response.json())
+                .then(data => renderDogData(data))
+                .catch(error => alert(error));
+}
+renderList(data);
+addEventListener('change', getDogImg)

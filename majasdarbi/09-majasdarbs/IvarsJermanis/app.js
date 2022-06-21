@@ -15,7 +15,7 @@
             `<option value=${breed.value}>${breed.name}</option>`
         - izsaucam renderDogData() funkciju un rezultātā iegūsim visas iespejamāss suņu šķirnes iekš <select> elementa kā <options>.
 
-
+        
 
 
     2)  Izmantojot addEventListener('change', getDogImg) notikumu priekš dogSelector elementa, piesaistam šim notikumam funkciju kura kā parametru saņemt suņa attēlu.
@@ -43,28 +43,28 @@
 */
 
 
-const dogSelector       = document.getElementById('dogSelector');
-const dogImgSelector    = document.getElementById('dogImg');
 
-function renderDogData(data) {
+const dogSelector   = document.getElementById('dogSelector');
+const dogimg        = document.getElementById('dogImg');
+
+function renderSelectOptions(data) {
     data.forEach(breed => {
         dogSelector.innerHTML += `<option value=${breed.value}>${breed.name}</option>`
-    }) 
-}
-
-function renderDogImg(data) {
-    dogImgSelector.innerHTML = `<img src='${data.message}'/>`
+    })
 } 
+
+function renderDogData(data) {
+    dogImg.innerHTML = `<img src='${data.message}'>`
+}
 
 function getDogImg() {
     const url = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
-    console.log(url);
 
     fetch(url)
-        .then(rensponse => rensponse.json())
-        .then(data => renderDogImg(data))
-        .catch(error => alert(error))
+        .then(response => response.json())
+        .then(data => renderDogData(data))
+        .catch(error => alert(error));
 }
 
-renderDogData(data);
-dogSelector.addEventListener('change', getDogImg)
+renderSelectOptions(data);
+dogSelector.addEventListener('change', getDogImg);

@@ -14,10 +14,20 @@
         - izmantojot cilku forEach() izesiem cauri datiem un pievienosim mūsu dogSelector elementam ar innerHTML nepiecišamo html:
             `<option value=${breed.value}>${breed.name}</option>`
         - izsaucam renderDogData() funkciju un rezultātā iegūsim visas iespejamāss suņu šķirnes iekš <select> elementa kā <options>.
+*/
+
+let dogSelector = document.getElementById('dogSelector');
+function renderDogData(breed){
+    //console.log(breed.name);
+    dogSelector.innerHTML += `<option value=${breed.value}>${breed.name}</option>`;
+    //let dogImg = document.getElementById('dogImg');
+    //dogImg.innerHTML = `<img src=${breed.message}></img>`;
+}
+
+data.forEach(renderDogData); 
 
 
-
-
+/*
     2)  Izmantojot addEventListener('change', getDogImg) notikumu priekš dogSelector elementa, piesaistam šim notikumam funkciju kura kā parametru saņemt suņa attēlu.
 
         Implementācija:
@@ -31,9 +41,21 @@
                 .then(response => response.json())
                 .then(data => renderDogData(data))
                 .catch(error => alert(error));
+*/
+
+function getDogImg(){
+    let url_to_server = "https://dog.ceo/api/breed/"+String(dogSelector.value)+"/images/random";
+    console.log(dogSelector.value);
+    console.log(url_to_server);
+    fetch(url_to_server)
+                .then(response => response.json())
+                .then(data => renderDogData2(data))
+                .catch(error => alert(error));
+}
+document.addEventListener('change', getDogImg);
 
 
-
+/*
     3)  Izvadit suņa bildi 
         
         Implementācija:
@@ -43,28 +65,10 @@
 */
 
 
-const dogSelector       = document.getElementById('dogSelector');
-const dogImgSelector    = document.getElementById('dogImg');
-
-function renderDogData(data) {
-    data.forEach(breed => {
-        dogSelector.innerHTML += `<option value=${breed.value}>${breed.name}</option>`
-    }) 
+function renderDogData2(breed){
+    console.log(breed.message);
+    let dogImg = document.getElementById('dogImg');
+    dogImg.innerHTML = `<img src=${breed.message}></img>`;
 }
 
-function renderDogImg(data) {
-    dogImgSelector.innerHTML = `<img src='${data.message}'/>`
-} 
 
-function getDogImg() {
-    const url = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
-    console.log(url);
-
-    fetch(url)
-        .then(rensponse => rensponse.json())
-        .then(data => renderDogImg(data))
-        .catch(error => alert(error))
-}
-
-renderDogData(data);
-dogSelector.addEventListener('change', getDogImg)
