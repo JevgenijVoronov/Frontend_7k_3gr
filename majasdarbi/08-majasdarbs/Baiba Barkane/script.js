@@ -51,7 +51,7 @@ function printValues() {
   if (finalValues.length === savedValues.length) {
     alert(finalValues);
   } else {
-    window.alert("Aizpildi visus laukus");
+    window.alert("Nepieciešams aizpildīt visus laukus");
   }
 }
 
