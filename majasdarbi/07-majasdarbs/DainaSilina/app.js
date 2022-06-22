@@ -1,3 +1,11 @@
+// Jevgēņijam, Vladislavam:
+// Šis bija visgrūtākais mājasdarbs, tādēļ uzreiz varu teikt, ka pati tādu bez parauga neuzrakstītu.
+// Ko es darīju - vairākas reizes gāju cauri piemēram un mēģināju saprast, mēģināju kaut ko mainīt, bet minimāli,
+// galvenokārt - saprast, tas man bez nekādām priekšzinašanām pašreiz ir maksimums.
+// Tāpēc arī šeit ir daudz komentāru, jo tādā veidā mācos saprast.
+
+
+
 const taskAdder = document.querySelector(".taskAdder");
 const myTasks = document.querySelector(".myTasks");
 const tasks = JSON.parse(localStorage.getItem("taskList")) || [];
