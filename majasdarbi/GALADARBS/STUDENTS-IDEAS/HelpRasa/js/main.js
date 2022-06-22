@@ -26,12 +26,24 @@ let customIcon = {
     iconSize:[40,40]
 }
 
+let myPositionIcon = {
+    iconUrl:"https://cdn-icons-png.flaticon.com/512/25/25694.png",
+    iconSize:[40,40]
+}
+
 let myIcon = L.icon(customIcon);
+let positionIcon = L.icon(myPositionIcon);
 
 let iconOptions = {
-    title:"name",
+    title:"company name",
     icon:myIcon
 }
+
+let positionIconOptions = {
+    title:"company name",
+    icon:myPositionIcon
+}
+
 
 cordinates.forEach(element => {
     let marker = new L.Marker([element.l, element.w] , iconOptions);
