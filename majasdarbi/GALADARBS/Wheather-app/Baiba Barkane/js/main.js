@@ -20,7 +20,7 @@ function convertion(val) {
 
 // fetch metode
 
-tn.addEventListener("click", function () {
+btn.addEventListener("click", function () {
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       inputval.value +
