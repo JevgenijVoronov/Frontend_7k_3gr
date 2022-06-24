@@ -10,9 +10,17 @@ function getAllProducts() {
 .then(console.log)
 }
 
-let buttonGetAllProducts = document.createElement("button");
-buttonGetAllProducts.innerHTML = "getallproducts";
+const buttonGetAllProducts = document.querySelector("Get All Products");
 buttonGetAllProducts.addEventListener("click", function () {
    getAllProducts();
 });
-document.body.appendChild(buttonGetAllProducts);
+
+/*
+function findProducts() {
+   fetch('https://dummyjson.com/products/search?q=phone')
+.then(res => res.json())
+.then(console.log);
+}
+
+let
+*/
