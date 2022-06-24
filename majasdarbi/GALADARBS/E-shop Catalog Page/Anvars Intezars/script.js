@@ -10,7 +10,7 @@ function getAllProducts() {
 .then(console.log)
 }
 
-let buttonGetAllProducts = document.getElementByName("getAllProducts");
+let buttonGetAllProducts = document.getElementById("getAllProducts");
 buttonGetAllProducts.addEventListener("click", function () {
    getAllProducts();
 });
@@ -22,4 +22,3 @@ function findProducts() {
 .then(console.log);
 }
 
-let
