@@ -12,7 +12,7 @@ function getAllProducts() {
 
 let buttonGetAllProducts = document.createElement("button");
 buttonGetAllProducts.innerHTML = "getallproducts";
-buttonGetAllProducts.addEventListener("click", getAllProducts () {
-   alert("Button is clicked");
+buttonGetAllProducts.addEventListener("click", function () {
+   getAllProducts();
 });
 document.body.appendChild(buttonGetAllProducts);
