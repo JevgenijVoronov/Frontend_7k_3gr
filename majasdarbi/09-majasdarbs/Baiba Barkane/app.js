@@ -8,14 +8,14 @@ function renderDogData(data) {
 }
 
 function renderDogImg(data) {
-  dogImgSelector.inner.HTML = `<img src='${data.message}'>`;
+  dogImg.innerHTML = `<img src='${data.message}'>`;
 }
 
 function getDogImg() {
-  const url = "https://dog.ceo/api/${dogSelectorValue}/images/random/";
+  const url = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
   fetch(url)
     .then((response) => response.json())
-    .then((data) => renderDogData(data)).catch.error = alert(error);
+    .then((data) => renderDogImg(data)).catch((error) => alert(error));
 }
 
 renderDogData(data);
