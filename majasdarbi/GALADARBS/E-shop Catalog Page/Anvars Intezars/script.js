@@ -1,8 +1,10 @@
 function getAboutUs() {
-   let aboutUs = document.getElementById("About Us").onclick = 
-   console.log("Hello");
-
+   alert("Hello!");
 }
+
+let buttonAboutUs = document.getElementById("About Us");
+buttonAboutUs.addEventListener("click", function () {
+});
 
 function getAllProducts() {
    fetch('https://dummyjson.com/products')
