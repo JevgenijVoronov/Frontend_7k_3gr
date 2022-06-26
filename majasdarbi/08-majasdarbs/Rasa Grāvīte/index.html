@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="text">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="text"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="email">Epasts lauks</label>
+            <input 
+                type="email" 
+                id="email"
+                pattern=".+@gmail.com"
+                title="e-mail"  
+                required
+            />
+        </div>
+
+        <div>
+            <label for="limitedText">Teksta lauks ar Min un Max garumu(5-10)</label>
+            <input 
+                type="text" 
+                id="limitedText" 
+                title="teksts nedrīkst saturēt mazāk par 5 un vairāk par 10 simboliem"  
+                minlength="5"
+                maxlength="10"
+                oninvalid="this.setCustomValidity('nepareizs simbolu skaits')" 
+                oninput="this.setCustomValidity('')"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="Password1">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="Password1" 
+                id="Password1" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}"
+                oninvalid="this.setCustomValidity('Parolei jāsatur vismaz 1 cipars, viens lielais un viens mazais burts')"
+                oninput="this.setCustomValidity('')"
+                required  
+            />
+        </div>
+            
+        <div>
+            <label for="Password2">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="Password2" 
+                id="Password2" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Parolei jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars" 
+                required 
+            />
+        </div>
+
+        <div>
+            <label for="week">Nedeļa</label>
+            <input 
+                type="week" 
+                name="week" 
+                id="week"
+                min="2022-W18"
+                max="2022-W26"
+                oninvalid="this.setCustomValidity('Izvēle iespējama 18.-26. nedēļas ietvaros')"
+                oninput="this.setCustomValidity('')"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="time">Laiks</label>
+
+            <input 
+            type="time" 
+            id="time" 
+            name="time"
+            min="09:00" 
+            max="18:00"
+            oninvalid="this.setCustomValidity('Choose time between 09:00 and 18:00!')"
+            oninput="this.setCustomValidity('')"
+            required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="ZIP">ZIP : </label>
+            <input 
+                type="ZIP" 
+                id="ZIP"
+                required
+            />
+            <label for="Country">Valsts : </label>
+            <select id="Country">
+              <option value="lv">Latvija</option>
+              <option value="est">Igaunija </option>
+              <option value="lt">Lietuva </option>
+              <option value="se">Zviedrija </option>
+              required
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>

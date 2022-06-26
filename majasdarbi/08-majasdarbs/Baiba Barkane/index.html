@@ -15,14 +15,12 @@
         </div>
       
         <div>
-            <label for="">Epasts lauks</label>
+            <label for="">E-pasta lauks</label>
             <input 
                 type="email" 
                 id="email"
-                pattern=".+@gmail.com"
+                pattern=".+@gmail\.com"
                 title="E-pasts"  
-                oninvalid="this.setCustomValidity('E-pasts neatbilst prasībām')" 
-
                 required
             />
         </div>
@@ -35,8 +33,6 @@
                 title="Teksts nedrīkst būt īsāks par 5 zīmēm un garāks par 10"  
                 minlength="5"
                 maxlength="10"
-                pattern="(^\d{5,10}$)"
-                oninvalid="this.setCustomValidity('Teksts nedrīkst būt īsāks par 5 zīmēm un garāks par 10')" 
                required
             />
         </div>
@@ -47,8 +43,7 @@
                 type="password" 
                 id="pwd1" 
                 title="Parolei jāsatur vismaz viens lielais burts, mazais burts un cipars"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])"
-                oninvalid="this.setCustomValidity('Parolei jāsatur vismaz viens lielais burts, mazais burts un cipars')"  
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                 required
             />
         </div>
@@ -59,14 +54,14 @@
                 type="password" 
                 id="pwd2" 
                 title="Parolei jābūt 8 zīmes garai un jāsatur vismaz viens lielais burts, mazais burts un cipars"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.{8,})"
-                oninvalid="this.setCustomValidity('Parolei jābūt 8 zīmes garai un jāsatur vismaz viens lielais burts, mazais burts un cipars')" 
+                minlength="8"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                 required
             />
         </div>
 
         <div>
-            <label for="">Nedeļa</label>
+            <label for="">Nedēļa</label>
             <input 
                 type="week" 
                 name="week" 
@@ -86,7 +81,6 @@
                 name="time"
                 min="09:00"
                 max="18:00"
-                oninvalid="this.setCustomValidity('Pieejams laiks no plkst. 9 līdz 18')" 
                 required
             />
         </div>

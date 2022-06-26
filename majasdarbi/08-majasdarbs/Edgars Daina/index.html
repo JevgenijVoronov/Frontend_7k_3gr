@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="text"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="">Epasts lauks</label>
+            <input 
+                type="email" 
+                id="email"
+                pattern=".+@gmail\.com"
+                title="epastam jasatur '@gmail.com'"  
+                required
+            />
+        </div>
+
+        <div>
+            <label for="minmaxlenght">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="minmaxlenght" 
+                minlength="3"
+                maxlength="10"
+                title="tekstam jabut no 3 lidz 10 simboliem"
+                required  
+            />
+        </div>
+      
+        <div>
+            <label for="password">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                oninvalid="this.setCustomValidity('jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')" 
+                required 
+            />
+        </div>
+            
+        <div>
+            <label for="password2">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password2" 
+                minlength="8"
+                title="jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars" 
+                required
+            />
+        </div>
+
+        <div>
+            <label for="week">Nedeļa</label>
+            <input 
+                type="week" 
+                name="week" 
+                id="week"
+                min="2022-W1"
+                max="2022-W52"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="appointment">Laiks</label>
+
+            <input 
+                type="time" 
+                id="time" 
+                name="time"
+                min="08:00"
+                max="17:00"
+                required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="zip">ZIP : </label>
+            <input 
+                type="text" 
+                id="zip"
+            />
+            <label for="country">Valsts : </label>
+            <select id="country">
+              <option value="lv">Latvija</option>
+              <option value="lt">Lietuva </option>
+              <option value="est">Igaunija </option>
+              <option value="no">Zviedrija </option>
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
