@@ -1,6 +1,14 @@
+
 function getAboutUs() {
    alert("Hello!");
 }
+/*
+element.addEventListener("click", getAboutUs);
+
+function getAboutUs() {
+   document.getElementById("About Us").innerHTML = "Hello World";
+ }
+ */
 
 let buttonAboutUs = document.getElementById("About Us");
 buttonAboutUs.addEventListener("click", function () {
