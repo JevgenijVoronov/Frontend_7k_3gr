@@ -1,4 +1,4 @@
-// local variables:
+// definējam mainīgos
 
 const inputval = document.querySelector("#cityinput");
 const btn = document.querySelector("#add");
@@ -33,8 +33,8 @@ tn.addEventListener("click", function () {
       let descrip = data["weather"]["0"]["description"];
       let tempature = data["main"]["temp"];
       let wndspd = data["wind"]["speed"];
-      //    let rise = data["sun"]["rise"];
-      //   let set = data["sun"]["set"];
+      let rise = data["sys"]["sunrise"];
+      let set = data["sys"]["sunset"];
 
       city.innerHTML = `Weather of <span>${nameval}<span>`;
       temp.innerHTML = `Temperature: <span>${convertion(tempature)} C</span>`;
