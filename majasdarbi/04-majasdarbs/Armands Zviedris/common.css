@@ -1,0 +1,18 @@
+ body {
+    background-color: #ff9800;
+}
+
+html {
+    font-family: 'Square Peg', cursive;
+}
+
+section {
+    padding: 50px;
+    min-height: -4vh;
+    background-color: #ff9800;
+}
+div{
+    padding: 50px;
+    min-height: 20vh;
+    color: green;
+}
