@@ -25,14 +25,14 @@ body {
 .inputs input[type="text"] {
   height: 3.5rem;
   width: 20rem;
-  background: #212121;
+  background: rgb(226, 150, 45);
   font-weight: lighter;
   font-size: 1.1rem;
   text-align: center;
   padding: 10px;
   border: none;
   background-color: transparent;
-  border: 2px solid #c2c2c2;
+  border: 2px solid rgb(79, 78, 78);
   border-radius: 7px;
   margin-right: 4px;
 }
@@ -51,15 +51,10 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
 .display {
   text-align: center;
   width: 400px;
-  color: #16a864;
+  color: #3a3b3a;
   border-radius: 7px;
 }
 .wrapper {
@@ -72,23 +67,27 @@ body {
 .wrapper h2 {
   padding: 5px 0;
   text-align: center;
-  background: #4c4c4d;
+  background: rgb(226, 150, 45);
   color: white;
+  font-size: 19px;
   font-family: sans-serif;
 }
 .wrapper p {
-  margin: 20px 50px;
+  margin: 20px 20px;
   margin-right: 20px;
-  text-align: left;
-  color: #04214c;
-  font-size: 23px;
+  text-align: center;
+  color: rgb(226, 150, 45);
+  font-size: 17px;
+  font-family: sans-serif;
 }
 
 .wrapper h2 span {
-  font-size: 26px;
-  color: #9beefb;
+  font-size: 17px;
+  color: #3a3b3a;
+  font-family: sans-serif;
 }
 .wrapper p span {
-  color: #90006e;
-  font-size: 25px;
+  color: #3a3b3a;
+  font-size: 17px;
+  font-family: sans-serif;
 }
