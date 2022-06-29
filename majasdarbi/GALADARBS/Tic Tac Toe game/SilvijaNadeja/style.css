@@ -1,0 +1,162 @@
+:root {
+    --cell-size: 100px;
+
+    --color1: #81c3fd;     /* for hover x*/
+    --color2: #fd8d81;     /* for hover o*/
+    --color-set1: #0275d8;    /* when set x*/
+    --color-set2: #9e0d0d;    /* when set o*/
+    --color-set3: #8b0087ef;    /* winning msg*/
+    --1: 10px;    /* x line-width */
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, #f0f4e3, #c8cfed);
+    color: transparent;
+}
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #2f1b65, #715c87);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.board {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 2px solid rgb(84, 83, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* remove border from edges */
+
+.cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(1), .cell:nth-child(4), .cell:nth-child(7) {
+    border-left: none;
+}
+
+.cell:nth-child(3), .cell:nth-child(6), .cell:nth-child(9) {
+    border-right: none;
+}
+
+.cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.cell.x, .cell.circle {
+cursor: not-allowed;
+}
+
+/* for cross */
+/* .cell.x:hover {
+    background-color: var(--color1);       
+     background-size: 80% 80%;
+     background-repeat: no-repeat;
+     background-position: center;
+} */
+.board.x .cell:not(.circle):not(.x):hover {
+    background: linear-gradient(to top right, transparent calc(50% - var(--1) / 2), var(--color1) calc(50% - var(--1) / 2) calc(50% + var(--1) / 2), transparent calc(50% + var(--1) / 2)), linear-gradient(to bottom right, transparent calc(50% - var(--1) / 2), var(--color1) calc(50% - var(--1) / 2) calc(50% + var(--1) / 2), transparent calc(50% + var(--1) / 2));
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+
+/* for cross set */
+
+/* .cell.x {
+   background-color: var(--color-set1);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+} */
+.cell:not(.circle).x {
+    background: linear-gradient(to top right, transparent calc(50% - var(--1) / 2), var(--color-set1) calc(50% - var(--1) / 2) calc(50% + var(--1) / 2), transparent calc(50% + var(--1) / 2)), linear-gradient(to bottom right, transparent calc(50% - var(--1) / 2), var(--color-set1) calc(50% - var(--1) / 2) calc(50% + var(--1) / 2), transparent calc(50% + var(--1) / 2));
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* for circle */
+
+.cell.circle:hover {
+    background-color: var(--color2);
+    width: var(--cell-size);
+    height:  var(--cell-size);
+    border-radius: 50%;
+    background-size: 80% 80%;
+}
+/* .board.circle .cell:not(.circle):not(.x):hover {
+    background: radial-gradient(var(--color2) 60%, transparent 60%);
+} */
+
+
+/* for circle set*/
+.cell.circle {
+    background-color: var(--color-set2);
+    width: calc(var(--cell-size) * .9);
+    height:  calc(var(--cell-size) * .9);
+    border-radius: 50%;
+    background-size: 80% 80%;
+}
+/* .cell:not(.x).circle {
+    background: radial-gradient(var(--color-set2) 60%, transparent 60%);
+} */
+
+/* winning msg */
+
+.winning-msg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  var(--color-set3);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+}
+
+.winning-msg button {
+border-radius: 10px;
+font-size: 3rem;
+background-color: white;
+border: 1px solid var(--color-set3);
+padding: .25em .5em;
+cursor: pointer;
+}
+
+.winning-msg button:hover {
+    background-color: var(--color-set3);
+    color: white;
+    border-color: white;
+}
+
+.winning-msg.show {
+display: flex;
+}
+
