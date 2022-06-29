@@ -121,6 +121,26 @@ body{
 
 }
 
+.header-image {
+
+    width: 500px;
+
+    height: 650px;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header-image {
+
+        width: 400px;
+    
+        height: 400px;
+    
+    }
+
+}
+
 /*apakštekstam visās versijās*/
 .header-content {
 
