@@ -1,0 +1,368 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.conainer {
+
+    /*platums visām versijām*/
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: auto;
+
+
+}
+
+/*Header*/
+
+.header {
+
+    /*galvenā bloka fons un augstums*/
+    padding-top: 46px;
+
+    background-color: floralwhite;
+
+
+}
+
+/*selektors, stilizēt logotipu*/
+.header-nav {
+
+    display: flex;
+    justify-content: space-between;
+
+    /*rindu vertikālā līdzināšana*/
+    align-items: flex-end;
+
+    margin-bottom: 76px;  /*Atstarpe no logo lidz nosaukumam*/
+}
+
+/*logotipa stilizacija*/
+.logo {
+
+    position: relative;
+
+    padding-right: 0 12px 3px 0;
+
+    font-weight: 700;
+
+    font-size: 32px;
+
+    color: black;
+
+}
+
+.logo::after {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 0;
+
+    content: "";
+
+    display: block;
+
+    width: 8px;
+
+    height: 8px;
+
+    background-color: blueviolet;
+
+    border-radius: 50%;
+
+}
+
+/*Nav*/
+
+.nav-list {
+
+        display: flex;
+
+        column-gap: 50px;
+
+        font-weight: 500;
+
+        font-size: 14px;
+
+
+}
+
+.nav-button {
+
+    display: none;
+
+}
+
+.nav-link {
+
+    color: black;
+
+}
+
+.nav-link.active {
+/*SĀKUMS- izcelts citā krāsā*/
+    color: #606060;
+
+}
+
+/*Header content no html*/
+
+.header-row {
+
+    display: flex; justify-content: space-between;
+
+    column-gap: 30px;
+
+}
+
+.header-image {
+
+    width: 500px;
+
+    height: 650px;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header-image {
+
+        width: 400px;
+    
+        height: 400px;
+    
+    }
+
+}
+
+/*apakštekstam visās versijās*/
+.header-content {
+
+    margin-top: 124px;
+    max-width: 500;
+
+}
+
+/*Galvenais nosaukums*/
+.header-heading {
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+
+    font-size: 44px;
+
+}
+
+/*Apakšnosaukums- teksts */
+.header-content p {
+
+line-height: 2;
+
+}
+
+/*Servicies*/
+
+.servicie {
+
+    padding: 90px 0;
+
+
+}
+
+
+.servicie-row {
+
+display: flex;
+
+column-gap: 30px;
+
+}
+
+
+.servicie-card {
+
+
+
+}
+
+
+.servicie-card-img {
+
+margin-bottom: 30px;
+
+
+}
+
+
+.servicie-card-title {
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+
+    font-size: 24px;
+
+    text-transform: uppercase;
+
+}
+
+.servicie-card p {
+
+    line-height: 2;
+
+
+}
+
+/*Portfolio*/
+.portfolio {
+
+    padding: 90px;
+
+    background-color: floralwhite;
+
+
+}
+
+.portfolio-title {
+
+    margin-bottom: 70px;
+
+    text-align: center;
+
+}
+
+.title-1 {
+
+    font-size: 34px;
+
+    font-size: 600;
+
+}
+
+.project {
+
+    text-align: center;
+
+}
+
+.project-img {
+
+margin-bottom: 40px;
+
+}
+
+.project-title {
+
+    font-size: 18px;
+
+}
+
+.portfolio-title a {
+
+    color: #000;
+
+    text-decoration: underline;  /*Teksts melnā krāsā, pasvītrots*/
+
+}
+
+/*Teksts melnā krāsā, pasvītrots*/
+.cotacts {
+
+    padding: 90px;
+
+    text-align: center;
+
+}
+
+.cotacts-title {
+
+    margin-bottom: 40px;
+
+}
+
+.cotacts-content {
+
+    margin: 0 auto 40px;
+
+    max-width: 480px;
+
+    font-size: 18px;
+
+}
+
+.cotacts-content p + p {
+
+    margin-top: 1em;
+
+
+}
+
+.cotacts-button {
+
+    margin-bottom: 80px;
+
+    
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 7px 22px;
+
+    background-color: #000;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    color: #fff;
+
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+
+}
+
+.btn:hover:focus {
+
+    background-color: #323232;
+
+}
+
+.btn:active {
+
+    position: relative;
+
+    top: 1px;
+
+    background-color: #000;
+
+
+}
+
+.cotacts-social {
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+column-gap: 60px;
+
+margin-bottom: 40px;
+
+}
+
+.cotacts-footer {
+
+    color: #828282;
+
+}
+
