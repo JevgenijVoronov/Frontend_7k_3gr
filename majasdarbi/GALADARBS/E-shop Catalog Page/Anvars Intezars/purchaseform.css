@@ -1,10 +1,18 @@
 body {
 
     background: url("./eshopbackground.jpg"); no-repeat center fixed;
+	background-size: cover;
+  	height: 50%;
+  /*
+  background: url("./eshopbackground.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  height: 50%;
+  */
   
 }
+
   li {
 	display: inline;
 	float: left;
@@ -85,8 +93,15 @@ body {
 		color: purple;
 	}
 
-	
-
 	container:hover {
 		color: purple;
 	}
+
+	label {
+		color: #B4886B;
+		font-weight: bold;
+		width: 130px;
+		float: left;
+	  
+	  }
+	  label:after { content: ": " }
