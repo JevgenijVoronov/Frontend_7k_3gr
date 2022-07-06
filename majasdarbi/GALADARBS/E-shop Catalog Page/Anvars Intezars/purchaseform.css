@@ -105,3 +105,9 @@ body {
 	  
 	  }
 	  label:after { content: ": " }
+
+	  input {
+		width: 200px;
+		height: 25px;
+		margin: 2px;
+	  }
