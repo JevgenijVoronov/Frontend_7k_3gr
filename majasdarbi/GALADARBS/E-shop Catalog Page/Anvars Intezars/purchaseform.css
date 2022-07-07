@@ -122,6 +122,6 @@ text-shadow: none;
 cursor: pointer;
 }
 
-#purchasebutton :hover {
-	color: purple;
+form {
+	size: auto;
 }
