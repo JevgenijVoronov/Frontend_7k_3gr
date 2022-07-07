@@ -112,16 +112,16 @@ body {
 		margin: 2px;
 	  }
 
-	  #purchasebutton {
-background: #016ABC;
-color: #fff;
-border: 1px solid #eee;
-border-radius: 20px;
-box-shadow: 5px 5px 5px #eee;
-text-shadow: none;
-cursor: pointer;
-}
+	#purchasebutton {
+		background: #016ABC;
+		color: #fff;
+		border: 1px solid #eee;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px #eee;
+		text-shadow: none;
+		cursor: pointer;
+	}
 
-form {
-	size: auto;
+	form {
+		size: auto;
 }
