@@ -1,15 +1,10 @@
 body {
 
-    background: url("./eshopbackground.jpg"); no-repeat center fixed;
-	background-size: cover;
-  	height: 50%;
-  /*
   background: url("./eshopbackground.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  */
   
 }
 
@@ -112,8 +107,20 @@ body {
 		margin: 2px;
 	  }
 
-	#purchasebutton {
+	#gobackbutton {
 		background: #016ABC;
+		color: #fff;
+		border: 1px solid #eee;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px #eee;
+		text-shadow: none;
+		cursor: pointer;
+		text-align: center;
+
+	}  
+
+	#purchasebutton {
+		background: grey;
 		color: #fff;
 		border: 1px solid #eee;
 		border-radius: 20px;
@@ -125,3 +132,11 @@ body {
 	form {
 		size: auto;
 }
+
+#footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:50px;   /* Height of the footer */
+	background: #c1b9b9;;
+ }
