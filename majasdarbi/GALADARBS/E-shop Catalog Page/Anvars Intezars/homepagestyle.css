@@ -1,17 +1,12 @@
 body {
 
-    background: url("./eshopbackground.jpg"); no-repeat center fixed;
+	background: url("./eshopbackground.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
-  	height: 50%;
-  /*
-  background: url("./eshopbackground.jpg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  */
-  
-}
+	
+  }
 
   li {
 	display: inline;
