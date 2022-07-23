@@ -26,8 +26,8 @@ buttonFindProducts.addEventListener("click", function () {
 });
 
 
-function getProductsByCategory () {
-   fetch('https://dummyjson.com/products')
+function getProductCategory () {
+   fetch('https://dummyjson.com/products/categories')
 .then(res => res.json())
 .then(console.log);
 }
