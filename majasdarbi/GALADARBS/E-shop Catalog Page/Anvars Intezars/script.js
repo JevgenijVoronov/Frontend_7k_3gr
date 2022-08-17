@@ -1,21 +1,32 @@
 
 let inputElementSelector = document.getElementById("searchProduct");
-var mainContainer = document.getElementById("allProductData")
+const mainUL = document.createElement('ul')
 
-function appendData(data) {
-   var mainContainer = document.getElementById("allProductData");
-   for (var i = 0; i < data.length; i++) {
-     var div = document.createElement("div");
-     div.innerHTML = 'product: ' + data[i].brand + ' ' + data[i].category;
-     mainContainer.appendChild(div);
-   }
- }
+mainUL.appendChild(productLI);
 
+
+/*This is old code, which for now I do not want to remove
 function getAllProducts() {
    fetch('https://dummyjson.com/products')
 .then(res => res.json())
 .then(console.log)
+*/
+
+function getAllProducts() {
+   fetch('https://dummyjson.com/products')
+.then(res => res.json())
+.then(data => console.log(data))
 }
+
+
+//Testing new method in order to create list of products in HTML file
+function createList(data) {
+   const mainUL = document.createElement('ol');
+   for (let i = 0; i < data.result.length; i++) {
+     const productLI = document.createElement('li');
+     productLI.innerHTML = data.result[i].title;
+
+
 
 let buttonGetAllProducts = document.getElementById("getAllProducts");
 buttonGetAllProducts.addEventListener("click", function () {
