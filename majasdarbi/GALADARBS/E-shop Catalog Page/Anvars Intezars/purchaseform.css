@@ -1,10 +1,13 @@
 body {
 
-    background: url("./eshopbackground.jpg"); no-repeat center center fixed;
+  background: url("./eshopbackground.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  height: 50%;
   
 }
+
   li {
 	display: inline;
 	float: left;
@@ -28,11 +31,13 @@ body {
 	-o-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
   }
+
   .one h1 {
 	text-align: center;
 	text-transform: uppercase;
 	padding-bottom: 5px;
   }
+
   .one h1:before {
 	width: 28px;
 	height: 5px;
@@ -44,6 +49,7 @@ body {
 	margin-left: -14px;
 	background-color: #b80000;
   }
+
   .one h1:after {
 	width: 100px;
 	height: 1px;
@@ -75,6 +81,62 @@ body {
 	border-radius: 0;
 	box-shadow: inset 0 0 0 var(--border-size) currentcolor;
 	transition: background 0.8s ease;
-	&:hover {
-		background: rgba(100, 0, 0, 0.03);
+	
+  }
+
+	button:hover {
+		color: purple;
 	}
+
+	container:hover {
+		color: purple;
+	}
+
+	label {
+		color: #B4886B;
+		font-weight: bold;
+		width: 130px;
+		float: left;
+	  
+	  }
+	  label:after { content: ": " }
+
+	  input {
+		width: 200px;
+		height: 25px;
+		margin: 2px;
+	  }
+
+	#gobackbutton {
+		background: #016ABC;
+		color: #fff;
+		border: 1px solid #eee;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px #eee;
+		text-shadow: none;
+		cursor: pointer;
+		text-align: center;
+
+	}  
+
+	#purchasebutton {
+		background: grey;
+		color: #fff;
+		border: 1px solid #eee;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px #eee;
+		text-shadow: none;
+		cursor: pointer;
+	}
+
+	form {
+		size: auto;
+}
+
+#footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:50px;   /* Height of the footer */
+	background: #c1b9b9;;
+ }

@@ -3,7 +3,7 @@
 <head>
     <title>EQUICK your friendly E-Shop</title>
     <link rel="stylesheet"
-          type="text/css" href="./style.css"/>
+          type="text/css" href="./homepagestyle.css"/>
     <meta name="description" content="EQUICK your friendly E-Shop">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
@@ -19,9 +19,9 @@
 <header>
     <nav role="full-horizontal">
         <ul class="container">
-            <li><a href="#home">HOME</a></li> &nbsp; &nbsp;
-            <li><a id = "About Us" href="#about">ABOUT US</a></li> &nbsp; &nbsp;
-            <li><a href="#faq">FAQ</a></li> &nbsp; &nbsp;
+            <li><a href="homepage.html">HOME</a></li> &nbsp; &nbsp;
+            <li><a id = "About Us" href="about.html">ABOUT US</a></li> &nbsp; &nbsp;
+            <li><a href="FAQ.html">FAQ</a></li> &nbsp; &nbsp;
             <li><a href="#privacypolicy">PRIVACY POLICY</a></li> &nbsp; &nbsp;
             <li><a href="#contactcus">CONTACT US</a></li>
             </a>
@@ -32,15 +32,14 @@
 <br>
 <br>
 
+
     <div class="one">
             <h1><center>EQUICK your friendly E-Shop
  </center></h1>
         </div>
     <!-- ABOUT US -->
     <ul  class="customfont"> 
-        <li> EQUICK is an Internet Shop which was established in Riga, Latvia.
-            Shops offers a variety of different products which posses high quality. </li>
-        <li> EQUICK started business activity in 2020 as a local shop and further in 2022 expanded within the Batltics.</li>
+        <li> <b>The most easiest and quickest way to make your best shopping. </b> <li>
     </ul>
 
 
@@ -48,6 +47,7 @@
     <!-- Get All Products -->
     <section id="Get All Products"> <img src="./paper-clip.svg" width="35px" height="auto">
         <h2> <button id = "getAllProducts"> <b> Get All Products  </b> </button> </h2>
+        <div id="allProductData"></div>
         <br>
 
     </section>
@@ -56,6 +56,7 @@
     <hr>
     <!-- Find Products -->
     <section id="Find Products"> <img src="./paper-clip.svg" width="35px" height="auto">
+        <input id="searchProduct"> 
         <h2> <button id ="findProducts"> <b> Find Products  </b> </button> </h2>
     </section>
     <!-- Find Products -->
@@ -84,11 +85,11 @@
     <!-- CONTACT US -->
 </main>
 
-
-    <footer>
-        <p style="text-align:center;">
-            Copyright <span>&copy; 2022 Anvars Intezars Inc. All rights Reserved. </span></p>
-    </footer>
-    <script src="./script.js"></script>
+<footer id = "footer">
+    <p style="text-align:center;">
+        Copyright <span>&copy; 2022 Anvars Intezars Inc. All rights Reserved. </span></p>
+        <img src="./mastercard.png" width="55px" height="auto" class="center"> <img src="./visa.png" width="55px" height="auto" class="center">
+</footer>
+    <script src="./script.js"></script
 </body>
 </html>
