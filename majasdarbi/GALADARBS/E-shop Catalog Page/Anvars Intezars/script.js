@@ -1,6 +1,5 @@
 
 let inputElementSelector = document.getElementById("searchProduct");
-let buttonGetProductsByCategory = document.getElementById("productsByCategory");
 let renderProduct = document.getElementById("render-products");
 const mainUL = document.createElement('ul')
 
@@ -40,12 +39,13 @@ buttonFindProducts.addEventListener("click", function () {
 });
 
 
-function getProductCategory () {
+function getAllProductCategories () {
    fetch('https://dummyjson.com/products/categories')
    .then(res => res.json())
    .then(console.log);
 }
 
-
-
-buttonGetProductsByCategory.addEventListener("click", getProductCategory);
+let buttonGetAllProductCategories = document.getElementById("getAllProductCategories");
+buttonGetAllProductCategories.addEventListener("click", function() {
+   getAllProductCategories();
+});
