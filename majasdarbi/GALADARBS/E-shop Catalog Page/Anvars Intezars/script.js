@@ -39,27 +39,32 @@ buttonFindProducts.addEventListener("click", function () {
 });
 
 
+/*
 function getAllProductCategories () {
    
 const fetchProductCagegoryPromise = fetch('https://dummyjson.com/products/categories')
+
+const renderProductCategories = document.getElementById("render-products-categories");
    
    fetchProductCagegoryPromise.then(response => {
       return response.json();
     }).then(data => {
-      const productCategories = data.map(category => category.name).join("\n");
-      console.log(names);
+      const products = data.map(category => category.product).join("\n");
+      
+
+      renderProductCategories.innerHTML = products;
     });
    }
-    
+   */
+   
 
 
-    /*
 function getAllProductCategories () {
    fetch('https://dummyjson.com/products/categories')
    .then(res => res.json())
    .then(data => createList(data));
 }
-*/
+
 
 let buttonGetAllProductCategories = document.getElementById("getAllProductCategories");
 buttonGetAllProductCategories.addEventListener("click", function() {
