@@ -8,8 +8,8 @@ const mainUL = document.createElement('ul')
 function createList(data) {
    console.log(data);
 
-   for (let i = 0; i < data.products.length; i++) {
-      renderProduct.innerHTML += `<li>${data.products[i].title}</li>`
+   for (let i = 0; i < data.length; i++) {
+      renderProduct.innerHTML += `<li>${data[i].title}</li>`
    //   const productLI = document.createElement('li');
    //   productLI.innerHTML = data.products[i].title;
    }
