@@ -56,17 +56,126 @@ const renderProductCategories = document.getElementById("render-products-categor
     });
    }
    */
-   
 
+   function showDataForProductCategories(data) {
+      let tab =
+          `<tr>
+            <th>Smarphones</th>
+            <th>Laptops</th>
+            <th>Fragrances</th>
+            <th>Skincare</th>
+            <th>Groceries</th>
+            <th>Home-decoration</th>
+            <th>Furniture</th>
+            <th>Tops</th>
+            <th>Womens-dresses</th>
+            <th>Womens-shoes</th>
+            <th>Mens-shirts</th>
+            <th>Mens-shoes</th>
+            <th>Mens-watches</th>
+            <th>Womens-watches</th>
+            <th>Womens-bags</th>
+            <th>Womens-jewellery</th>
+            <th>Sunglasses</th>
+            <th>Automative</th>
+            <th>Motorcycle</th>
+            <th>Lightning</th>
+           </tr>`;
+   }
+   
+      // Loop to access all rows
+      for (let r of data.list) {
+          tab += `<tr>
+      <td>${r.smartphones} </td>
+      <td>${r.laptops}</td>
+      <td>${r.fragrances}</td>
+      <td>${r.skincare}</td>
+      <td>${r.groceries}</td>
+      <td>${r.home-decoration}</td>
+      <td>${r.furniture}</td>
+      <td>${r.tops}</td>
+      <td>${r.womens-dresses}</td>
+      <td>${r.womens-shoes}</td>
+      <td>${r.mens-shirts}</td>
+      <td>${r.mens-shoes}</td>
+      <td>${r.mens-shirts}</td>
+      <td>${r.mens-watches}</td>
+      <<td>${r.womens-watches}</td>
+      <td>${r.womens-bags}</td>
+      <td>${r.womens-jewellery}</td> 
+      <td>${r.sunglasses}</td>
+      <td>${r.automative}</td>
+      <td>${r.motorcycle}</td>
+      <td>${r.lightning}</td>        
+  </tr>`;
+      }  
 
 function getAllProductCategories () {
    fetch('https://dummyjson.com/products/categories')
    .then(res => res.json())
-   .then(data => createList(data));
+   .then(data => createList(data))
+   .then(showDataForProductCategories(data));
 }
 
 
 let buttonGetAllProductCategories = document.getElementById("getAllProductCategories");
 buttonGetAllProductCategories.addEventListener("click", function() {
    getAllProductCategories();
+
+   function showDataForProductCategories(data) {
+      let tab =
+          `<tr>
+            <th>Smarphones</th>
+            <th>Laptops</th>
+            <th>Fragrances</th>
+            <th>Skincare</th>
+            <th>Groceries</th>
+            <th>Home-decoration</th>
+            <th>Furniture</th>
+            <th>Tops</th>
+            <th>Womens-dresses</th>
+            <th>Womens-shoes</th>
+            <th>Mens-shirts</th>
+            <th>Mens-shoes</th>
+            <th>Mens-watches</th>
+            <th>Womens-watches</th>
+            <th>Womens-bags</th>
+            <th>Womens-jewellery</th>
+            <th>Sunglasses</th>
+            <th>Automative</th>
+            <th>Motorcycle</th>
+            <th>Lightning</th>
+           </tr>`;
+   
+      // Loop to access all rows
+      for (let r of data.list) {
+          tab += `<tr>
+      <td>${r.smartphones} </td>
+      <td>${r.laptops}</td>
+      <td>${r.fragrances}</td>
+      <td>${r.skincare}</td>
+      <td>${r.groceries}</td>
+      <td>${r.home-decoration}</td>
+      <td>${r.furniture}</td>
+      <td>${r.tops}</td>
+      <td>${r.womens-dresses}</td>
+      <td>${r.womens-shoes}</td>
+      <td>${r.mens-shirts}</td>
+      <td>${r.mens-shoes}</td>
+      <td>${r.mens-shirts}</td>
+      <td>${r.mens-watches}</td>
+      <<td>${r.womens-watches}</td>
+      <td>${r.womens-bags}</td>
+      <td>${r.womens-jewellery}</td> 
+      <td>${r.sunglasses}</td>
+      <td>${r.automative}</td>
+      <td>${r.motorcycle}</td>
+      <td>${r.lightning}</td>        
+  </tr>`;
+      }
+      
+      // Setting innerHTML as tab variable
+      document.getElementById("employees").innerHTML = tab;
+  }
+
 });

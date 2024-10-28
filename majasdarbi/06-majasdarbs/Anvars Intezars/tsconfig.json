@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "outDir": "./dist", // Specify the output folder for compiled JavaScript
+      "allowJs": true
+    },
+    "include": ["./src/Anvars Intezars/cv.ts"] // Specify the path to your TypeScript files
+  }
