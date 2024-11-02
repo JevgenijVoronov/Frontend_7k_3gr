@@ -1,6 +1,6 @@
 const NameSurname = {
-    name:"Anvars",
-    surname:"Intezars", 
+    let name: string = "Anvars",
+    let surname: string = "Intezars", 
 
     get name() {
         return this.name;
@@ -10,12 +10,12 @@ const NameSurname = {
     }
 }
 
-let aboutMe = {
-    telephone:297754525,
-    mail:"anvar.intezar@gmail.com",
-    linkedin:"https://www.linkedin.com/in/anvarintezar",
-    github:"https://github.com/Anvar331",
-    location:"Riga, Latvia",
+let aboutMe: (string | number)[] = {
+    let telephone: number = 297754525,
+    let mail: string = "anvar.intezar@gmail.com",
+    let linkedin: string = "https://www.linkedin.com/in/anvarintezar",
+    let github: tring = "https://github.com/Anvar331",
+    let location: string = "Riga, Latvia",
 
     get telephone() {
         return this.telephone
@@ -34,7 +34,7 @@ let aboutMe = {
     }
 }
 
-let workExperience = [
+let arrayWorkExperience: string[] = [
     "Baltic Development Forum Summit", 
     "Riga City Cuncil", 
     "SIA Venitek",
@@ -45,7 +45,7 @@ let workExperience = [
     "Skandinavska Enskilda Banken AB"
 ]
 
-let education = [
+let arayEducation: string[] = [
     "SIA Progemeistars",
     "International House",
     "University of Latvia",
@@ -55,8 +55,8 @@ let education = [
     "SIA ITGuru Sowftware Development"
 ]
 
-let nonHumanLanguages = ["Java", "SQL", "HTML", "CSS", "JavaScript"]
+let arrayNonHumanLanguages: string[] = ["Java", "SQL", "HTML", "CSS", "JavaScript"]
 
-let languages = ["Latvian", "Russian", "English", "French", "Chinese"]
+let arrayLanguages: string[] = ["Latvian", "Russian", "English", "French", "Chinese"]
 
-let hobbies = ["Foreign languages", "books", "fitness", "progamming", "music"]
+let arrayHobbies: string[] = ["Foreign languages", "books", "fitness", "progamming", "music"]
