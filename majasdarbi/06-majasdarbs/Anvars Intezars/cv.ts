@@ -14,7 +14,7 @@ let aboutMe: (string | number)[] = {
     let telephone: number = 297754525,
     let mail: string = "anvar.intezar@gmail.com",
     let linkedin: string = "https://www.linkedin.com/in/anvarintezar",
-    let github: tring = "https://github.com/Anvar331",
+    let github: string = "https://github.com/Anvar331",
     let location: string = "Riga, Latvia",
 
     get telephone() {
@@ -22,7 +22,7 @@ let aboutMe: (string | number)[] = {
     },
     get mail() {
         return this.mail
-    },
+    }, 
     get linkedin() {
         return this.linkedin
     },
